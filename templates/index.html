@@ -12,50 +12,52 @@
 
   <!-- Compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/ownStyles.css">
 
   <!-- Compiled and minified JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <section class="navSuperior">
+  <section class="navSuperior" data-bs-theme="dark">
     <div class="navSuperior-icons">
       <img src="../static/img/ipn.png">
       <img src="../static/img/escom.png">
     </div>
-    <h4 class="navSuperior-title">Recurso Didáctico Digital</h4>
-    <h5 class="navSuperior-desc">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA Finanzas Empresariales</h5>
+    <div class="navSuperior-texts">
+      <h4 class="navSuperior-title text-dark">Recurso Didáctico Digital</h4>
+      <h5 class="navSuperior-desc text-dark">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA Finanzas
+        Empresariales</h5>
+    </div>
   </section>
 
-  <nav class="navbar nav-fill nav-pills navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav id="navPersonal" class="navbar nav-fill navbar-expand-lg bg-body-tertiary" style="background: #5086c1;">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <button type="button" class="btn btn-light">Inicio</button>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link text-light" href="#">Contenidos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contenidos</a>
+            <a class="nav-link text-light" href="#">Material de apoyo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Material de apoyo</a>
+            <a class="nav-link text-light" href="#">Glosario</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Glosario</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Referencias</a>
+            <a class="nav-link text-light" href="#">Referencias</a>
           </li>
         </ul>
       </div>
@@ -64,32 +66,77 @@
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Bienvenida</button>
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true">Bienvenida</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Unidad de competencia</button>
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false">Unidad de competencia</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Metodologia</button>
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Metodologia</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Evaluación de los aprendizajes</button>
+      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button"
+        role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Evaluación de los aprendizajes</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactos</button>
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactos</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Requerimientos</button>
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Requerimientos</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Manual de usuario</button>
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Manual de usuario</button>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+      <div class="marginPersonal">
+        <div class="card">
+          <h5 class="card-header">Bienvenida</h5>
+          <div class="card-body">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima amet magnam asperiores ex est ad,
+              harum quisquam eos vel quaerat reiciendis nesciunt, accusamus aut optio obcaecati rem illum doloribus.
+              Iusto, provident! Necessitatibus nobis qui repellat sapiente quas, totam ut fugit laboriosam quos ullam
+              ipsum quae impedit consectetur praesentium, illo beatae vel exercitationem aliquam blanditiis cum autem
+              porro? Numquam, in!
+              Sunt sed eaque quaerat, suscipit excepturi fuga recusandae quos atque, hic aliquid laboriosam. Pariatur
+              asperiores vel veritatis dolor maiores ipsam debitis unde iste dolorem, nam aspernatur cum omnis quaerat
+              illum.
+              Placeat illo velit voluptatem iusto tempore ipsam commodi non blanditiis magnam fuga quae, ipsa obcaecati
+              a fugit repudiandae rem maxime dicta delectus! Magnam totam sapiente repellat non nisi quos officia.
+              Odit nam culpa doloribus soluta, perspiciatis ut cupiditate quaerat ipsam non tempore ex in dolorum ab
+              temporibus adipisci eligendi a dignissimos at possimus ad. Explicabo aspernatur saepe beatae modi odit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam magni ipsa at molestias,
+              necessitatibus consequuntur laboriosam fuga quam voluptatum itaque nesciunt inventore dignissimos
+              laudantium doloribus quas voluptates cumque illum.
+              Velit dolorem ut quas libero quidem sint unde quos laborum! Nobis quibusdam laborum tenetur numquam
+              cumque! Doloremque molestiae sequi quas ratione quae architecto, soluta, eaque distinctio quis laboriosam
+              pariatur voluptatibus.
+            </p>
+          </div>
+          <div class="imagenDefaultContainer">
+            <img class="imagenDefault" src="../static/img/default.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+    </div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...
+    </div>
   </div>
 </body>
 

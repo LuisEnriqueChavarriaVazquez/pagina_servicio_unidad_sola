@@ -9,14 +9,52 @@ html{
     margin: 0;
 }
 
+/*Margin personal*/
+.marginPersonal{
+    margin: 20px !important;
+    box-sizing: border-box !important;
+}
+
 /*Nav con los logos del POLI*/
 .navSuperior{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    background-color: #b2dafa;
+}
+
+.navSuperior-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.navSuperior-icons{
-    
+.navSuperior-icons > img{
+    width: 100px;
+}
+
+.navSuperior-texts{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Imagen de las cards*/
+.imagenDefaultContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagenDefault{
+    width: 200px;
+}
+
+/*Personalizacion del nav*/
+#navPersonal{
+    background-color: #5086c1 !important;
 }
