@@ -26,14 +26,14 @@
 
 <body>
 
-  <section class="navSuperior" data-bs-theme="dark">
+  <section class="navSuperior">
     <div class="navSuperior-icons">
-      <img src="../static/img/ipn.png">
-      <img src="../static/img/escom.png">
+      <img id="iconIpn" src="../static/img/ipn_blanco.png">
+      <img id="iconEscom" src="../static/img/escom_blanco.png">
     </div>
     <div class="navSuperior-texts">
-      <h4 class="navSuperior-title text-dark">Recurso Didáctico Digital</h4>
-      <h5 class="navSuperior-desc text-dark">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA Finanzas
+      <h4 class="navSuperior-title text-light">Recurso Didáctico Digital</h4>
+      <h5 class="navSuperior-desc text-light">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA Finanzas
         Empresariales</h5>
     </div>
   </section>
@@ -66,31 +66,31 @@
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one-tab-pane" type="button"
         role="tab" aria-controls="one-tab-pane" aria-selected="true">Bienvenida</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane" type="button"
         role="tab" aria-controls="two-tab-pane" aria-selected="false">Unidad de competencia</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane" type="button"
         role="tab" aria-controls="three-tab-pane" aria-selected="false">Metodologia</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane" type="button"
         role="tab" aria-controls="four-tab-pane" aria-selected="false">Evaluación de los aprendizajes</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane" type="button"
         role="tab" aria-controls="five-tab-pane" aria-selected="false">Contactos</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="six-tab" data-bs-toggle="tab" data-bs-target="#six-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="six-tab" data-bs-toggle="tab" data-bs-target="#six-tab-pane" type="button"
         role="tab" aria-controls="six-tab-pane" aria-selected="false">Requerimientos</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven-tab-pane" type="button"
+      <button class="nav-link fw-bold text-primary-emphasis" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven-tab-pane" type="button"
         role="tab" aria-controls="seven-tab-pane" aria-selected="false">Manual de usuario</button>
     </li>
   </ul>
@@ -299,13 +299,15 @@
         <div class="card">
           <h5 class="card-header">Manual de usuario</h5>
           <div class="card-body">
+            <div class="imagenDefaultContainer">
+              <img class="imagenDefault" src="../static/img/default.png">
+            </div>
             <p class="card-text">
               Da click en el enlace para descargar el manual de usuario.
             </p>
-            <a href="#" class="btn btn-primary">Descargar</a>
-          </div>
-          <div class="imagenDefaultContainer">
-            <img class="imagenDefault" src="../static/img/default.png">
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-outline-primary btn-lg">Descargar</a>
+            </div>
           </div>
         </div>
       </div>

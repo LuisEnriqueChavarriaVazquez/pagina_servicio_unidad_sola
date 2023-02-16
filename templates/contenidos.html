@@ -13,6 +13,7 @@
     <!-- Compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/ownStyles.css">
 
@@ -26,14 +27,14 @@
 
 <body>
 
-    <section class="navSuperior" data-bs-theme="dark">
+    <section class="navSuperior">
         <div class="navSuperior-icons">
-            <img src="../static/img/ipn.png">
-            <img src="../static/img/escom.png">
+            <img id="iconIpn" src="../static/img/ipn_blanco.png">
+            <img id="iconEscom" src="../static/img/escom_blanco.png">
         </div>
         <div class="navSuperior-texts">
-            <h4 class="navSuperior-title text-dark">Recurso Didáctico Digital</h4>
-            <h5 class="navSuperior-desc text-dark">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA
+            <h4 class="navSuperior-title text-light">Recurso Didáctico Digital</h4>
+            <h5 class="navSuperior-desc text-light">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA
                 Finanzas
                 Empresariales</h5>
         </div>
@@ -67,56 +68,681 @@
     </nav>
 
     <div class="d-flex align-items-start">
-        <div class="sideButtonPersonal nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-            aria-orientation="vertical">
-            <button class="justifyPersonal nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                aria-selected="true">5.1 Los proyectos de inversión</button>
-            <button class="justifyPersonal nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                aria-selected="false">5.2 Proceso de preparación y evaluación de proyectos</button>
-            <button class="justifyPersonal nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">5.3 Métodos de evaluación financiera de proyectos de inversión</button>
-            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">5.3.1 Método del período de recuperación de la inversión (PRI)</button>
-            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">5.3.2 Método de rendimiendo anual promedio (RAP)</button>
-            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">5.3.3 Costo-beneficio</button>
-            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">5.3.4 Valor presente neto (VPN) o valor actual neto (VAN) </button>
-            <button class="justifyPersonalSecondary nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false">5.3.5 Tasa interna de rendimiendo</button>
-            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false">Actividades de aprendizaje</button>
-            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false">Evaluación</button>
-            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                aria-selected="false">Cierre</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-                tabindex="0">5.1 Los proyectos de inversión</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-                tabindex="0">5.2 Proceso de preparación y evaluación de proyectos</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-                tabindex="0">5.3 Métodos de evaluación financiera de proyectos de inversión</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-                tabindex="0">Actividades de aprendizaje</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-                tabindex="0">Evaluación</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-                tabindex="0">Cierre</div>
-        </div>
+        <section class="containerMenuAndContent">
+            <div class="containerMenuAndContent-primeraSeccion sideButtonPersonal nav flex-column nav-pills me-3"
+                id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="justifyPersonal nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">5.1 Los proyectos de inversión</button>
+                <button class="justifyPersonal nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">5.2 Proceso de preparación y evaluación de proyectos</button>
+                <button class="justifyPersonal nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                    aria-selected="false">5.3 Métodos de evaluación financiera de proyectos de inversión</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-5.3.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-5.3.1" type="button" role="tab" aria-controls="v-pills-5.3.1"
+                    aria-selected="false">5.3.1 Método del período de recuperación de la inversión (PRI)</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-5.3.2-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-5.3.2" type="button" role="tab" aria-controls="v-pills-5.3.2"
+                    aria-selected="false">5.3.2 Método de rendimiendo anual promedio (RAP)</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-5.3.3-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-5.3.3" type="button" role="tab" aria-controls="v-pills-5.3.3"
+                    aria-selected="false">5.3.3 Costo-beneficio</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-5.3.4-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-5.3.4" type="button" role="tab" aria-controls="v-pills-5.3.4"
+                    aria-selected="false">5.3.4 Valor presente neto (VPN) o valor actual neto (VAN) </button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-5.3.5-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-5.3.5" type="button" role="tab" aria-controls="v-pills-5.3.5"
+                    aria-selected="false">5.3.5 Tasa interna de rendimiendo</button>
+                <button class="justifyPersonal nav-link" id="v-pills-actividades-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-actividades" type="button" role="tab" aria-controls="v-pills-actividades"
+                    aria-selected="false"><i class="bi bi-book text-primary"></i> &nbsp;&nbsp;Actividades de
+                    aprendizaje</button>
+                <button class="justifyPersonal nav-link" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-evaluacion" type="button" role="tab" aria-controls="v-pills-evaluacion"
+                    aria-selected="false"><i
+                        class="bi bi-file-earmark-richtext text-primary"></i>&nbsp;&nbsp;Evaluación</button>
+                <button class="justifyPersonal nav-link" id="v-pills-cierre-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-cierre" type="button" role="tab" aria-controls="v-pills-cierre"
+                    aria-selected="false"><i class="bi bi-door-closed text-primary"></i> &nbsp;&nbsp;Cierre</button>
+            </div>
+            <div class="tab-content containerMenuAndContent-segundaSeccion" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <p class="fs-1 fw-bold">5.1 Los proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quisquam recusandae, ratione odio ducimus, at quos? Corporis
+                                    perferendis maiores hic aliquid quia!
+                                    Praesentium harum corporis, assumenda, perferendis totam facilis, impedit
+                                    consequatur porro recusandae sapiente cum ab exercitationem magni provident soluta
+                                    eius! Doloribus quasi nostrum assumenda eum ut ad vero libero adipisci esse?
+                                    Ipsa nihil, sint quis iure libero eos soluta quae, repellat dolor odio mollitia
+                                    veniam aliquam aliquid, nulla non amet nisi beatae illo rerum harum facilis dolorem
+                                    autem debitis distinctio. Animi!dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quisquam recusandae, ratione odio ducimus, at quos? Corporis
+                                    perferendis maiores hic aliquid quia!
+                                    Praesentium harum corporis, assumenda, perferendis totam facilis, impedit
+                                    consequatur porro recusandae sapiente cum ab exercitationem magni provident soluta
+                                    eius! Doloribus quasi nostrum assumenda eum ut ad vero libero adipisci esse?
+                                    Ipsa nihil, sint quis iure libero eos soluta quae, repellat dolor odio mollitia
+                                    veniam aliquam aliquid, nulla non amet nisi beatae illo rerum harum facilis dolorem
+                                    autem debitis distinctio. Animi!dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.2 Proceso de preparación y evaluación de proyectos</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quisquam recusandae, ratione odio ducimus, at quos? Corporis
+                                    perferendis maiores hic aliquid quia!
+                                    Praesentium harum corporis, assumenda, perferendis totam facilis, impedit
+                                    consequatur porro recusandae sapiente cum ab exercitationem magni provident soluta
+                                    eius! Doloribus quasi nostrum assumenda eum ut ad vero libero adipisci esse?
+                                    Ipsa nihil, sint quis iure libero eos soluta quae, repellat dolor odio mollitia
+                                    veniam aliquam aliquid, nulla non amet nisi beatae illo rerum harum facilis dolorem
+                                    autem debitis distinctio. Animi!dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quisquam recusandae, ratione odio ducimus, at quos? Corporis
+                                    perferendis maiores hic aliquid quia!
+                                    Praesentium harum corporis, assumenda, perferendis totam facilis, impedit
+                                    consequatur porro recusandae sapiente cum ab exercitationem magni provident soluta
+                                    eius! Doloribus quasi nostrum assumenda eum ut ad vero libero adipisci esse?
+                                    Ipsa nihil, sint quis iure libero eos soluta quae, repellat dolor odio mollitia
+                                    veniam aliquam aliquid, nulla non amet nisi beatae illo rerum harum facilis dolorem
+                                    autem debitis distinctio. Animi!dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit
+                                    deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-5.3.1" role="tabpanel" aria-labelledby="v-pills-5.3.1-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3.1 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit
+                                    deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-5.3.2" role="tabpanel" aria-labelledby="v-pills-5.3.2-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3.2 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit
+                                    deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-5.3.3" role="tabpanel" aria-labelledby="v-pills-5.3.3-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3.3 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit
+                                    deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-5.3.4" role="tabpanel" aria-labelledby="v-pills-5.3.4-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3.4 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsu Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusamus, possimus doloremque. Nobis sapiente enim nihil fugit
+                                    deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-5.3.5" role="tabpanel" aria-labelledby="v-pills-5.3.5-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">5.3.5 Métodos de evaluación financiera de proyectos de inversión</p>
+                    <section class="cardsPaginaContenidoList">
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum demo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, poue. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusanemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, poue. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusanemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-light">
+                            <div class="card-header">Contenido 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Primera parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus, poue. Nobis sapiente enim nihil fugit deleniti at, quidem
+                                    quis cum dolores laborum tempore nemo eveniet impedit? Perferendis, unde velit.</p>
+                                <h5 class="card-title">Segunda parte del contenido 1</h5>
+                                <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Necessitatibus perspiciatis, officiis provident magni dolor natus neque
+                                    voluptatibus quis Accusanemo eveniet impedit? Perferendis, unde velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="v-pills-actividades" role="tabpanel"
+                    aria-labelledby="v-pills-actividades-tab" tabindex="0">
+                    <p class="fs-1 fw-bold">Actividades de aprendizaje</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis atque quisquam
+                        voluptatem assumenda nisi. Voluptatem reiciendis iusto, quisquam vero ipsa asperiores quo ad
+                        nobis, a temporibus, sed porro suscipit? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Et repellendus rerum nemo neque voluptatem laboriosam alias itaque ducimus fugiat, a vitae
+                        corporis quas molestias dolor repudiandae aut animi qui illo!</p>
+
+                    <section class="downloadActivitiesCard">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../static/img/back.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Actividad 1</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Pariatur dolorum atque facere.</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Descargar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../static/img/back.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Actividad 2</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Pariatur dolorum atque facere.</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Descargar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-evaluacion" role="tabpanel"
+                    aria-labelledby="v-pills-evaluacion-tab" tabindex="0">
+                    <p class="fs-1 fw-bold">Evaluación</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis atque quisquam
+                        voluptatem assumenda nisi. Voluptatem reiciendis iusto, quisquam vero ipsa asperiores quo ad
+                        nobis, a temporibus, sed porro suscipit? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Et repellendus rerum nemo neque voluptatem laboriosam alias itaque ducimus fugiat, a vitae
+                        corporis quas molestias dolor repudiandae aut animi qui illo!</p>
+
+                    <section class="downloadActivitiesCard">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 1</h5>
+                                <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                            id="pregunta1_opt1">
+                                        <label class="form-check-label" for="pregunta1_opt1">
+                                            Opción 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                            id="pregunta1_opt2" checked>
+                                        <label class="form-check-label" for="pregunta1_opt2">
+                                            Opción 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                            id="pregunta1_opt3" checked>
+                                        <label class="form-check-label" for="pregunta1_opt3">
+                                            Opción 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                            id="pregunta1_opt4" checked>
+                                        <label class="form-check-label" for="pregunta1_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 2</h5>
+                                <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="pregunta2_opt1">
+                                        <label class="form-check-label" for="pregunta2_opt1">
+                                            Opción 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="pregunta2_opt2" checked>
+                                        <label class="form-check-label" for="pregunta2_opt2">
+                                            Opción 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="pregunta2_opt3" checked>
+                                        <label class="form-check-label" for="pregunta2_opt3">
+                                            Opción 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="pregunta2_opt4" checked>
+                                        <label class="form-check-label" for="pregunta2_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 3</h5>
+                                <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="pregunta3_opt1">
+                                        <label class="form-check-label" for="pregunta3_opt1">
+                                            Opción texto 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="pregunta3_opt2" checked>
+                                        <label class="form-check-label" for="pregunta3_opt2">
+                                            Opción texto largo de ejemplo 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="pregunta3_opt3" checked>
+                                        <label class="form-check-label" for="pregunta3_opt3">
+                                            Opción texto 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="pregunta3_opt4" checked>
+                                        <label class="form-check-label" for="pregunta3_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 4</h5>
+                                <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                            id="pregunta4_opt1">
+                                        <label class="form-check-label" for="pregunta4_opt1">
+                                            Opción 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                            id="pregunta4_opt2" checked>
+                                        <label class="form-check-label" for="pregunta4_opt2">
+                                            Opción 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                            id="pregunta4_opt3" checked>
+                                        <label class="form-check-label" for="pregunta4_opt3">
+                                            Opción 3 de ejemplo
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                            id="pregunta1_opt4" checked>
+                                        <label class="form-check-label" for="pregunta1_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 5</h5>
+                                <p>¿Itaque ducimus fugiatitaque ducimus fugiat Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                            id="pregunta5_opt1">
+                                        <label class="form-check-label" for="pregunta5_opt1">
+                                            Opción 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                            id="pregunta5_opt2" checked>
+                                        <label class="form-check-label" for="pregunta5_opt2">
+                                            Opción 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                            id="pregunta5_opt3" checked>
+                                        <label class="form-check-label" for="pregunta5_opt3">
+                                            Opción 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                            id="pregunta1_opt4" checked>
+                                        <label class="form-check-label" for="pregunta1_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pregunta 6</h5>
+                                <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
+                                    itaque ducimus fugiat?</p>
+                                <section class="m-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault6"
+                                            id="pregunta6_opt1">
+                                        <label class="form-check-label" for="pregunta6_opt1">
+                                            Opción 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault6"
+                                            id="pregunta6_opt2" checked>
+                                        <label class="form-check-label" for="pregunta6_opt2">
+                                            Opción 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault6"
+                                            id="pregunta6_opt3" checked>
+                                        <label class="form-check-label" for="pregunta6_opt3">
+                                            Opción 3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault6"
+                                            id="pregunta6_opt4" checked>
+                                        <label class="form-check-label" for="pregunta6_opt4">
+                                            Opción 4
+                                        </label>
+                                    </div>
+                                </section>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="d-grid gap-2 mt-3">
+                        <button class="btn btn-lg btn-secondary" type="button">Descargar resultados en PDF</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-cierre" role="tabpanel" aria-labelledby="v-pills-cierre-tab"
+                    tabindex="0">
+                    <p class="fs-1 fw-bold">Cierre</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis atque quisquam
+                        voluptatem assumenda nisi. Voluptatem reiciendis iusto, quisquam vero ipsa asperiores quo ad
+                        nobis, a temporibus, sed porro suscipit? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Et repellendus rerum nemo neque voluptatem laboriosam alias itaque ducimus fugiat, a vitae
+                        corporis quas molestias dolor repudiandae aut animi qui illo!</p>
+                    <div class="imagenDefaultContainer">
+                        <img class="imagenDefault" src="../static/img/default.png">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 </body>
