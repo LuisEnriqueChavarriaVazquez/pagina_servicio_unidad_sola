@@ -1,40 +1,73 @@
 /*Pagina default*/
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
+body{
+    background-color: rgb(240, 240, 240);
+}
+
 /*Margin personal*/
-.marginPersonal{
-    margin: 20px !important;
+.marginPersonal {
+    padding: 40px 100px !important;
     box-sizing: border-box !important;
 }
 
+@media (max-width: 1000px) {
+    .marginPersonal {
+        padding: 20px 20px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/*Justificar textos*/
+.sideButtonPersonal{
+    padding: 10px;
+    height: calc(100vh - 147.16px) !important;
+    background-color: #fcfcfc;
+}
+
+.justifyPersonal{
+    text-align: justify !important;
+    display: flex !important;
+    justify-content: left !important;
+    align-items: center !important;
+}
+
+.justifyPersonalSecondary{
+    text-align: justify !important;
+    display: flex !important;
+    justify-content: left !important;
+    align-items: center !important;
+    margin-left: 15px !important;
+}
+
 /*Nav con los logos del POLI*/
-.navSuperior{
+.navSuperior {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
     background-color: #b2dafa;
 }
 
-.navSuperior-icons{
+.navSuperior-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.navSuperior-icons > img{
+.navSuperior-icons>img {
     width: 100px;
 }
 
-.navSuperior-texts{
+.navSuperior-texts {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -42,19 +75,23 @@ html{
     flex-direction: column;
 }
 
+#navbarIconPersonal{
+    margin-bottom: 10px !important;
+}
+
 /*Imagen de las cards*/
-.imagenDefaultContainer{
+.imagenDefaultContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.imagenDefault{
+.imagenDefault {
     width: 200px;
 }
 
 /*Personalizacion del nav*/
-#navPersonal{
+#navPersonal {
     background-color: #5086c1 !important;
 }

@@ -11,49 +11,25 @@ app=Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/polilibro')
-def polilibro():
-    return render_template('polilibro.html')
-
-
-@app.route("/contacto")
-def contacto():
-    return render_template("contacto.html")
-
-@app.route('/requerimientos')
-def requerimientos():
-    return render_template('requerimientos.html')
-
-#Unidades del unidad1
-@app.route('/unidad1')
-def unidad1():
-    return render_template('unidad1.html')
-
-@app.route('/unidad2')
-def unidad2():
-    return render_template('unidad2.html')
-
-@app.route('/unidad3')
-def unidad3():
-    return render_template('unidad3.html')
-
-@app.route('/unidad4')
-def unidad4():
-    return render_template('unidad4.html')
-
-@app.route('/unidad5')
-def unidad5():
-    return render_template('unidad5.html')
+#Unidades del contenidos
+@app.route('/contenidos')
+def contenidos():
+    return render_template('contenidos.html')
 
 #Glosario
 @app.route('/glosario')
 def glosario():
     return render_template('glosario.html')
 
-#Manual
-@app.route('/manual')
-def manual():
-    return render_template('manual.html')
+#referencias
+@app.route('/materialDeApoyo')
+def materialDeApoyo():
+    return render_template('materialDeApoyo.html')
+
+#materialDeApoyo
+@app.route('/referencias')
+def referencias():
+    return render_template('referencias.html')
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bienvenida</title>
+    <link rel="shortcut icon" href="../static/img/ipn.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="../static/fonts/roboto.css">
+
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ownStyles.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="navSuperior" data-bs-theme="dark">
+        <div class="navSuperior-icons">
+            <img src="../static/img/ipn.png">
+            <img src="../static/img/escom.png">
+        </div>
+        <div class="navSuperior-texts">
+            <h4 class="navSuperior-title text-dark">Recurso Didáctico Digital</h4>
+            <h5 class="navSuperior-desc text-dark">Unidad 5: Métodos de evaluación de proyectos de inversión de la UA
+                Finanzas
+                Empresariales</h5>
+        </div>
+    </section>
+
+    <nav id="navPersonal" class="navbar nav-fill navbar-expand-lg bg-body-tertiary" style="background: #5086c1;">
+        <div class="container-fluid">
+            <button id="navbarIconPersonal" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/">Inicio</a>
+                    </li>
+                    <button type="button" class="btn btn-light" href="/">Contenidos</button>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/materialDeApoyo">Material de apoyo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/glosario">Glosario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/referencias">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex align-items-start">
+        <div class="sideButtonPersonal nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="justifyPersonal nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                aria-selected="true">5.1 Los proyectos de inversión</button>
+            <button class="justifyPersonal nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="false">5.2 Proceso de preparación y evaluación de proyectos</button>
+            <button class="justifyPersonal nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">5.3 Métodos de evaluación financiera de proyectos de inversión</button>
+            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">5.3.1 Método del período de recuperación de la inversión (PRI)</button>
+            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">5.3.2 Método de rendimiendo anual promedio (RAP)</button>
+            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">5.3.3 Costo-beneficio</button>
+            <button class="justifyPersonalSecondary nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">5.3.4 Valor presente neto (VPN) o valor actual neto (VAN) </button>
+            <button class="justifyPersonalSecondary nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">5.3.5 Tasa interna de rendimiendo</button>
+            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">Actividades de aprendizaje</button>
+            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">Evaluación</button>
+            <button class="justifyPersonal nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">Cierre</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                tabindex="0">5.1 Los proyectos de inversión</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0">5.2 Proceso de preparación y evaluación de proyectos</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">5.3 Métodos de evaluación financiera de proyectos de inversión</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+                tabindex="0">Actividades de aprendizaje</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+                tabindex="0">Evaluación</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+                tabindex="0">Cierre</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
