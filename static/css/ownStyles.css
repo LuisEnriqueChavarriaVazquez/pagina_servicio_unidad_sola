@@ -13,6 +13,10 @@ body{
     background-color: rgb(240, 240, 240);
 }
 
+.hideElement{
+    display: none;
+}
+
 /*Margin personal*/
 .marginPersonal {
     padding: 40px 100px !important;
@@ -107,12 +111,21 @@ body{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     grid-template-rows: auto;
+    width: 100%;
+}
+
+.containerMenuAndContentClose{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
 }
 
 .containerMenuAndContent-primeraSeccion{
     border-left: #375c83 10px solid;
     height: calc(100vh - 147.16px) !important;
     width: 100%;
+    transition: all .4s ease-in;
 }
 
 .containerMenuAndContent-segundaSeccion{
@@ -131,7 +144,7 @@ body{
 
 .cardsPaginaContenidoGrid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
 }
@@ -216,4 +229,43 @@ body{
     .iconCreative{
         background-position: center;
     }
+}
+
+/*Diseño del boton flotante*/
+.botonFlotante1{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: #122a3b;
+    color: #fcfcfc;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.botonFlotante2{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: #224f6e;
+    color: #fcfcfc;
+
+    position: fixed;
+    bottom: 0;
+    right: 74px;
+    margin: 20px 10px 20px 20px;
 }
