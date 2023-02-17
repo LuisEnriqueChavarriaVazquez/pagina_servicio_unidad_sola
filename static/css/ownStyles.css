@@ -89,6 +89,49 @@ body{
     margin-bottom: 10px !important;
 }
 
+@media (max-width: 800px) {
+    .navSuperior {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: #375c83;
+    }
+
+    .navSuperior-icons > #iconEscom {
+        width: 60px;
+        margin: 15px 10px;
+    }
+    
+    .navSuperior-icons > #iconIpn {
+        width: 30px;
+        margin: 15px 10px;
+    }
+
+    .navSuperior-title{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .navSuperior-desc{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/*Diseño de las tabs pensado para los dispositivos moviles*/
+
+@media (max-width: 1200px) {
+    .overflowResponsiveTabs{
+        overflow-x:scroll;
+        overflow-y: hidden;
+        width: auto;
+        display: grid;
+        grid-template-columns: 117.06px 211.64px 131px 261.39px 108.95px 152.42px 173.59px;
+    }
+}
+
+
 /*Imagen de las cards*/
 .imagenDefaultContainer {
     display: flex;
