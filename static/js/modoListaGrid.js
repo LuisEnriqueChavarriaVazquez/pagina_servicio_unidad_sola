@@ -11,16 +11,16 @@ botonFlotante2.addEventListener('click', () => {
             e.classList.remove('cardsPaginaContenidoList');
             e.classList.add('cardsPaginaContenidoGrid');
         });
-        botonFlotanteIcon2.classList.remove('bi-view-list');
-        botonFlotanteIcon2.classList.add('bi-grid');
+        botonFlotanteIcon2.classList.add('bi-view-list');
+        botonFlotanteIcon2.classList.remove('bi-grid');
         viewState = "grid";
     }else{
         containerListaArr.forEach(e => {
             e.classList.add('cardsPaginaContenidoList');
             e.classList.remove('cardsPaginaContenidoGrid');
         });
-        botonFlotanteIcon2.classList.add('bi-view-list');
-        botonFlotanteIcon2.classList.remove('bi-grid');
+        botonFlotanteIcon2.classList.remove('bi-view-list');
+        botonFlotanteIcon2.classList.add('bi-grid');
         viewState = "list";
     }
 });

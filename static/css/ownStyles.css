@@ -116,6 +116,7 @@ body{
     .navSuperior-desc{
         font-size: 14px;
         text-align: center;
+        margin: 0 5px 10px 5px;
     }
 }
 
@@ -130,7 +131,6 @@ body{
         grid-template-columns: 117.06px 211.64px 131px 261.39px 108.95px 152.42px 173.59px;
     }
 }
-
 
 /*Imagen de las cards*/
 .imagenDefaultContainer {
@@ -178,6 +178,22 @@ body{
     padding: 20px 40px;
 }
 
+@media (max-width: 800px) {
+    .containerMenuAndContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .containerMenuAndContent-primeraSeccion{
+        z-index: 10000;
+        position: fixed;
+        top: 0;
+        height: 100vh !important;
+    }
+}
+
 .cardsPaginaContenidoList{
     display: grid;
     grid-template-columns: 1fr;
@@ -190,6 +206,15 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .cardsPaginaContenidoGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
 }
 
 /*Cards de descarga*/ 
@@ -292,6 +317,7 @@ body{
     bottom: 0;
     right: 0;
     margin: 20px;
+    z-index: 100000000;
 }
 
 .botonFlotante2{
@@ -311,6 +337,12 @@ body{
     bottom: 0;
     right: 74px;
     margin: 20px 10px 20px 20px;
+}
+
+@media (max-width: 800px) {
+    .botonFlotante2{
+        display: none;
+    }
 }
 
 /*Buscador contenedor*/
