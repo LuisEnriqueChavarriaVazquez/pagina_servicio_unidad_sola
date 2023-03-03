@@ -25,8 +25,9 @@
         crossorigin="anonymous"></script>
 
     <!--JS-->
-    <script defer src="../static/js/menuLateral.js"></script>
-    <script defer src="../static/js/modoListaGrid.js"></script>
+    <!-- <script defer src="../static/js/menuLateral.js"></script>
+    <script defer src="../static/js/modoListaGrid.js"></script> -->
+    <script defer src="../static/js/buscador.js"></script>
 </head>
 
 <body>
@@ -74,153 +75,128 @@
     <section class="browserContainerPersonal">
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Buscar</span>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-lg">
+            <input type="text" class="form-control" onkeyup="buscar_concepto()" id="inputBrowser"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
-        <section class="browserContainerPersonal-browserContainerPalabras">
-            <div class="card">
+        <section class="browserContainerPersonal-browserContainerPalabras" id="fullContainer">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 1</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nesciunt
-                        quisquam, nisi libero architecto, dignissimos animi rem, facilis vel magnam aspernatur neque
-                        quasi excepturi natus reprehenderit. Est cum Lorem ipsum dolor lore Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque iure sint doloribus tempore, delectus laborum
-                        praesentium suscipit quaerat sed asperiores mollitia incidunt eius recusandae, sit nostrum quas,
-                        unde blanditiis ea! sit amet consectetur adipisicing elit. Rerum at id recusandae iure ipsum
-                        quibusdam obcaecati voluptate libero quo? Tempore asperiores officiis inventore porro architecto
-                        obcaecati minus facere omnis id. voluptatibus eveniet.</p>
+                    <h5 class="card-title conceptCard">Anualidad</h5>
+                    <p class="card-text">
+                        Conjunto de flujos de efectivo periódicos e iguales durante un periodo determinado. Estos flujos
+                        de efectivo pueden ser entradas de rendimientos obtenidos por inversiones o salidas de fondos
+                        invertidos para obtener rendimientos futuros (Gitman, 2012).
+                        <br><br>
+                        Existen dos tipos de anualidades:
+                        <br>
+                        <b>a. anualidad ordinaria</b>
+                        <br>
+                        Anualidad en la que el flujo de efectivo ocurre al final de cada periodo.
+                        <br>
+                        <b>b. anualidad anticipada</b>
+                        Anualidad en la que el flujo de efectivo ocurre al inicio de cada periodo.
+                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 2</h5>
-                    <p class="card-text">Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Nesciunt aspernatur magnam, adipisci vitae ad praesentium at rem deserunt exercitationem
-                        quibusdam. Doloribus accusantium quibusdam, voluptate libero eum dignissimos animi deleniti
-                        numquam! sit amet consectetur, adipisicing elit. Nihil nesciunt quisquam, nisi libero
-                        architecto, dignissimos animi rem, facilis vel magnam aspernatur neque quasi excepturi natus
-                        reprehenderit. Est cum voluptatibus eveniet.</p>
+                    <h5 class="card-title conceptCard">Cantidad única o monto único </h5>
+                    <p class="card-text">Un monto global que se posee hoy o se espera tener en alguna fecha futura. Como
+                        ejemplo tenemos $1,000 actuales y $650 que se recibirán al cabo de10 años (Gitman, 2012).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 3</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nesciunt
-                        quisquam, nisi libero architecto, dignissimos animi rem, facilis vel magnam aspernatur neque
-                        quasi excepturi natus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis beatae
-                        ipsa maiores ipsam. Quibusdam maxime id sed aliquid corporis iusto assumenda veniam, aut quidem
-                        amet autem mollitia suscipit vero hic? reprehenderit. Est cum voluptatibus eveniet Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Maiores rerum quod quisquam quidem ullam ducimus
-                        saepe dolorum, impedit, ipsa magni, consequatur eos at harum. Alias ut optio architecto vel
-                        eos!.</p>
+                    <h5 class="card-title conceptCard">Capitalización</h5>
+                    <p class="card-text">Proceso que se sigue para determinar el valor de un flujo de efectivo o de una
+                        serie de flujos de efectivo en algún momento en el futuro cuando se aplica un interés compuesto
+                        (Besley y Brigham, 2001).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 4</h5>
-                    <p class="card-text">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Illo velit fugit mollitia perspiciatis praesentium, ratione quibusdam beatae molestiae quos
-                        veniam impedit, voluptatibus omnis expedita optio unde corrupti laborum aliquam neque. sit amet
-                        consectetur, adipisicing elit. Nihil nesciunt quisquam, nisi libero architecto, dignissimos
-                        animi rem, facilis vel magnam aspernatur neque quasi excepturi natus reprehenderit. Est cum
-                        voluptatibus eveniet.</p>
+                    <h5 class="card-title conceptCard">Flujo de efectivo</h5>
+                    <p class="card-text">
+                        El flujo de efectivo (entradas y salidas) de una empresa se describe por medio de su patrón
+                        general. Se define como un monto único, una anualidad o un ingreso mixto (Gitman, 2012).
+                        <br><br>
+                        Es la concentración de toda la información cuantitativa obtenida en los estudios de mercado,
+                        técnico organizacional, legal y ambiental. Tiene como propósito determinar todas las entradas y
+                        salidas de efectivo pudiendo ser ingresos, costos, gastos e inversiones producidos por una
+                        empresa o proyecto en el futuro (Vidal y González, 2014).
+                        <br><br>
+                        El paso más importante, pero también el más difícil, durante el análisis de un proyecto de
+                        capital es la estimación de sus flujos de efectivo, es decir, los desembolsos por inversiones y
+                        los flujos de efectivo netos que se esperan después de que un proyecto sea adoptado (Besley y
+                        Brigham, 2001).
+                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 5</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Fugit laborum ipsa alias quasi eaque ducimus sint, reprehenderit
-                        vero obcaecati natus, enim perferendis architecto explicabo repellendus accusantium quas harum
-                        reiciendis molestias?
-                        Quia illo incidunt laudantium unde nemo earum porro animi quisquam vero dicta ullam facere
-                        minima ex cumque iure, repudiandae tenetur adipisci! Earum ducimus modi iure exercitationem in
-                        explicabo amet ipsa. elit. Nihil nesciunt quisquam, nisi libero architecto, dignissimos animi
-                        rem, facilis vel magnam aspernatur neque quasi excepturi natus reprehenderit. Est cum
-                        voluptatibus eveniet.</p>
+                    <h5 class="card-title conceptCard">Flujo neto de efectivo</h5>
+                    <p class="card-text">Diferencia matemática entre los ingresos en efectivo de la empresa y sus
+                        egresos en efectivo en cada periodo (Gitman y Zutter, 2012).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 6</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nesciunt
-                        quisquam, nisi libero architecto, dignissimos animi rem, facilis vel magnam Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Amet repellat necessitatibus nulla dolores possimus in
-                        nihil, illo ratione alias voluptas maiores excepturi reiciendis at explicabo sed Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Repellendus, nam? Recusandae sapiente debitis
-                        corporis hic laudantium sint animi beatae veniam itaque magni illum, incidunt illo! Rem fuga sit
-                        hic sed.
-                        Sed tempore debitis suscipit, perferendis veniam accusamus explicabo nobis animi voluptatibus?
-                        Odio tempora possimus, alias veniam ipsum ad ea quidem explicabo, non nam doloremque error,
-                        officia et earum sunt dolore.
-                        Magni minima libero distinctio sunt vitae et hic dolores. Corporis earum aliquid totam harum
-                        asperiores quos? Facilis totam eum, velit quis dolorum rerum eius minima natus, quo aut adipisci
-                        temporibus. cupiditate incidunt error quos? aspernatur neque quasi excepturi natus
-                        reprehenderit. Est cum voluptatibus eveniet.</p>
+                    <h5 class="card-title conceptCard">Interés compuesto</h5>
+                    <p class="card-text">Interés ganado en un depósito específico y que se vuelve parte del principal al
+                        final de un periodo determinado (Gitman, 2012); implica ganar interés sobre interés (Johnson y
+                        Melicher, 2005).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 7</h5>
-                    <p class="card-text">Lorem ipsum dolor sit a lorem Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Quasi, modi consequatur iusto voluptatem corrupti quas necessitatibus aut amet
-                        incidunt maxime impedit nobis cumque velit vel voluptas nemo nesciunt sit ex! met consectetur,
-                        adipisicing elit. Nihil nesciunt quisquam, nisi libero architecto, dignissimos animi rem,
-                        facilis vel magnam aspernatur neque quasi excepturi natus reprehenderit. Est cum voluptatibus
-                        eveniet.</p>
+                    <h5 class="card-title conceptCard">Linea de flujo de efectivo o linea de tiempo</h5>
+                    <p class="card-text">Una línea horizontal sobre la que aparece el tiempo cero en el extremo
+                        izquierdo, y los periodos futuros se marcan de izquierda a derecha; se usa para representar
+                        flujos de efectivo de inversiones (Gitman, 2012).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 8</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nesciunt
-                        quisquam, nisi libero architecto, dignissimos animi rem, facilis vel magnam aspernatur neque
-                        quasi excepturi natus reprehenderit. Est cum voluptatibus eveniet. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quia aut ad, ab aspernatur odio facere culpa! Aut, beatae,
-                        necessitatibus officia vitae ad atque enim eveniet repellat at error ipsa inventore!
-                        Vero fugiat, ea incidunt delectus eaque odio voluptatibus excepturi blanditiis omnis ut, fugit
-                        quam voluptas aspernatur repellat corporis! Ullam eos labore a itaque corporis magni nulla?
-                        Veniam optio molestias aspernatur.
-                        Consequuntur perferendis exercitationem et quos! Autem assumenda voluptatibus ut sunt architecto
-                        molestiae temporibus deserunt neque quibusdam dolor eum, repellat, enim doloremque! Quo quisquam
-                        harum ipsam cumque sint! Officia, vero. Tenetur!</p>
+                    <h5 class="card-title conceptCard">Perpetuidad</h5>
+                    <p class="card-text">
+                        Anualidad con una vida infinita que garantiza un flujo de efectivo anual continuo (Gitman,
+                        2012).
+                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 9</h5>
-                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                        rerum dignissimos eos veritatis facere eius delectus, repellendus minima neque nobis libero
-                        accusamus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nulla sequi enim
-                        quae maiores aspernatur, quas cum explicabo nostrum illo inventore ipsa veniam praesentium,
-                        consequatur quia omnis ut? Ipsam, cumque? repellat, ut cum non autem. Vero, tempora qui. dolor
-                        sit amet consectetur, adipisicing elit. Nihil nesciunt quisquam, nisi libero architecto,
-                        dignissimos animi rem, facilis vel magnam aspernatur neque quasi excepturi natus Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Corporis beatae ipsa maiores ipsam. Quibusdam
-                        maxime id sed aliquid corporis iusto assumenda veniam, aut quidem amet autem mollitia suscipit
-                        vero hic? reprehenderit. Est cum voluptatibus eveniet Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Maiores rerum quod quisquam quidem ullam ducimus saepe dolorum, impedit, ipsa
-                        magni, consequatur eos at harum. Alias ut optio architecto vel eos!.</p>
+                    <h5 class="card-title conceptCard">Principal o capital</h5>
+                    <p class="card-text">Monto de dinero sobre el que se pagan intereses (Gitman, 2012).</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card cardContainer">
                 <div class="card-body">
-                    <h5 class="card-title">Palabra 10</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quaerat, in
-                        commodi dolorem officia a repellat eligendi maiores vitae architecto placeat consequuntur fugit
-                        assumenda pariatur ab, quas, consequatur tempore nihil. Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Nihil nesciunt quisquam, nisi libero architecto, dignissimos animi rem,
-                        facilis vel magnam aspernatur neque quasi excepturi natus Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Corporis beatae ipsa maiores ipsam. Quibusdam maxime id sed
-                        aliquid corporis iusto assumenda veniam, aut quidem amet autem mollitia suscipit vero hic?
-                        reprehenderit. Est cum voluptatibus eveniet Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Maiores rerum quod quisquam quidem ullam ducimus saepe dolorum, impedit, ipsa magni,
-                        consequatur eos at harum. Alias ut optio architecto vel eos!.</p>
+                    <h5 class="card-title conceptCard">Tasa de descuento o descuento de flujos de efectivo</h5>
+                    <p class="card-text">Proceso para calcular los valores presentes; es lo contrario de la
+                        capitalización de intereses (Gitman, 2012).</p>
                 </div>
             </div>
+            <div class="card cardContainer">
+                <div class="card-body">
+                    <h5 class="card-title conceptCard">Valor futuro (VF)</h5>
+                    <p class="card-text">Valor en una fecha futura específica de un monto colocado en depósito el día de
+                        hoy y que gana un interés a una tasa determinada. Se calcula aplicando un interés compuesto
+                        durante un periodo específico (Gitman, 2012).</p>
+                </div>
+            </div>
+            <div class="card cardContainer">
+                <div class="card-body">
+                    <h5 class="card-title conceptCard">Valor presente (VP) </h5>
+                    <p class="card-text">Valor actual en dólares de un monto futuro; es decir, la cantidad de dinero que
+                        debería invertirse hoy a una tasa de interés determinada, durante un periodo específico, para
+                        igualar el monto futuro (Gitman, 2012). </p>
+                </div>
             </div>
         </section>
     </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
 
     <footer class="footerDesign">
         <div class="footerContainerOne">
