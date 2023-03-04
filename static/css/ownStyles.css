@@ -137,11 +137,52 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
+    padding: 30px;
+}
+
+.titleImageMine{
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+    height: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background-color: #cfcfcf;
+}
+
+.descImageMine{
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+}
+
+.noteImageMine{
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+    height: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
 }
 
 .imagenDefault {
     width: 200px;
+    margin: 10px;
 }
 
 /*Personalizacion del nav*/
