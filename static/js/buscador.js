@@ -23,8 +23,9 @@ function buscar_concepto(){
         <section class="contenedormaterialDeApoyo">
             <p class="fs-1 fw-bold">No hay coincidencias</p>
             <div class="imagenDefaultContainer mt-3">
-                <img class="imagenDefault" src="../static/img/default.png">
+                <img class="imagenDefault" src="../static/img/no-results.png">
             </div>
+            <br>
             <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <div class="d-grid gap-2">
