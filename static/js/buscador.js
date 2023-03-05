@@ -29,7 +29,7 @@ function buscar_concepto(){
             <div class="card" style="width: 100%;">
                 <div class="card-body">
                     <div class="d-grid gap-2">
-                        <a href="/glosario" class="btn btn-secondary btn-lg">Reiniciar</a>
+                        <a href="glosario.html" class="btn btn-secondary btn-lg">Reiniciar</a>
                     </div>
                 </div>
             </div>
