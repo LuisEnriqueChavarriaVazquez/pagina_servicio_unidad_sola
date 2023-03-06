@@ -28,6 +28,7 @@
     <script defer src="static/js/menuLateral.js"></script>
     <script defer src="static/js/modoListaGrid.js"></script>
     <script defer src="static/js/imageZoomed.js"></script>
+    <script defer src="static/js/evaluacion_unidad.js"></script>
 </head>
 
 <body>
@@ -926,11 +927,11 @@
 
                     <section class="cardsPaginaContenidoList">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body" id="pregunta1">
                                 <h5 class="card-title">Pregunta 1</h5>
                                 <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
                                     itaque ducimus fugiat?</p>
-                                <section class="m-3">
+                                <section class="m-3" >
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault1"
                                             id="pregunta1_opt1">
@@ -940,33 +941,36 @@
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                            id="pregunta1_opt2" checked>
+                                            id="pregunta1_opt2">
                                         <label class="form-check-label" for="pregunta1_opt2">
                                             Opción 2
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                            id="pregunta1_opt3" checked>
+                                            id="pregunta1_opt3">
                                         <label class="form-check-label" for="pregunta1_opt3">
                                             Opción 3
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                            id="pregunta1_opt4" checked>
+                                            id="pregunta1_opt4">
                                         <label class="form-check-label" for="pregunta1_opt4">
                                             Opción 4
                                         </label>
                                     </div>
                                 </section>
+                                <div id="retroalimentacion">
+
+                                </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                    <button class="btn btn-primary" onclick="pregunta(1)" type="button">Evaluar</button>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body" id="pregunta2">
                                 <h5 class="card-title">Pregunta 2</h5>
                                 <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
                                     itaque ducimus fugiat?</p>
@@ -1000,13 +1004,16 @@
                                         </label>
                                     </div>
                                 </section>
+                                <div id="retroalimentacion">
+
+                                </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                    <button class="btn btn-primary" onclick="pregunta(2)" type="button">Evaluar</button>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body" id="pregunta3">
                                 <h5 class="card-title">Pregunta 3</h5>
                                 <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
                                     itaque ducimus fugiat?</p>
@@ -1040,13 +1047,16 @@
                                         </label>
                                     </div>
                                 </section>
+                                <div id="retroalimentacion">
+
+                                </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                    <button class="btn btn-primary" onclick="pregunta(3)" type="button">Evaluar</button>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body" id="pregunta4">
                                 <h5 class="card-title">Pregunta 4</h5>
                                 <p>¿Rerum lorem dldemsds kmsdkndsk sdmsd dsjnsdjn nemo neque voluptatem laboriosam alias
                                     itaque ducimus fugiat?</p>
@@ -1080,8 +1090,11 @@
                                         </label>
                                     </div>
                                 </section>
+                                <div id="retroalimentacion">
+
+                                </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="button">Evaluar</button>
+                                    <button class="btn btn-primary" onclick="pregunta(4)" type="button">Evaluar</button>
                                 </div>
                             </div>
                         </div>
