@@ -580,7 +580,7 @@ body {
 
 /*Ajuste de los textos*/
 .textoReadingTitle {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -602,12 +602,12 @@ body {
     }
 
     .textoReadingLink {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
     }
 
     .textoReading {
-        font-size: 20px;
+        font-size: 18px;
         text-align: justify;
     }
 }
@@ -619,12 +619,12 @@ body {
     }
 
     .textoReadingLink {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 700;
     }
 
     .textoReading {
-        font-size: 17px;
+        font-size: 16px;
         text-align: justify;
     }
 }
