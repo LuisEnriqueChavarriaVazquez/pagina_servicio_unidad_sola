@@ -1,3 +1,6 @@
+//Puntaje del usuario
+let puntajeTotal = 0;
+
 function pregunta(numero) {
     //Respuestas para las preguntas
     let respuestasId = [0, "pregunta1_opt3"
@@ -40,10 +43,13 @@ function pregunta(numero) {
     let retroalimentacion = contenedor.querySelector("#retroalimentacion")
     var respuestaAlumnoId = contenedor.querySelector("section>div>input:checked").id;
 
+
     //Evaluacion de las preguntas
     console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
         retroalimentacion.innerHTML = "La respuesta es correcta";
+        puntajeTotal++;
+        console.log(puntajeTotal);
     } else {
         retroalimentacion.innerHTML = "Incorrecto, la respuesta era " + respuestasExplicacion[numero]
     }
