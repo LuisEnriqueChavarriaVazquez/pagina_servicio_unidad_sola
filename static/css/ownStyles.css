@@ -42,6 +42,8 @@ body {
     display: flex !important;
     justify-content: left !important;
     align-items: center !important;
+    font-weight: 700;
+    font-size: 23px;
 }
 
 .justifyPersonalSecondary {
@@ -49,7 +51,35 @@ body {
     display: flex !important;
     justify-content: left !important;
     align-items: center !important;
-    margin-left: 15px !important;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .justifyPersonal {
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .justifyPersonalSecondary {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .justifyPersonal {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .justifyPersonalSecondary {
+        margin-left: 0px;
+        font-weight: 500;
+        font-size: 15.5px;
+    }
 }
 
 /*Nav con los logos del POLI*/
@@ -122,13 +152,26 @@ body {
 
 /*Diseño de las tabs pensado para los dispositivos moviles*/
 
-@media (max-width: 1200px) {
+.nav-linkTextos{
+    font-size: 20px;
+    font-weight: 700;
+    width: auto;
+}
+
+@media (max-width: 1400px) {
+    .nav-linkTextos{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1400px) {
     .overflowResponsiveTabs {
         overflow-x: scroll;
         overflow-y: hidden;
         width: auto;
         display: grid;
-        grid-template-columns: 117.06px 211.64px 131px 261.39px 108.95px 152.42px 173.59px;
+        grid-template-columns: 117.06px 233.817px 141px 289.783px 108.95px 152.42px 193.59px;
     }
 }
 
@@ -142,7 +185,7 @@ body {
     padding: 30px;
 }
 
-.titleImageMine{
+.titleImageMine {
     margin: 0px;
     padding: 20px;
     text-align: left;
@@ -152,7 +195,7 @@ body {
     align-items: center;
 }
 
-.noteImageMine{
+.noteImageMine {
     margin: 0px;
     padding: 20px;
     text-align: left;
@@ -163,20 +206,27 @@ body {
 }
 
 .imagenDefault {
-    width: 200px;
+    width: 300px;
     margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .imagenDefault {
+        width: 200px;
+        margin: 5px;
+    }
 }
 
 .imagenDefaultBig {
     width: 65%;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .imagenDefaultBig:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 @media (max-width: 1200px) {
@@ -194,7 +244,7 @@ body {
 }
 
 /*Diseño de las notas*/
-.notaStyle{
+.notaStyle {
     width: 100%;
     height: auto;
     background-color: #a9d2ff;
@@ -226,12 +276,12 @@ body {
 }
 
 .containerMenuAndContent-primeraSeccion {
-    border-left: #375c83 10px solid;
+    border-left: #2f4e70 20px solid;
     height: 100vh !important;
     width: 80%;
     transition: all .4s ease-in;
 
-    padding: 20px;
+    padding: 20px 10px;
 
     position: fixed;
     top: 0;
@@ -241,6 +291,20 @@ body {
     box-shadow: 20px -1px 66px -9px rgba(0, 0, 0, 0.64);
     -webkit-box-shadow: 20px -1px 66px -9px rgba(0, 0, 0, 0.64);
     -moz-box-shadow: 20px -1px 66px -9px rgba(0, 0, 0, 0.64);
+}
+
+@media (max-width: 800px) {
+    .containerMenuAndContent-primeraSeccion {
+        border-left: #2f4e70 10px solid;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerMenuAndContent-primeraSeccion {
+        border-left: #2f4e70 0px solid;
+        padding: 5px;
+    }
 }
 
 .containerMenuAndContent-segundaSeccion {
@@ -361,7 +425,13 @@ body {
     margin-left: 15px;
 }
 
-@media (max-width: 800px) {
+.textoFooter{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
     .footerContainerOne {
         padding: 40px;
     }
@@ -377,7 +447,22 @@ body {
     .iconCreative {
         background-position: center;
     }
+
+    .textoFooter{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: justify;
+    }
 }
+
+@media (max-width: 600px) {
+    .textoFooter{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: justify;
+    }
+}
+
 
 /*Diseño del boton flotante*/
 .botonFlotante1 {
@@ -490,5 +575,56 @@ body {
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
+    }
+}
+
+/*Ajuste de los textos*/
+.textoReadingTitle {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.textoReadingLink {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.textoReading {
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+@media (max-width: 1000px) {
+    .textoReadingTitle {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .textoReadingLink {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .textoReading {
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 500px) {
+    .textoReadingTitle {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .textoReadingLink {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .textoReading {
+        font-size: 17px;
+        text-align: justify;
     }
 }
