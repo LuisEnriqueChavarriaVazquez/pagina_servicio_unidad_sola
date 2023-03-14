@@ -38,9 +38,10 @@ function pregunta(numero) {
     let respuestaCorrectaId = respuestasId[numero]
     let contenedor = document.getElementById("pregunta" + String(numero))
     let retroalimentacion = contenedor.querySelector("#retroalimentacion")
-    var respuestaAlumnoId = contenedor.querySelector("section>div>input:checked").id
+    var respuestaAlumnoId = contenedor.querySelector("section>div>input:checked").id;
 
     //Evaluacion de las preguntas
+    console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
         retroalimentacion.innerHTML = "La respuesta es correcta";
     } else {
@@ -196,11 +197,11 @@ preguntas_aleatorias();
 
 
 //Evaluacion de todo (Pendiente)
-let evaluartodo = document.getElementById('evaluartodo');
-evaluartodo.addEventListener('click', () => {   
-    let getAllButtonsQuestions = document.getElementsByClassName('btnIndividualQuestion');
-    getAllButtonsQuestionsArr = [...getAllButtonsQuestions]
-    getAllButtonsQuestionsArr.forEach(element => {
-        element.click();
-    });
-})
+// let evaluartodo = document.getElementById('evaluartodo');
+// evaluartodo.addEventListener('click', () => {   
+//     let getAllButtonsQuestions = document.getElementsByClassName('btnIndividualQuestion');
+//     getAllButtonsQuestionsArr = [...getAllButtonsQuestions]
+//     getAllButtonsQuestionsArr.forEach(element => {
+//         element.click();
+//     });
+// })
