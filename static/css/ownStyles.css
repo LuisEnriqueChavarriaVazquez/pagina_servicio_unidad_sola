@@ -119,6 +119,10 @@ body {
     margin-bottom: 10px !important;
 }
 
+.navSuperior-title {
+    font-weight: 700;
+}
+
 @media (max-width: 800px) {
     .navSuperior {
         display: grid;
@@ -539,7 +543,7 @@ body {
 /*Diseño de las referencias*/
 .contenedorReferencias {
     height: 55vh;
-    padding: 20px 100px;
+    padding: 30px 60px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -551,7 +555,7 @@ body {
         height: 70vh;
         padding: 20px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }
@@ -560,7 +564,7 @@ body {
 /*Diseño del material de apoyo*/
 .contenedormaterialDeApoyo {
     height: 55vh;
-    padding: 20px 100px;
+    padding: 30px 60px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -572,7 +576,7 @@ body {
         height: 70vh;
         padding: 20px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }

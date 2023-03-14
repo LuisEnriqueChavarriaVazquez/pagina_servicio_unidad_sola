@@ -11,3 +11,16 @@ document.addEventListener("selectstart", () => {
     }, 2000);
 
 });
+
+document.addEventListener("contextmenu", () => {
+    contenedorNotificaciones.innerHTML = `
+        <div id="notificacionMine">
+            No está permitido copiar contenido.
+        </div>
+    `;
+
+    setTimeout(() => {
+        $("#notificacionMine").fadeOut("slow");
+    }, 2000);
+
+});

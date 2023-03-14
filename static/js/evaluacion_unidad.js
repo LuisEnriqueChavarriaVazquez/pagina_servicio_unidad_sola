@@ -140,7 +140,6 @@ function preguntas_aleatorias() {
                 </div>
             </section>
             <div id="retroalimentacion">
-
             </div>
             <div class="d-grid gap-2">
                 <button class="btn btn-primary" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">Evaluar</button>
