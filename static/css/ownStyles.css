@@ -671,6 +671,10 @@ body {
     margin-bottom: 10px;
 }
 
+.cardMarginExtraTwo{
+    margin: 10px;
+}
+
 .cardLevelOne {
     background-color: #ececec;
 }
