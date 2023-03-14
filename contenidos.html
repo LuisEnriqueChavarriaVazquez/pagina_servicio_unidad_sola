@@ -29,9 +29,13 @@
     <script defer src="static/js/modoListaGrid.js"></script>
     <script defer src="static/js/imageZoomed.js"></script>
     <script defer src="static/js/evaluacion_unidad.js"></script>
+    <!--Cargador de la pagina-->
+    <script src="/static/js/loader.js" defer></script>
 </head>
 
 <body>
+    <!--Div para la carga de la página-->
+    <div class="loader"></div>
 
     <section class="navSuperior">
         <div class="navSuperior-icons">
@@ -56,7 +60,8 @@
                     <li class="nav-item">
                         <a class="nav-link nav-linkTextos text-light" href="index.html">Inicio</a>
                     </li>
-                    <button type="button" class="btn btn-light nav-linkTextos" href="contenidos.html">Contenidos</button>
+                    <button type="button" class="btn btn-light nav-linkTextos"
+                        href="contenidos.html">Contenidos</button>
                     <li class="nav-item">
                         <a class="nav-link nav-linkTextos text-light" href="materialDeApoyo.html">Material de apoyo</a>
                     </li>
@@ -129,107 +134,130 @@
                 <!--Primer contenido-->
                 <div class="tab-pane fade show active" id="v-pills-4.1" role="tabpanel"
                     aria-labelledby="v-pills-4.1-tab" tabindex="0">
-                    <p class="fs-1 fw-bold">4.1 Valor del dinero en el tiempo </p>
-                    <section class="cardsPaginaContenidoList">
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Valor del dinero en el tiempo</h5>
-                                <p class="card-text">El valor del dinero en el tiempo es uno de los aspectos más
-                                    importantes de las finanzas; expliquemoslo de manera sencilla, si por ejemplo, en
-                                    este momento tienes $100 (cien pesos) valen más el día de hoy que en el futuro y
-                                    esto se debe basicamente a que el día de hoy los puedes invertir y ganar
-                                    rendimientos. Sin embargo, esos mismos $100 (cien pesos) recibidos en el futuro no
-                                    tedrán el mismo poder adquisitivo que tienen el día de hoy, dicho cambio en el valor
-                                    del dinero tiene como principal causa el efecto inflacionario sobre los bienes y
-                                    servicios que compramos. De tal manera que, “la relación que existe entre el tiempo,
-                                    el interés y el poder de compra del dinero se conoce como valor del dinero en el
-                                    tiempo” (Vidaurri, 2020, p.134) </p>
-                                <p>A medida que vayas avanzando en los subtemas de este FRDD irás comprendiendo mejor
-                                    este interesante tema.</p>
-                            </div>
+
+                    <div class="titleSuperior">
+                        4.1 Valor del dinero en el tiempo
+                    </div>
+
+
+                    <div class="card">
+                        <h5 class="card-header textoReadingTitle">Valor del dinero en el tiempo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReading">
+                                El valor del dinero en el tiempo es uno de los aspectos más
+                                importantes de las finanzas; expliquemoslo de manera sencilla, si por ejemplo, en
+                                este momento tienes $100 (cien pesos) valen más el día de hoy que en el futuro y
+                                esto se debe basicamente a que el día de hoy los puedes invertir y ganar
+                                rendimientos. Sin embargo, esos mismos $100 (cien pesos) recibidos en el futuro no
+                                tedrán el mismo poder adquisitivo que tienen el día de hoy, dicho cambio en el valor
+                                del dinero tiene como principal causa el efecto inflacionario sobre los bienes y
+                                servicios que compramos. De tal manera que, “la relación que existe entre el tiempo,
+                                el interés y el poder de compra del dinero se conoce como valor del dinero en el
+                                tiempo” (Vidaurri, 2020, p.134)
+                            </p>
+                            <p class="card-text textoReading">A medida que vayas avanzando en los subtemas de este FRDD
+                                irás comprendiendo mejor
+                                este interesante tema.</p>
                         </div>
-                    </section>
+                    </div>
+
                 </div>
                 <!--Segundo contenido-->
                 <div class="tab-pane fade" id="v-pills-4.1.1" role="tabpanel" aria-labelledby="v-pills-4.1.1-tab"
                     tabindex="0">
-                    <p class="fs-1 fw-bold">4.1.1 Valor futuro y valor presente</p>
-                    <section class="cardsPaginaContenidoList">
-                        <div class="card text-bg-light">
-                            <div class="card-header">Del valor del dinero en el tiempo hay dos conceptos básicos que
-                                debemos comprender:</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Valor futuro</h5>
-                                <p class="card-text">
-                                    Es el efectivo que se recibirá en una fecha futura. La técnica del valor futuro
-                                    utiliza la capitalización para encontrar el valor futuro de cada flujo de efectivo.
-                                </p>
 
-                                <h5 class="card-title">Valor presente</h5>
-                                <p class="card-text">
-                                    Término que se usa para referirse al valor actual del dinero. La técnica del valor
-                                    presente utiliza la tasa de descuento. Aunque el valor futuro es más atractivo por
-                                    naturaleza, el valor presente es más útil para la toma de decisiones financieras
-                                    (Gitman, 2003).
-                                </p>
+                    <div class="titleSuperior">
+                        4.1.1 Valor futuro y valor presente
+                    </div>
+
+                    <div class="card cardLevelOne">
+                        <div class="card-body">
+                            <p class="card-text textoReading">
+                                Del valor del dinero en el tiempo hay dos conceptos básicos que
+                                debemos comprender:
+                            </p>
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Valor futuro</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Es el efectivo que se recibirá en una fecha futura. La técnica del valor futuro
+                                        utiliza la capitalización para encontrar el valor futuro de cada flujo de efectivo.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <p class="card-text">El valor del dinero se determinan sobre los flujos de caja o flujos
+        
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Valor presente</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Término que se usa para referirse al valor actual del dinero. La técnica del valor
+                                        presente utiliza la tasa de descuento. Aunque el valor futuro es más atractivo por
+                                        naturaleza, el valor presente es más útil para la toma de decisiones financieras
+                                        (Gitman, 2003)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelTwo">
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        El valor del dinero se determina sobre los flujos de caja o flujos
                                     de efectivo. De acuerdo con Vidal y González (2014) el flujo de efectivo tiene como
                                     propósito determinar todas las entradas y salidas de dinero; es decir, los ingresos,
                                     costos, gastos e inversiones producidos por una empresa o proyecto en el futuro.
                                     Siguiendo a Gitman (2012) los flujos de efectivo (entradas y salidas de dinero) se
                                     presentan como cantidades únicas (montos únicos), anualidades e ingreso mixto
-                                    (figura 4.1).</p>
+                                    (figura 4.1).
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card text-bg-light">
-                            <div class="card text-bg-light">
-                                <div class="imagenDefaultContainer">
-                                    <p class="titleImageMine">Figura 4.1 Clasificación de los flujos de efectivo</p>
-                                    <img class="imageZoomed imagenDefaultBig" src="static/vectores/vector 1.png">
-                                    <p class="noteImageMine">Fuente: Gitman (2012).</p>
+
+                            <div class="imagenDefaultContainer">
+                                <p class="titleImageMine">Figura 4.1 Clasificación de los flujos de efectivo</p>
+                                <img class="imageZoomed imagenDefaultBig" src="static/vectores/vector 1.png">
+                                <p class="noteImageMine">Fuente: Gitman (2012).</p>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Cantidad única</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Cantidad global que se tiene actualmente (valor presente) o que se espera en una
+                                        fecha futura (valor futuro); es cualquier cantidad que no se repite en forma
+                                        periódica; por ejemplo: $100 pesos, $3,400 pesos o cualquier otra cantidad.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Anualidad</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Son cantidades iguales que se repiten periódicamente durante un determinado tiempo.
+                                        No necesariamente hace referencia a pagos anuales, pueden ser quincenales,
+                                        mensuales, bimestrales etc. Las anualidades pueden ser: ordinarias, vencidas o
+                                        diferidas y anticipadas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Ingreso mixto</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Conjunto de flujos de efectivo periódicos y desiguales que no reflejan un patrón en
+                                        particular. Por ejemplo, para el período uno $5,000 pesos, para el período dos
+                                        $4,000 pesos, para el período tres $8,000 pesos, etc.
+                                        <br>
+                                        En los siguientes subtemas se abordarán el valor presente y valor futuro tanto de
+                                        cantidades únicas, así como de anualidades.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Cantidad única</h5>
-                                <p class="card-text">
-                                    Cantidad global que se tiene actualmente (valor presente) o que se espera en una
-                                    fecha futura (valor futuro); es cualquier cantidad que no se repite en forma
-                                    periódica; por ejemplo: $100 pesos, $3,400 pesos o cualquier otra cantidad.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Anualidad</h5>
-                                <p class="card-text">
-                                    Son cantidades iguales que se repiten periódicamente durante un determinado tiempo.
-                                    No necesariamente hace referencia a pagos anuales, pueden ser quincenales,
-                                    mensuales, bimestrales etc. Las anualidades pueden ser: ordinarias, vencidas o
-                                    diferidas y anticipadas.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Ingreso mixto</h5>
-                                <p class="card-text">
-                                    Conjunto de flujos de efectivo periódicos y desiguales que no reflejan un patrón en
-                                    particular. Por ejemplo, para el período uno $5,000 pesos, para el período dos
-                                    $4,000 pesos, para el período tres $8,000 pesos, etc.
-                                    <br>
-                                    En los siguientes subtemas se abordarán el valor presente y valor futuro tanto de
-                                    cantidades únicas, así como de anualidades.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
+                
                 <!--Tercer contenido-->
                 <div class="tab-pane fade" id="v-pills-4.1.1.1" role="tabpanel" aria-labelledby="v-pills-4.1.1.1-tab"
                     tabindex="0">
@@ -844,11 +872,13 @@
                                 <h5 class="card-title">¿Quiénes utilizan los estados financieros proforma?</h5>
                                 <br>
                                 <li>
-                                    <b>Accionistas y dueños.</b> Para conocer la situación financiera de la empresa y los
+                                    <b>Accionistas y dueños.</b> Para conocer la situación financiera de la empresa y
+                                    los
                                     resultados esperados, con el fin de tomar decisiones.
                                 </li>
                                 <li>
-                                    <b>Administradores.</b> Para planear las operaciones, trazar estrategias facilitando la
+                                    <b>Administradores.</b> Para planear las operaciones, trazar estrategias facilitando
+                                    la
                                     toma de decisiones que tienen impacto en el presente y en el futuro.
                                 </li>
                                 <li>
@@ -860,7 +890,8 @@
                                     base en su situación financiera y resultados de operación.
                                 </li>
                                 <li>
-                                    <b>Autoridades gubernamentales y crediticias.</b> Estas instituciones se auxilian de los
+                                    <b>Autoridades gubernamentales y crediticias.</b> Estas instituciones se auxilian de
+                                    los
                                     estados financieros proforma como un importante elemento que les proporciona
                                     información para evaluar la conveniencia de proporcionar financiamiento o no.
                                 </li>
@@ -926,7 +957,7 @@
                         corporis quas molestias dolor repudiandae aut animi qui illo!</p>
 
                     <section class="cardsPaginaContenidoList" id="contenedor_preguntas">
-                        
+
                     </section>
                     <div class="d-grid gap-2 mt-3">
                         <button class="btn btn-lg btn-secondary" type="button">Descargar resultados en PDF</button>
