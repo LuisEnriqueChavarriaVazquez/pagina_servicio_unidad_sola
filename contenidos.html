@@ -224,7 +224,10 @@
 
                             <div class="imagenDefaultContainer">
                                 <p class="titleImageMine">Figura 4.1 Clasificación de los flujos de efectivo</p>
-                                <img class="imageZoomed imagenDefaultBig" src="static/vectores/vector 1.png">
+                                <figure class="zoom" onmousemove="zoom(event)"
+                                    style="background-image: url('static/vectores/vector 1.png')">
+                                    <img src="static/vectores/vector 1.png" class="imageZoomed imagenDefaultBig" />
+                                </figure>
                                 <p class="noteImageMine">Fuente: Gitman (2012).</p>
                             </div>
 
@@ -316,7 +319,10 @@
                                 </div>
                                 <div class="imagenDefaultContainer">
                                     <p class="titleImageMine">Figura 4.2 linea de flujo de efectivo</p>
-                                    <img class="imageZoomed imagenDefaultBig" src="static/vectores/vector 2.png">
+                                    <figure class="zoom" onmousemove="zoom(event)"
+                                        style="background-image: url('static/vectores/vector 2.png')">
+                                        <img src="static/vectores/vector 2.png" class="imageZoomed imagenDefaultBig" />
+                                    </figure>
                                     <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
                                 </div>
                             </div>
@@ -331,7 +337,10 @@
                                 </div>
                                 <div class="imagenDefaultContainer">
                                     <p class="titleImageMine">Tabla 4.1 Valor futuro de cantidades únicas</p>
-                                    <img class="imageZoomed imagenDefaultBig" src="static/vectores/tabla1.png">
+                                    <figure class="zoom" onmousemove="zoom(event)"
+                                        style="background-image: url('static/vectores/tabla1.png')">
+                                        <img src="static/vectores/tabla1.png" class="imageZoomed imagenDefaultBig" />
+                                    </figure>
                                     <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
                                 </div>
                                 <div class="card cardMarginExtraTwo cardLevelTwo">
@@ -363,7 +372,7 @@
                                 </div>
                             </div>
 
-                            <div class="card cardMarginExtra">                
+                            <div class="card cardMarginExtra">
                                 <div class="card-body">
                                     <p class="card-text textoReading">
                                         Para el ejemplo que estamos trabajando quedaría:
@@ -376,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Cuarto contenido-->
                 <div class="tab-pane fade" id="v-pills-4.1.1.2" role="tabpanel" aria-labelledby="v-pills-4.1.1.2-tab"
                     tabindex="0">
@@ -834,6 +843,7 @@
                     </section>
                 </div>
 
+                <!--Contanido 11-->
                 <div class="tab-pane fade" id="v-pills-4.3.1" role="tabpanel" aria-labelledby="v-4.3.1-tab"
                     tabindex="0">
                     <p class="fs-1 fw-bold">4.3.1 El presupuesto maestro</p>
@@ -895,62 +905,103 @@
                     </section>
                 </div>
 
+                <!--Contanido 12-->
                 <div class="tab-pane fade" id="v-pills-4.4" role="tabpanel" aria-labelledby="v-pills-4.4-tab"
                     tabindex="0">
-                    <p class="fs-1 fw-bold">4.4 Estados financieros proforma</p>
-                    <section class="cardsPaginaContenidoList">
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <p class="card-text">El término proforma es sinónimo de proyectado, pronosticado,
-                                    presupuestado y estimado; al hablar de estados financieros proforma nos estaremos
-                                    refiriendo a estados financieros proyectados. </p>
-                                <h5 class="card-title">Estados financieros proforma</h5>
-                                <ul>
-                                    <li>Los proforma son estados que contienen, en todo o en parte, uno o
-                                        varios supuestos o hipótesis con el fin de mostrar cuál sería la situación
-                                        financiera o los resultados de las operaciones si éstos sucedieran.</li>
-                                    <li>El objetivo de estos estados es proporcionar información anticipada sobre la
-                                        situación financiera de la empresa si se trata del estado de situación
-                                        financiera, o
-                                        de las utilidades o pérdidas si se trata del estado de resultados.</li>
-                                    <li>La base de los estados financieros proforma son los presupuestos.</li>
-                                </ul>
+
+                    <div class="titleSuperior">
+                        4.4 Estados financieros proforma
+                    </div>
+
+                    <div class="card cardLevelOne">
+                        <div class="card-body">
+                            <p class="card-text textoReading">
+                                El término proforma es sinónimo de proyectado, pronosticado,
+                                presupuestado y estimado; al hablar de estados financieros proforma nos estaremos
+                                refiriendo a estados financieros proyectados.
+                            </p>
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Estados financieros proforma</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                    <ul>
+                                        <li class="textoReading">Los proforma son estados que contienen, en todo o en
+                                            parte, uno o
+                                            varios supuestos o hipótesis con el fin de mostrar cuál sería la situación
+                                            financiera o los resultados de las operaciones si éstos sucedieran.</li>
+                                        <li class="textoReading">El objetivo de estos estados es proporcionar
+                                            información anticipada sobre la
+                                            situación financiera de la empresa si se trata del estado de situación
+                                            financiera, o
+                                            de las utilidades o pérdidas si se trata del estado de resultados.</li>
+                                        <li class="textoReading">La base de los estados financieros proforma son los
+                                            presupuestos.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Presupuesto</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        Estimación en términos monetarios tanto de los ingresos como de
+                                        los egresos de un ente económico.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">¿Quiénes utilizan los estados financieros
+                                    proforma?</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReading">
+                                        <b>Accionistas y dueños.</b>
+                                        <br>
+                                        Para conocer la situación financiera de la empresa
+                                        y
+                                        los
+                                        resultados esperados, con el fin de tomar decisiones.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReading">
+                                        <b>Administradores.</b>
+                                        <br>
+                                        Para planear las operaciones, trazar estrategias
+                                        facilitando
+                                        la
+                                        toma de decisiones que tienen impacto en el presente y en el futuro.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReading">
+                                        <b>Acreedores y futuros acreedores.</b>
+                                        <br>
+                                        Para vigilar la seguridad de sus
+                                        créditos u
+                                        otorgar nuevos créditos.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReading">
+                                        <b>Prospectos de accionistas.</b>
+                                        <br>
+                                        Para decidir sobre invertir o no en la empresa
+                                        con
+                                        base en su situación financiera y resultados de operación.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReading">
+                                        <b>Autoridades gubernamentales y crediticias.</b>
+                                        <br>
+                                        Estas instituciones se
+                                        auxilian de
+                                        los
+                                        estados financieros proforma como un importante elemento que les proporciona
+                                        información para evaluar la conveniencia de proporcionar financiamiento o no.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card text-bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Presupuesto</h5>
-                                <p class="card-title">Estimación en términos monetarios tanto de los ingresos como de
-                                    los egresos de un ente económico.</p>
-                                <h5 class="card-title">¿Quiénes utilizan los estados financieros proforma?</h5>
-                                <br>
-                                <li>
-                                    <b>Accionistas y dueños.</b> Para conocer la situación financiera de la empresa y
-                                    los
-                                    resultados esperados, con el fin de tomar decisiones.
-                                </li>
-                                <li>
-                                    <b>Administradores.</b> Para planear las operaciones, trazar estrategias facilitando
-                                    la
-                                    toma de decisiones que tienen impacto en el presente y en el futuro.
-                                </li>
-                                <li>
-                                    <b>Acreedores y futuros acreedores.</b> Para vigilar la seguridad de sus créditos u
-                                    otorgar nuevos créditos.
-                                </li>
-                                <li>
-                                    <b>Prospectos de accionistas.</b> Para decidir sobre invertir o no en la empresa con
-                                    base en su situación financiera y resultados de operación.
-                                </li>
-                                <li>
-                                    <b>Autoridades gubernamentales y crediticias.</b> Estas instituciones se auxilian de
-                                    los
-                                    estados financieros proforma como un importante elemento que les proporciona
-                                    información para evaluar la conveniencia de proporcionar financiamiento o no.
-                                </li>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
 
                 <div class="tab-pane fade" id="v-pills-actividades" role="tabpanel"
