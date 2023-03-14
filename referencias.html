@@ -29,9 +29,12 @@
     <script defer src="static/js/modoListaGrid.js"></script>
     <!--Cargador de la pagina-->
     <script src="/static/js/loader.js" defer></script>
+
+    <!--Bloqueo de copias-->
+    <script src="/static/js/noCopy.js" defer></script>
 </head>
 
-<body>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
     <!--Div para la carga de la página-->
     <div class="loader"></div>
 
@@ -120,6 +123,10 @@
             </button>
         </div>
     </footer>
+
+    <!--Seccion de notificaciones-->
+    <section id="contenedorNotificaciones">
+    </section>
 
 </body>
 

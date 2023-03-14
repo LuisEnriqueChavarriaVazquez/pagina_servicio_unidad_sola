@@ -26,9 +26,12 @@
 
   <!--Cargador de la pagina-->
   <script src="/static/js/loader.js" defer></script>
+
+  <!--Bloqueo de copias-->
+  <script src="/static/js/noCopy.js" defer></script>
 </head>
 
-<body>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
   <!--Div para la carga de la página-->
   <div class="loader"></div>
 
@@ -300,8 +303,8 @@
             </div>
           </div>
         </div>
-        <div class="imagenDefaultContainer"p>
-          <img class="imagenDefault" src="static/img/icons/manual.png"
+        <div class="imagenDefaultContainer">
+          <img class="imagenDefault" src="static/img/icons/manual.png">
         </div>
       </div>
       <br><br><br>
@@ -309,6 +312,7 @@
     </div>
   </div>
 
+  <!--Pie de pagina-->
   <footer class="footerDesign">
     <div class="footerContainerOne">
       <p class="textoFooter">
@@ -337,6 +341,10 @@
       </button>
     </div>
   </footer>
+
+  <!--Seccion de notificaciones-->
+  <section id="contenedorNotificaciones">
+  </section>
 </body>
 
 </html>

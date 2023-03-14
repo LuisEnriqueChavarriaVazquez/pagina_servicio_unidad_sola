@@ -29,11 +29,15 @@
     <script defer src="static/js/modoListaGrid.js"></script>
     <script defer src="static/js/imageZoomed.js"></script>
     <script defer src="static/js/evaluacion_unidad.js"></script>
+
     <!--Cargador de la pagina-->
     <script src="/static/js/loader.js" defer></script>
+
+    <!--Bloqueo de copias-->
+    <script src="/static/js/noCopy.js" defer></script>
 </head>
 
-<body>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
     <!--Div para la carga de la página-->
     <div class="loader"></div>
 
@@ -181,17 +185,20 @@
                                 <div class="card-body">
                                     <p class="card-text textoReading">
                                         Es el efectivo que se recibirá en una fecha futura. La técnica del valor futuro
-                                        utiliza la capitalización para encontrar el valor futuro de cada flujo de efectivo.
+                                        utiliza la capitalización para encontrar el valor futuro de cada flujo de
+                                        efectivo.
                                     </p>
                                 </div>
                             </div>
-        
+
                             <div class="card cardMarginExtra">
                                 <h5 class="card-header textoReadingTitle">Valor presente</h5>
                                 <div class="card-body">
                                     <p class="card-text textoReading">
-                                        Término que se usa para referirse al valor actual del dinero. La técnica del valor
-                                        presente utiliza la tasa de descuento. Aunque el valor futuro es más atractivo por
+                                        Término que se usa para referirse al valor actual del dinero. La técnica del
+                                        valor
+                                        presente utiliza la tasa de descuento. Aunque el valor futuro es más atractivo
+                                        por
                                         naturaleza, el valor presente es más útil para la toma de decisiones financieras
                                         (Gitman, 2003)
                                     </p>
@@ -202,12 +209,15 @@
                                 <div class="card-body">
                                     <p class="card-text textoReading">
                                         El valor del dinero se determina sobre los flujos de caja o flujos
-                                    de efectivo. De acuerdo con Vidal y González (2014) el flujo de efectivo tiene como
-                                    propósito determinar todas las entradas y salidas de dinero; es decir, los ingresos,
-                                    costos, gastos e inversiones producidos por una empresa o proyecto en el futuro.
-                                    Siguiendo a Gitman (2012) los flujos de efectivo (entradas y salidas de dinero) se
-                                    presentan como cantidades únicas (montos únicos), anualidades e ingreso mixto
-                                    (figura 4.1).
+                                        de efectivo. De acuerdo con Vidal y González (2014) el flujo de efectivo tiene
+                                        como
+                                        propósito determinar todas las entradas y salidas de dinero; es decir, los
+                                        ingresos,
+                                        costos, gastos e inversiones producidos por una empresa o proyecto en el futuro.
+                                        Siguiendo a Gitman (2012) los flujos de efectivo (entradas y salidas de dinero)
+                                        se
+                                        presentan como cantidades únicas (montos únicos), anualidades e ingreso mixto
+                                        (figura 4.1).
                                     </p>
                                 </div>
                             </div>
@@ -233,7 +243,8 @@
                                 <h5 class="card-header textoReadingTitle">Anualidad</h5>
                                 <div class="card-body">
                                     <p class="card-text textoReading">
-                                        Son cantidades iguales que se repiten periódicamente durante un determinado tiempo.
+                                        Son cantidades iguales que se repiten periódicamente durante un determinado
+                                        tiempo.
                                         No necesariamente hace referencia a pagos anuales, pueden ser quincenales,
                                         mensuales, bimestrales etc. Las anualidades pueden ser: ordinarias, vencidas o
                                         diferidas y anticipadas.
@@ -245,11 +256,13 @@
                                 <h5 class="card-header textoReadingTitle">Ingreso mixto</h5>
                                 <div class="card-body">
                                     <p class="card-text textoReading">
-                                        Conjunto de flujos de efectivo periódicos y desiguales que no reflejan un patrón en
+                                        Conjunto de flujos de efectivo periódicos y desiguales que no reflejan un patrón
+                                        en
                                         particular. Por ejemplo, para el período uno $5,000 pesos, para el período dos
                                         $4,000 pesos, para el período tres $8,000 pesos, etc.
                                         <br>
-                                        En los siguientes subtemas se abordarán el valor presente y valor futuro tanto de
+                                        En los siguientes subtemas se abordarán el valor presente y valor futuro tanto
+                                        de
                                         cantidades únicas, así como de anualidades.
                                     </p>
                                 </div>
@@ -257,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Tercer contenido-->
                 <div class="tab-pane fade" id="v-pills-4.1.1.1" role="tabpanel" aria-labelledby="v-pills-4.1.1.1-tab"
                     tabindex="0">
@@ -989,6 +1002,7 @@
         <!-- <i class="bi bi-view-list"></i> -->
     </button>
 
+    <!--Pie de pagina-->
     <footer class="footerDesign">
         <div class="footerContainerOne">
             <p class="textoFooter">
@@ -1017,6 +1031,10 @@
             </button>
         </div>
     </footer>
+
+    <!--Seccion de notificaciones-->
+    <section id="contenedorNotificaciones">
+    </section>
 
 </body>
 

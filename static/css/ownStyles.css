@@ -61,7 +61,7 @@ body {
         font-weight: 700;
         font-size: 19px;
     }
-    
+
     .justifyPersonalSecondary {
         margin-left: 10px;
         font-weight: 600;
@@ -74,7 +74,7 @@ body {
         font-weight: 700;
         font-size: 18px;
     }
-    
+
     .justifyPersonalSecondary {
         margin-left: 0px;
         font-weight: 500;
@@ -152,14 +152,14 @@ body {
 
 /*Diseño de las tabs pensado para los dispositivos moviles*/
 
-.nav-linkTextos{
+.nav-linkTextos {
     font-size: 20px;
     font-weight: 700;
     width: auto;
 }
 
 @media (max-width: 1400px) {
-    .nav-linkTextos{
+    .nav-linkTextos {
         font-size: 18px;
         font-weight: 600;
     }
@@ -425,7 +425,7 @@ body {
     margin-left: 15px;
 }
 
-.textoFooter{
+.textoFooter {
     font-size: 18px;
     font-weight: 600;
     text-align: justify;
@@ -448,7 +448,7 @@ body {
         background-position: center;
     }
 
-    .textoFooter{
+    .textoFooter {
         font-size: 16px;
         font-weight: 600;
         text-align: justify;
@@ -456,7 +456,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .textoFooter{
+    .textoFooter {
         font-size: 15px;
         font-weight: 600;
         text-align: justify;
@@ -594,7 +594,7 @@ body {
     text-align: justify;
 }
 
-.titleSuperior{
+.titleSuperior {
     margin: 0 0 10px 0;
     padding: 15px 20px;
     font-size: 28px;
@@ -622,7 +622,7 @@ body {
         text-align: justify;
     }
 
-    .titleSuperior{
+    .titleSuperior {
         margin: 0 0 10px 0;
         padding: 10px 20px;
         font-size: 25px;
@@ -650,7 +650,7 @@ body {
         text-align: justify;
     }
 
-    .titleSuperior{
+    .titleSuperior {
         margin: 0 0 10px 0;
         padding: 8px 20px;
         font-size: 23px;
@@ -663,15 +663,15 @@ body {
 }
 
 /*Diseño de cards personalizadas*/
-.cardMarginExtra{
+.cardMarginExtra {
     margin-bottom: 10px;
 }
 
-.cardLevelOne{
+.cardLevelOne {
     background-color: #ececec;
 }
 
-.cardLevelTwo{
+.cardLevelTwo {
     background-color: #dadada;
 }
 
@@ -683,5 +683,46 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('../img/load.gif') 50% 50% no-repeat rgb(249,249,249);
+    background: url('../img/load.gif') 50% 50% no-repeat rgb(249, 249, 249);
+}
+
+/*Seleccionar textos*/
+::selection {
+    background: #4b79aa;
+    color: #ffffff;
+}
+
+/*Contenedor de notificaciones*/
+#contenedorNotificaciones{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000000000;
+    padding: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#notificacionMine{
+    background-color: #272727;
+    color: #dadada;
+    padding: 10px 20px 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+    #contenedorNotificaciones{
+        padding: 0;
+    }
+    
+    #notificacionMine{
+        border-radius: 0;
+        font-weight: 700;
+        width: 100%;
+    }
 }
