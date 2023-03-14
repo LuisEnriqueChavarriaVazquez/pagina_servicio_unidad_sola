@@ -40,6 +40,7 @@ function pregunta(numero) {
     let retroalimentacion = contenedor.querySelector("#retroalimentacion")
     var respuestaAlumnoId = contenedor.querySelector("section>div>input:checked").id
 
+    //Evaluacion de las preguntas
     if (respuestaCorrectaId == respuestaAlumnoId) {
         retroalimentacion.innerHTML = "La respuesta es correcta";
     } else {
@@ -176,7 +177,7 @@ function preguntas_aleatorias() {
             <div id="retroalimentacion">
             </div>
             <div class="d-grid gap-2">
-                <button class="btn btn-primary" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">Evaluar</button>
+                <button class="btn btn-primary btnIndividualQuestion" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">Revisar pregunta</button>
             </div>
         </div>
     </div>
@@ -192,3 +193,14 @@ function aleatorio(a, b) {
 }
 
 preguntas_aleatorias();
+
+
+//Evaluacion de todo (Pendiente)
+let evaluartodo = document.getElementById('evaluartodo');
+evaluartodo.addEventListener('click', () => {   
+    let getAllButtonsQuestions = document.getElementsByClassName('btnIndividualQuestion');
+    getAllButtonsQuestionsArr = [...getAllButtonsQuestions]
+    getAllButtonsQuestionsArr.forEach(element => {
+        element.click();
+    });
+})
