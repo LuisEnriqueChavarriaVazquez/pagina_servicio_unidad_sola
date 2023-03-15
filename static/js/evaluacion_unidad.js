@@ -110,7 +110,7 @@ function preguntas_aleatorias() {
         },
         {
             "enunciado": "Enunciado de la pregunta 13",
-            "opciones": [123, 2334, 434,466],
+            "opciones": [123, 2334, 434, 466],
         },
         {
             "enunciado": "Enunciado de la pregunta 14",
@@ -201,12 +201,20 @@ function aleatorio(a, b) {
     return aleatorio
 }
 
-preguntas_aleatorias();
+
+if (window.addEventListener)
+    window.addEventListener("load", preguntas_aleatorias, false);
+else if (window.attachEvent)
+    window.attachEvent("onload", preguntas_aleatorias);
+else
+    window.onload = preguntas_aleatorias;
+
+
 
 
 //Evaluacion de todo (Pendiente)
 // let evaluartodo = document.getElementById('evaluartodo');
-// evaluartodo.addEventListener('click', () => {   
+// evaluartodo.addEventListener('click', () => {
 //     let getAllButtonsQuestions = document.getElementsByClassName('btnIndividualQuestion');
 //     getAllButtonsQuestionsArr = [...getAllButtonsQuestions]
 //     getAllButtonsQuestionsArr.forEach(element => {
