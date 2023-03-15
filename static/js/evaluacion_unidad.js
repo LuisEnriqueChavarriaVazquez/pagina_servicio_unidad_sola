@@ -110,7 +110,7 @@ function preguntas_aleatorias() {
         },
         {
             "enunciado": "Enunciado de la pregunta 13",
-            "opciones": [123, 2334, 434],
+            "opciones": [123, 2334, 434,466],
         },
         {
             "enunciado": "Enunciado de la pregunta 14",
@@ -149,6 +149,7 @@ function preguntas_aleatorias() {
         contenido_preguntas = contenido_preguntas + `
         <div class="card">
         <div class="card-body" id="pregunta${preguntas_aleatorias_indices[i]}">
+        <form>
             <h5 class="card-title textoReadingTitle">Pregunta ${preguntas_aleatorias_indices[i]}</h5>
             <p class="textoReading">${preguntas[preguntas_aleatorias_indices[i]].enunciado}</p>
             <section class="m-3" >
@@ -186,6 +187,7 @@ function preguntas_aleatorias() {
             <div class="d-grid gap-2">
                 <button class="btn btn-primary btnIndividualQuestion" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">Revisar pregunta</button>
             </div>
+            </form>
         </div>
     </div>
         `;
