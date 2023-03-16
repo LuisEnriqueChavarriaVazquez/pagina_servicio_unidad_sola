@@ -661,6 +661,12 @@ figure.zoom img {
     font-weight: 900;
 }
 
+.textoImportantNugget{
+    color: #1a3c53;
+    font-style:italic;
+    font-weight: 700;
+}
+
 .textoReadingTable {
     font-size: 17px;
     text-align: justify;
@@ -844,15 +850,16 @@ figure.zoom img {
 }
 
 .cardLevelOne {
-    background-color: #ececec;
+    background-color: #dadada;
+    border: #cfcfcf 3px solid;
 }
 
 .cardLevelTwo {
-    background-color: #dadada;
+    background-color: #ebebeb;
 }
 
 .cardLevelThree {
-    background-color: #eeeeee;
+    background-color: #f1f1f1;
 }
 
 /*Cargador*/
