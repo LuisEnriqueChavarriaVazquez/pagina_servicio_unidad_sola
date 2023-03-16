@@ -92,7 +92,11 @@
             <div class="containerMenuAndContent-primeraSeccion sideButtonPersonal nav flex-column nav-pills me-3 hideElement"
                 id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <!--Botones de contenido-->
-                <button class="justifyPersonal nav-link active" id="v-pills-4.1-tab" data-bs-toggle="pill"
+                <button class="justifyPersonal nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-intro" type="button" role="tab" aria-controls="v-pills-intro"
+                    aria-selected="false"><i class="bi bi-door-open text-primary"></i> &nbsp;&nbsp;Introducción</button>
+
+                <button class="justifyPersonal nav-link" id="v-pills-4.1-tab" data-bs-toggle="pill"
                     data-bs-target="#v-pills-4.1" type="button" role="tab" aria-controls="v-pills-4.1"
                     aria-selected="true">4.1 Valor del dinero en el tiempo</button>
                 <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1-tab" data-bs-toggle="pill"
@@ -142,8 +146,35 @@
                     aria-selected="false"><i class="bi bi-door-closed text-primary"></i> &nbsp;&nbsp;Cierre</button>
             </div>
             <div class="tab-content containerMenuAndContent-segundaSeccion" id="v-pills-tabContent">
+                <!--Introduccion-->
+                <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        Introducción
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <div class="card-body">
+                            <p class="card-text textoReading">
+                                Tal y como lo estudiaste en esta unidad temática, el presupuesto maestro se conforma de
+                                un conjunto de presupuestos de operación y financieros a partir de los cuales se
+                                construyen los estados financieros proforma. Uno de esos presupuestos es el presupuesto
+                                de flujo de efectivo, con el que es posible calcular los flujos netos de efectivo (FNE)
+                                que son la base para evaluar proyectos de inversión, tema que verás en la siguiente
+                                unidad temática.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imagenDefaultContainer">
+                        <img class="imagenDefaultExtra" src="static/img/icons/introduccion.png">
+                    </div>
+
+                </div>
+
                 <!--Primer contenido-->
-                <div class="tab-pane fade show active" id="v-pills-4.1" role="tabpanel"
+                <div class="tab-pane fade" id="v-pills-4.1" role="tabpanel"
                     aria-labelledby="v-pills-4.1-tab" tabindex="0">
 
                     <div class="titleSuperior">
@@ -779,8 +810,8 @@
                                         <div class="card-body">
                                             <p class="card-text textoReading">
                                                 El resultado: $31,698.63 corresponde al valor presente
-                                        considerando
-                                        todas las anualidades juntas.
+                                                considerando
+                                                todas las anualidades juntas.
                                             </p>
                                         </div>
                                     </div>
@@ -1471,8 +1502,7 @@
                     </section>
 
                     <div class="d-grid gap-2 mt-3">
-                        <button class="btn btn-lg btn-secondary" id="evaluartodo" type="button">Evaluar y
-                            descargar
+                        <button class="btn btn-lg btn-secondary" id="evaluartodo" type="button">Evaluar y descargar
                             resultados en PDF</button>
                     </div>
                 </div>
@@ -1480,18 +1510,28 @@
                 <!--Cierre-->
                 <div class="tab-pane fade" id="v-pills-cierre" role="tabpanel" aria-labelledby="v-pills-cierre-tab"
                     tabindex="0">
-                    <p class="fs-1 fw-bold">Cierre</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis atque quisquam
-                        voluptatem assumenda nisi. Voluptatem reiciendis iusto, quisquam vero ipsa asperiores
-                        quo ad
-                        nobis, a temporibus, sed porro suscipit? Lorem ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit. Et repellendus rerum nemo neque voluptatem laboriosam alias itaque ducimus fugiat,
-                        a vitae
-                        corporis quas molestias dolor repudiandae aut animi qui illo!</p>
-                    <div class="imagenDefaultContainer">
-                        <img class="imageZoomed imagenDefault" src="static/img/default.png">
+
+                    <div class="titleSuperior">
+                        Cierre
                     </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <div class="card-body">
+                            <p class="card-text textoReading">
+                                Tal y como lo estudiaste en esta unidad temática, el presupuesto maestro se conforma de
+                                un conjunto de presupuestos de operación y financieros a partir de los cuales se
+                                construyen los estados financieros proforma. Uno de esos presupuestos es el presupuesto
+                                de flujo de efectivo, con el que es posible calcular los flujos netos de efectivo (FNE)
+                                que son la base para evaluar proyectos de inversión, tema que verás en la siguiente
+                                unidad temática.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imagenDefaultContainer">
+                        <img class="imagenDefaultExtra" src="static/img/icons/cierre.png">
+                    </div>
+
                 </div>
             </div>
         </section>
