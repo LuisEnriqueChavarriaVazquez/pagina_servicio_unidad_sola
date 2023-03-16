@@ -28,6 +28,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
+    <!--Script para la evaluación-->
     <script defer src="static/js/evaluacion_unidad.js"></script>
     <!--JS-->
     <script defer src="static/js/menuLateral.js"></script>
@@ -47,8 +48,13 @@
     <script defer src="static/js/jspdf.min.js"></script>
     <script defer src="static/js/generadorPdfs.js"></script>
 
-    <!--String compresor-->
-    <script defer src="static/js/stringCompresor.js"></script>
+    <!--Fecha y tiempo actual-->
+    <script defer src="static/js/fechaActual.js"></script>
+    <script defer src="static/js/tiempoEnvio.js"></script>
+
+    <!--Contador de intentos-->
+    <script defer src="static/js/intentosActuales.js"></script>
+
 </head>
 
 <body>
@@ -1531,12 +1537,24 @@
                         Evaluación
                     </div>
 
-                    <div class="contenedorBarraProgreso">
-                        <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span id="contadorPreguntas">0</span>/10</p>
-                        <hr>
-                        <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span id="contadorPreguntasRespondidas">0</span>/10</p>
-                        <div class="contenedorBarraProgresoBarra" id="barraPreguntas"></div>
-                    </div>
+                    <section class="cardsPaginaContenidoGrid">
+                        <div class="contenedorBarraProgreso">
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span id="contadorPreguntas">0</span>/10</p>
+                            <hr>
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span id="contadorPreguntasRespondidas">0</span>/10</p>
+                            <div class="contenedorBarraProgresoBarra" id="barraPreguntas"></div>
+                        </div>
+                        
+                        <div class="contenedorBarraProgreso">
+                            <p class="contenedorBarraProgresoTexto textoReading">Fecha de respuesta: <span id="fechaActual"></span></p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Tiempo: 
+                                <span id="tiempoActualHoras">00</span>:
+                                <span id="tiempoActualMinutos">00</span>':
+                                <span id="tiempoActualSegundos">00</span>''
+                            </p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Intentos: <span id="intentosActuales"></span></p>
+                        </div>
+                    </section>
 
                     <section class="cardsPaginaContenidoGrid" id="contenedor_preguntas">
 

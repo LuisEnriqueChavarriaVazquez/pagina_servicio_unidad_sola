@@ -34,9 +34,11 @@ generarDocumento.addEventListener('click', () => {
     doc.setTextColor(0);
     doc.setFont("helvetica");
     doc.setFontSize(16);
-    doc.text(20, 55, 'Preguntas correctas: ');
-    doc.text(20, 65, 'Tiempo de respuesta: ');
-    doc.text(20, 75, 'Calificación: ');
+    doc.text(20, 55, 'Preguntas correctas: ' + puntajeTotal + '/10'); //Puntaje total es una variable global de evaluacion_unidad.js
+    doc.text(20, 65, 'Tiempo de respuesta: ' + horas + ":" +  minutos + "':" + segundos + "''");
+    doc.text(120, 65, 'Fecha de envio: ' + fecha);
+    doc.text(20, 75, 'Calificación: ' + puntajeTotal);
+    doc.text(120, 75, 'Intentos: ' + localStorage.getItem('intentos'));
 
     ////////////////////////////////////////////////
     //Imagenes
