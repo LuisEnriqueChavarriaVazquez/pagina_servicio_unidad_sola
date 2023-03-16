@@ -413,6 +413,39 @@ figure.zoom img {
     padding: 20px;
 }
 
+.specialContainerFormulaGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 35px 3px 35px;
+    overflow-x: scroll;
+    border-radius: 10px;
+}
+
+.primerContainerSpecial{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: right !important;
+    padding: 5px 20px;
+    background-color: #ebebeb;
+    border-radius: 6px 0 0 6px;
+    margin: 0;
+    min-width: 380px;
+}
+
+.segundoContainerSpecial{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left !important;
+    padding: 5px 20px;
+    
+    background-color: #e0e0e0;
+    border-radius: 0 6px 6px 0;
+    margin: 0;
+    min-width: 350px;
+}
+
 @media (max-width: 800px) {
 
     .cardsPaginaContenidoListPadding {
@@ -437,7 +470,6 @@ figure.zoom img {
         gap: 10px;
         padding: 10px;
     }
-
 }
 
 /*Cards de descarga*/

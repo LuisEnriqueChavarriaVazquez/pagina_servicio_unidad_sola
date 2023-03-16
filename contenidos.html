@@ -668,20 +668,58 @@
                                 <h5 class="card-header textoReadingTitle">2. Calculando el valor futuro de los
                                     pagos individuales y después
                                     sumarlos</h5>
-                                <div class="card-body">
-                                    <div class="imagenDefaultContainer">
-                                        <img class="imageZoomed imagenDefaultBig" src="static/vectores/formula5.png">
-                                    </div>
+
+                                &nbsp;
+                                <br>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading textoImportant primerContainerSpecial">Formula</p>
+                                    <p class="textoReading segundoContainerSpecial">$$VF_n = {VP(1+i)^n}$$</p>
                                 </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading primerContainerSpecial">El VF del periodo 1 se capitaliza en
+                                        3 periodos.</p>
+                                    <p class="textoReading segundoContainerSpecial">$$VF_1 = {10,000(1+i)^3} = 13,310$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading primerContainerSpecial">El VF del periodo 2 se capitaliza en
+                                        2 periodos.</p>
+                                    <p class="textoReading segundoContainerSpecial">$$VF_2 = {10,000(1+i)^2} = 12,100$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading primerContainerSpecial">El VF del periodo 3 se capitaliza en
+                                        1 periodo.</p>
+                                    <p class="textoReading segundoContainerSpecial">$$VF_3 = {10,000(1+i)^1} = 11,000$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading primerContainerSpecial">El VF del periodo 4 no se capitaliza.
+                                    </p>
+                                    <p class="textoReading segundoContainerSpecial">$$VF_4 = {10,000(1+i)^0} = 10,000$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReading textoImportant primerContainerSpecial">Total.</p>
+                                    <p class="textoReading segundoContainerSpecial">$$46,410$$</p>
+                                </div>
+                                <br>
+                                &nbsp;
                             </div>
 
                             <div class="card cardMarginExtra">
                                 <h5 class="card-header textoReadingTitle">3. Utilizando la fórmula de valor
                                     futuro de una anualidad
                                     ordinaria</h5>
-                                <div class="card-body">
-                                    <div class="imagenDefaultContainer">
-                                        <img class="imageZoomed imagenDefaultBig" src="static/vectores/formula6.png">
+                            
+                                <div class="contenedorFormula marginPersonal">
+                                    <p class="textoFormula">$$VF_An = PA{(1+i)^n - 1\over i} = 10,000{(1+0.10)^4 - 1 \over 0.10} = 46,410$$</p>
+                                    <div class="infoFormula">
+                                        <p class="infoFormula_title">Donde: </p>
+                                        <p class="infoFormula_data">VP<sub>An</sub> = Valor futuro de una anualidad ordinaria a un periodo de tiempo</p>
+                                        <p class="infoFormula_data">PA = Valor del pago igual o anualidad</p>
+                                        <p class="infoFormula_data">i = Tasa de descuento</p>
+                                        <p class="infoFormula_data">n = Período de tiempo</p>
                                     </div>
                                 </div>
                             </div>
@@ -707,8 +745,8 @@
                                 retirar el dinero recibirás:
                             </p>
 
-                            <div class="imagenDefaultContainer">
-                                <img class="imageZoomed imagenDefaultBig" src="static/vectores/formula7.png">
+                            <div class="contenedorFormula">
+                                <p class="textoFormula">$$VF_An = PA{(1+i)^n - 1\over i} = 5,000{(1+0.5)^40 - 1 \over 0.05} = $603,998.8712$$</p>
                             </div>
 
                             <p class="card-text textoReading">
@@ -1539,20 +1577,24 @@
 
                     <section class="cardsPaginaContenidoGrid">
                         <div class="contenedorBarraProgreso">
-                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span id="contadorPreguntas">0</span>/10</p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span
+                                    id="contadorPreguntas">0</span>/10</p>
                             <hr>
-                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span id="contadorPreguntasRespondidas">0</span>/10</p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span
+                                    id="contadorPreguntasRespondidas">0</span>/10</p>
                             <div class="contenedorBarraProgresoBarra" id="barraPreguntas"></div>
                         </div>
-                        
+
                         <div class="contenedorBarraProgreso">
-                            <p class="contenedorBarraProgresoTexto textoReading">Fecha de respuesta: <span id="fechaActual"></span></p>
-                            <p class="contenedorBarraProgresoTexto textoReading">Tiempo: 
+                            <p class="contenedorBarraProgresoTexto textoReading">Fecha de respuesta: <span
+                                    id="fechaActual"></span></p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Tiempo:
                                 <span id="tiempoActualHoras">00</span>:
                                 <span id="tiempoActualMinutos">00</span>':
                                 <span id="tiempoActualSegundos">00</span>''
                             </p>
-                            <p class="contenedorBarraProgresoTexto textoReading">Intentos: <span id="intentosActuales"></span></p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Intentos: <span
+                                    id="intentosActuales"></span></p>
                         </div>
                     </section>
 
@@ -1561,7 +1603,8 @@
                     </section>
 
                     <div class="d-grid gap-2 mt-3 textoReading">
-                        <button class="btn btn-lg btn-secondary" id="generarDocumento" type="button">Descargar resultados en PDF</button>
+                        <button class="btn btn-lg btn-secondary" id="generarDocumento" type="button">Descargar
+                            resultados en PDF</button>
                     </div>
                 </div>
 
