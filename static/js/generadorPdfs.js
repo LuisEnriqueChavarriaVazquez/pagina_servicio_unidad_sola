@@ -4,29 +4,39 @@ generarDocumento.addEventListener('click', () => {
     //Crear el documento
     var doc = new jsPDF();
 
+    //Datos de la unidad
+    doc.setTextColor(0, 79, 118);
+    doc.setFont("helvetica");
+    doc.setFontType("bold");
+    doc.setFontSize(18);
+    doc.text(67, 15, 'Recurso didáctico digital');
+    doc.setFontSize(14);
+    doc.text(71, 22, 'Unidad 4: Título de la unidad');
+
     //Rectangulo para el titulo
     doc.setDrawColor(0)
     doc.setFillColor(255, 255, 255)
-    doc.roundedRect(10, 10, 190, 15, 2, 2, 'FD')
+    doc.roundedRect(10, 30, 190, 15, 2, 2, 'FD')
 
     //Titulo
     doc.setTextColor(0, 79, 118);
     doc.setFont("helvetica");
     doc.setFontType("bold");
     doc.setFontSize(22)
-    doc.text(20, 20, 'Resultado del cuestionario.');
+    doc.text(20, 40, 'Resultado del cuestionario.');
 
-    //Rectangulo para el titulo
-    doc.setDrawColor(0)
-    doc.setFillColor(255, 255, 255)
-    doc.roundedRect(10, 25, 190, 25, 2, 2, 'FD')
+    //Rectangulo para datos del cuestionario
+    doc.setDrawColor(0);
+    doc.setFillColor(255, 255, 255);
+    doc.roundedRect(10, 45, 190, 35, 2, 2, 'FD');
 
     //Textos de datos
     doc.setTextColor(0);
     doc.setFont("helvetica");
     doc.setFontSize(16);
-    doc.text(20, 35, 'Preguntas correctas: ');
-    doc.text(20, 45, 'Tiempo de respuesta: ');
+    doc.text(20, 55, 'Preguntas correctas: ');
+    doc.text(20, 65, 'Tiempo de respuesta: ');
+    doc.text(20, 75, 'Calificación: ');
 
     ////////////////////////////////////////////////
     //Imagenes
@@ -38,16 +48,28 @@ generarDocumento.addEventListener('click', () => {
     doc.addImage(iconoIpn, 'png', 8, 8, 18, 22);
 
 
+    let posicionRectangulo = 80;
+    let posicionEnunciado = 88;
+    let posicionRespuesta = 95;
+    let colores = 230;
+    for(var i = 0; i < 10; i++){
+        //Rectangulo para preguntas del cuestionario
+        doc.setDrawColor(0);
+        doc.setFillColor(colores, colores, colores);
+        doc.roundedRect(10, posicionRectangulo, 190, 20, 2, 2, 'FD');
+    
+        ///////////////////////////////////////////////
+        //Preguntas
+        doc.setFontSize(12)
+        doc.text(20, posicionEnunciado, 'Pregunta 1: ');
+        doc.text(20, posicionRespuesta, 'Respuesta 1: ');
 
-    ///////////////////////////////////////////////
-    //Preguntas
-    doc.setFontSize(14)
-    doc.text(20, 60, 'Preguntas correctas: ');
-    doc.text(20, 70, 'Tiempo de respuesta: ');
+        //Actualizacion de valores para la siguiente pregunta
+        posicionRectangulo += 20;
+        posicionEnunciado += 20;
+        posicionRespuesta += 20;
+        colores -= 6;
+    }
 
-    doc.addPage();
-    doc.text(20, 20, 'Do you like that?')
-
-
-    doc.save('a4.pdf')
+    doc.save('a4.pdf');
 })
