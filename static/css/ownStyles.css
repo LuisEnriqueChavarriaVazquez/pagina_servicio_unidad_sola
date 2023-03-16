@@ -699,13 +699,13 @@ figure.zoom img {
 
 .titleSuperior {
     margin: 0 0 10px 0;
-    padding: 15px 20px;
+    padding: 7px 20px;
     font-size: 28px;
     font-weight: 700;
-    background-color: #4b79aa;
-    border: #2e4d6e solid 1px;
+    background-color: #5481b1;
+    border: #456a92 solid 2px;
     color: #fcfcfc;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 @media (max-width: 1000px) {
