@@ -945,3 +945,49 @@ figure.zoom img {
     height: 20px;
     width: 1%;
 }
+
+.preguntaCorrecta{
+    border-bottom: #298552 10px solid;
+}
+
+.preguntaIncorrecta{
+    border-bottom: #692121 10px solid;
+}
+
+.mensajeCorrecta{
+    color: #298552;
+    background-color: #b5fdd6;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mensajeIncorrecta{
+    color: #792323;
+    background-color: #ffa5a5;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .mensajeCorrecta{
+        font-size: 16px;
+    }
+    
+    .mensajeIncorrecta{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mensajeCorrecta{
+        font-size: 14px;
+    }
+    
+    .mensajeIncorrecta{
+        font-size: 14px;
+    }
+}  

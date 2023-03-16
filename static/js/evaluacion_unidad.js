@@ -54,10 +54,12 @@ function pregunta(numero) {
     console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
         retroalimentacion.innerHTML = "La respuesta es correcta";
+        retroalimentacion.classList.add('mensajeCorrecta');
         puntajeTotal++;
         preguntasContestadasTotal++;
     } else {
         retroalimentacion.innerHTML = "Incorrecto, la respuesta era " + respuestasExplicacion[numero];
+        retroalimentacion.classList.add('mensajeIncorrecta');
         preguntasContestadasTotal++;
     }
 
@@ -69,6 +71,21 @@ function pregunta(numero) {
 
     //La barra se incrementa de tamaño con cada pregunta
     barraPreguntas.setAttribute('style', 'width:' + preguntasContestadasTotal*10 + '%');
+
+    //Se elimina el boton de la pregunta que ha sido respondida
+    let button_evaluation = document.getElementById('button_evaluation_'+numero);
+    button_evaluation.setAttribute('style', 'display:none');
+
+    //Se eliminan los inputs de la pregunta
+    let opt1_input = document.getElementById('pregunta' + numero + '_opt1');
+    let opt2_input = document.getElementById('pregunta' + numero + '_opt2');
+    let opt3_input = document.getElementById('pregunta' + numero + '_opt3');
+    let opt4_input = document.getElementById('pregunta' + numero + '_opt4');
+
+    opt1_input.setAttribute('disabled', '');
+    opt2_input.setAttribute('disabled', '');
+    opt3_input.setAttribute('disabled', '');
+    opt4_input.setAttribute('disabled', '');
 }
 
 function preguntas_aleatorias() {
@@ -199,9 +216,10 @@ function preguntas_aleatorias() {
                 </div>
             </section>
             <div id="retroalimentacion">
+
             </div>
             <div class="d-grid gap-2">
-                <button class="btn btn-primary btnIndividualQuestion" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">
+                <button class="btn btn-primary btnIndividualQuestion" id="button_evaluation_${preguntas_aleatorias_indices[i]}" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">
                     <span class="textoReading">
                     Revisar pregunta
                     </span>
@@ -212,7 +230,7 @@ function preguntas_aleatorias() {
     </div>
         `;
     }
-    contenedor_preguntas.innerHTML = contenido_preguntas
+    contenedor_preguntas.innerHTML = contenido_preguntas;
 
 }
 
