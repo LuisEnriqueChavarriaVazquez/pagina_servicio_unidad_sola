@@ -38,6 +38,10 @@
 
     <!--Bloqueo de copias-->
     <script defer src="static/js/noCopy.js"></script>
+
+    <!--Formulas matematicas-->
+    <script defer src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script defer src="static/js/formulas.js"></script>
 </head>
 
 <body>
@@ -371,8 +375,8 @@
                                         La fórmula para calcular el valor futuro (VF) de una cantidad única es:
                                     </p>
                                 </div>
-                                <div class="imagenDefaultContainer">
-                                    <img class="imageZoomed imagenDefaultBig" src="static/vectores/formula1.png">
+                                <div class="contenedorFormula">
+                                    <p class="textoFormula">$$VF_n = {VP(1+i)^n}$$</p>
                                 </div>
                             </div>
 
@@ -382,8 +386,15 @@
                                         Para el ejemplo que estamos trabajando quedaría:
                                     </p>
                                 </div>
-                                <div class="imagenDefaultContainer">
-                                    <img class="imageZoomed imagenDefaultBig" src="static/vectores/formula2.png">
+                                <div class="contenedorFormula">
+                                    <p class="textoFormula">$$VF_n = {VP(1+i)^n} = (100,000)(1.10)^3 = 133,100$$</p>
+                                    <div class="infoFormula">
+                                        <p class="infoFormula_title">Donde: </p>
+                                        <p class="infoFormula_data">VP = Valor presente</p>
+                                        <p class="infoFormula_data">VF = Valor futuro</p>
+                                        <p class="infoFormula_data">i = Tasa de interés</p>
+                                        <p class="infoFormula_data">n = Período de tiempo</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
