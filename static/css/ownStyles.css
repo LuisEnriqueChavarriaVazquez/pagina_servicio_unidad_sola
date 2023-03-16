@@ -380,6 +380,14 @@ figure.zoom img {
     gap: 20px;
 }
 
+.cardsPaginaContenidoListPadding {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
 .cardsPaginaContenidoGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -387,13 +395,39 @@ figure.zoom img {
     gap: 20px;
 }
 
+.cardsPaginaContenidoGridPadding {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
 @media (max-width: 800px) {
+
+    .cardsPaginaContenidoListPadding {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
     .cardsPaginaContenidoGrid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 20px;
     }
+
+    .cardsPaginaContenidoGridPadding {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    
 }
 
 /*Cards de descarga*/
@@ -614,6 +648,18 @@ figure.zoom img {
 }
 
 /*Ajuste de los textos*/
+
+.textoImportant{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.textoReadingTable {
+    font-size: 17px;
+    text-align: justify;
+}
+
 .textoReadingTitle {
     font-size: 26px;
     font-weight: 700;
@@ -642,6 +688,11 @@ figure.zoom img {
 
 
 @media (max-width: 1000px) {
+    .textoReadingTable {
+        font-size: 15px;
+        text-align: justify;
+    }
+
     .textoReadingTitle {
         font-size: 23px;
         font-weight: 700;
@@ -670,6 +721,11 @@ figure.zoom img {
 }
 
 @media (max-width: 500px) {
+    .textoReadingTable {
+        font-size: 13px;
+        text-align: justify;
+    }
+
     .textoReadingTitle {
         font-size: 21px;
         font-weight: 700;
@@ -712,6 +768,10 @@ figure.zoom img {
 
 .cardLevelTwo {
     background-color: #dadada;
+}
+
+.cardLevelThree {
+    background-color: #eeeeee;
 }
 
 /*Cargador*/
