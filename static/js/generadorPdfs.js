@@ -2,7 +2,7 @@ let generarDocumento = document.getElementById('generarDocumento');
 
 generarDocumento.addEventListener('click', () => {
     //Crear el documento
-    var doc = new jsPDF();
+    var doc = new jsPDF('p', 'mm', [500, 210]);
 
     //Datos de la unidad
     doc.setTextColor(0, 79, 118);
@@ -49,28 +49,43 @@ generarDocumento.addEventListener('click', () => {
     doc.addImage(iconoEscom, 'png', 180, 10, 18, 16);
     doc.addImage(iconoIpn, 'png', 8, 8, 18, 22);
 
+    //Enunciados, identificadores y respuesta de las preguntas
+    let preguntaIdentificador = document.getElementsByClassName('preguntaIdentificador');
+    let preguntaEnunciado = document.getElementsByClassName('preguntaEnunciado');
+    let respuestaCorrectaPreguntaAzar = document.getElementsByClassName('respuestaCorrectaPreguntaAzar');
+    let estadoPreguntaAzar = document.getElementsByClassName('estadoPreguntaAzar');
+    let respuestaAlumnoClass = document.getElementsByClassName('respuestaAlumnoClassMark');
 
     let posicionRectangulo = 80;
-    let posicionEnunciado = 88;
-    let posicionRespuesta = 95;
-    let colores = 230;
+    let posicionEnunciado = 93;
+    let posicionRespuesta = 100;
+    let posicionRespuestaCorrecta = 105;
+    let estadoRespuesta = 110;
+    let colores = 245;
     for(var i = 0; i < 10; i++){
         //Rectangulo para preguntas del cuestionario
         doc.setDrawColor(0);
         doc.setFillColor(colores, colores, colores);
-        doc.roundedRect(10, posicionRectangulo, 190, 20, 2, 2, 'FD');
+        doc.roundedRect(10, posicionRectangulo, 190, 40, 2, 2, 'FD');
     
         ///////////////////////////////////////////////
         //Preguntas
-        doc.setFontSize(12)
-        doc.text(20, posicionEnunciado, 'Pregunta 1: ');
-        doc.text(20, posicionRespuesta, 'Respuesta 1: ');
+        doc.setFontSize(14);
+        doc.setTextColor(0, 79, 118);
+        doc.text(20, posicionEnunciado, `${preguntaIdentificador[i].textContent}: ${preguntaEnunciado[i].textContent}`);
+        doc.setFontSize(12);
+        doc.setTextColor(0, 0, 0);
+        doc.text(20, posicionRespuesta, 'Su respuesta: ' + `${respuestaAlumnoClass[i].value}`);
+        doc.text(20, posicionRespuestaCorrecta, 'Respuesta correcta: ' + `${respuestaCorrectaPreguntaAzar[i].textContent}`);
+        doc.text(20, estadoRespuesta, 'Estado: ' + `${estadoPreguntaAzar[i].textContent}`);
 
         //Actualizacion de valores para la siguiente pregunta
-        posicionRectangulo += 20;
-        posicionEnunciado += 20;
-        posicionRespuesta += 20;
-        colores -= 6;
+        posicionRectangulo += 40;
+        posicionEnunciado += 40;
+        posicionRespuesta += 40;
+        posicionRespuestaCorrecta += 40;
+        estadoRespuesta += 40;
+        colores -= 4;
     }
 
     doc.save('a4.pdf');
