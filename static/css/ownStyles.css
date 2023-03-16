@@ -923,3 +923,25 @@ figure.zoom img {
         width: 100%;
     }
 }
+
+/*Evaluaciones*/
+.contenedorBarraProgreso{
+    width: 100%;
+    padding: 8px 20px 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #dddddd;
+    border: #c7c7c7 2px solid;
+}
+
+.contenedorBarraProgresoTexto{
+    font-weight: 700;
+    color: #444444;
+}
+
+.contenedorBarraProgresoBarra{
+    background-color: #298552;
+    border-radius: 6px;
+    height: 20px;
+    width: 1%;
+}

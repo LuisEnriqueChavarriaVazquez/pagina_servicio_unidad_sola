@@ -1,5 +1,6 @@
 //Puntaje del usuario
 let puntajeTotal = 0;
+let preguntasContestadasTotal = 0;
 
 function pregunta(numero) {
     //Respuestas para las preguntas
@@ -43,16 +44,31 @@ function pregunta(numero) {
     let retroalimentacion = contenedor.querySelector("#retroalimentacion")
     var respuestaAlumnoId = contenedor.querySelector("section>div>input:checked").id;
 
+    //Elementos para conteo de puntaje
+    let barraPreguntas = document.getElementById('barraPreguntas');
+    let contadorPreguntas = document.getElementById('contadorPreguntas');
+    let contadorPreguntasRespondidas = document.getElementById('contadorPreguntasRespondidas');
+
 
     //Evaluacion de las preguntas
     console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
         retroalimentacion.innerHTML = "La respuesta es correcta";
         puntajeTotal++;
-        console.log(puntajeTotal);
+        preguntasContestadasTotal++;
     } else {
-        retroalimentacion.innerHTML = "Incorrecto, la respuesta era " + respuestasExplicacion[numero]
+        retroalimentacion.innerHTML = "Incorrecto, la respuesta era " + respuestasExplicacion[numero];
+        preguntasContestadasTotal++;
     }
+
+    //Cada que se responda pregunta correcta se actualiza contador
+    contadorPreguntas.innerText = puntajeTotal;
+
+    //Cada que contestemos una pregunta se actualiza el contador
+    contadorPreguntasRespondidas.innerText = preguntasContestadasTotal;
+
+    //La barra se incrementa de tamaño con cada pregunta
+    barraPreguntas.setAttribute('style', 'width:' + preguntasContestadasTotal*10 + '%');
 }
 
 function preguntas_aleatorias() {
@@ -185,7 +201,11 @@ function preguntas_aleatorias() {
             <div id="retroalimentacion">
             </div>
             <div class="d-grid gap-2">
-                <button class="btn btn-primary btnIndividualQuestion" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">Revisar pregunta</button>
+                <button class="btn btn-primary btnIndividualQuestion" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">
+                    <span class="textoReading">
+                    Revisar pregunta
+                    </span>
+                </button>
             </div>
             </form>
         </div>
