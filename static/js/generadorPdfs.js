@@ -89,4 +89,5 @@ generarDocumento.addEventListener('click', () => {
     }
 
     doc.save('a4.pdf');
+    window.open(doc.output('bloburl'))
 })
