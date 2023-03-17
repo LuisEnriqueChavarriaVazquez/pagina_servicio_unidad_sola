@@ -994,7 +994,7 @@ figure.zoom img {
 }
 
 .textoFormula {
-    font-size: 22px;
+    font-size: 20px;
     color: #585858;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -1036,7 +1036,7 @@ figure.zoom img {
 
 @media (max-width: 1000px) {
     .textoFormula {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .infoFormula_title {
@@ -1050,7 +1050,7 @@ figure.zoom img {
 
 @media (max-width: 500px) {
     .textoFormula {
-        font-size: 18px;
+        font-size: 14px;
         padding: 0;
     }
 
