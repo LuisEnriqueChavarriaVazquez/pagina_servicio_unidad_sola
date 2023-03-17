@@ -23,9 +23,31 @@ body {
     box-sizing: border-box !important;
 }
 
+.marginPersonalIntro{
+    padding: 40px 100px !important;
+    box-sizing: border-box !important;
+}
+
 @media (max-width: 1000px) {
     .marginPersonal {
         padding: 20px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .marginPersonalIntro{
+        padding: 20px 20px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .marginPersonal {
+        padding: 0px !important;
+        box-sizing: border-box !important;
+    }
+
+    .marginPersonalIntro{
+        padding: 10px !important;
         box-sizing: border-box !important;
     }
 }
@@ -186,12 +208,12 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 30px;
+    padding: 0 5px;
 }
 
 .titleImageMine {
     margin: 0px;
-    padding: 20px;
+    padding: 0 0 0 0;
     text-align: left;
     height: 50px;
     font-weight: 600;
@@ -201,7 +223,7 @@ body {
 
 .noteImageMine {
     margin: 0px;
-    padding: 20px;
+    padding: 0 0 20px 0;
     text-align: left;
     height: 30px;
     font-weight: 400;
@@ -229,6 +251,16 @@ body {
         width: 100px;
         margin: 10px;
     }
+
+    .titleImageMine {
+        font-weight: 700;
+        font-size: 13px;
+    }
+    
+    .noteImageMine {
+        font-size: 12px;
+    }
+    
 }
 
 .imagenDefaultBig {
@@ -286,6 +318,32 @@ figure.zoom img {
     transition: opacity 0.5s;
     display: block;
     width: 100%;
+}
+
+.zoomButtonMine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    background-color: #1b374b;
+    color: #fff;
+    position: relative;
+    bottom: 83.8px;
+    right: 0;
+}
+
+.bi-zoom-in{
+    font-size: 18px !important;
+    font-weight: 800;
+    position: relative;
+    top: -2px;
+}
+
+.zoomContainerMine{
+    border-bottom: #265e86 35px solid;
 }
 
 /*Diseño de las notas*/
@@ -438,7 +496,7 @@ figure.zoom img {
     background-color: #ebebeb;
     border-radius: 6px 0 0 6px;
     margin: 0;
-    min-width: 380px;
+    min-width: 280px;
 }
 
 .segundoContainerSpecial{
@@ -477,6 +535,16 @@ figure.zoom img {
         grid-template-rows: auto;
         gap: 10px;
         padding: 10px;
+    }
+
+    .specialContainerFormulaGrid{
+        margin: 0px 10px 3px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .specialContainerFormulaGrid{
+        margin: 0px 5px 3px 5px;
     }
 }
 
@@ -837,7 +905,7 @@ figure.zoom img {
 
 .textoFormula{
     font-size: 22px;
-    color: #444444;
+    color: #585858;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 0 20px;
@@ -893,6 +961,7 @@ figure.zoom img {
 @media (max-width: 500px) {
     .textoFormula{
         font-size: 18px;
+        padding: 0;
     }
 
     .infoFormula_title{
@@ -900,7 +969,12 @@ figure.zoom img {
     }
 
     .infoFormula_data{
-        font-size: 16px;
+        font-size: 14px;
+        padding-left: 0px;
+    }
+
+    .infoFormula{
+        padding: 8px 10px;
     }
 }   
 

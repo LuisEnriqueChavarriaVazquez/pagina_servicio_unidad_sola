@@ -55,6 +55,9 @@
     <!--Contador de intentos-->
     <script defer src="static/js/intentosActuales.js"></script>
 
+    <!--Carousel-->
+    <script defer src="static/js/fslightbox.js"></script>
+
 </head>
 
 <body>
@@ -209,8 +212,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <!--Primer contenido-->
@@ -308,11 +309,13 @@
 
                             <div class="imagenDefaultContainer">
                                 <p class="titleImageMine">Figura 4.1 Clasificación de los flujos de efectivo</p>
-                                <figure class="zoom" onmousemove="zoom(event)"
+                                <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                     style="background-image: url('static/vectores/vector 1.png')">
                                     <img src="static/vectores/vector 1.png" class="imageZoomed imagenDefaultBig" />
                                 </figure>
                                 <p class="noteImageMine">Fuente: Gitman (2012).</p>
+                                <a data-fslightbox="vector1" class="zoomButtonMine"
+                                    href="static/vectores/vector 1.png"><i class="bi bi-zoom-in"></i></a>
                             </div>
 
                             <div class="card cardMarginExtra">
@@ -402,13 +405,15 @@
                                         </div>
                                         <div class="imagenDefaultContainer">
                                             <p class="titleImageMine">Figura 4.2 linea de flujo de efectivo</p>
-                                            <figure class="zoom" onmousemove="zoom(event)"
+                                            <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                                 style="background-image: url('static/vectores/vector 2.png')">
                                                 <img src="static/vectores/vector 2.png"
                                                     class="imageZoomed imagenDefaultBig" />
                                             </figure>
                                             <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
                                             </p>
+                                            <a data-fslightbox="vector2" class="zoomButtonMine"
+                                                href="static/vectores/vector 2.png"><i class="bi bi-zoom-in"></i></a>
                                         </div>
                                     </div>
 
@@ -421,13 +426,15 @@
                                         </div>
                                         <div class="imagenDefaultContainer">
                                             <p class="titleImageMine">Tabla 4.1 Valor futuro de cantidades únicas</p>
-                                            <figure class="zoom" onmousemove="zoom(event)"
+                                            <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                                 style="background-image: url('static/vectores/tabla1.png')">
                                                 <img src="static/vectores/tabla1.png"
                                                     class="imageZoomed imagenDefaultBig" />
                                             </figure>
                                             <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
                                             </p>
+                                            <a data-fslightbox="tabla1" class="zoomButtonMine"
+                                                href="static/vectores/tabla1.png"><i class="bi bi-zoom-in"></i></a>
                                         </div>
                                         <div class="card cardMarginExtraTwo cardLevelTwo">
                                             <div class="card-body">
@@ -620,13 +627,15 @@
                                 <div class="card-body">
                                     <div class="imagenDefaultContainer">
                                         <p class="titleImageMine">Figura 4.4 linea de flujo de efectivo</p>
-                                        <figure class="zoom" onmousemove="zoom(event)"
+                                        <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                             style="background-image: url('static/vectores/vector 3.png')">
                                             <img src="static/vectores/vector 3.png"
                                                 class="imageZoomed imagenDefaultBig" />
                                         </figure>
                                         <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y.
                                             (2023).</p>
+                                        <a data-fslightbox="vector3" class="zoomButtonMine"
+                                            href="static/vectores/vector 3.png"><i class="bi bi-zoom-in"></i></a>
                                     </div>
 
                                     <p class="card-text textoReading">Expliquemos como se obtuvieron los
@@ -835,13 +844,15 @@
 
                                     <div class="imagenDefaultContainer">
                                         <p class="titleImageMine">Figura 4.5 linea de flujo de efectivo</p>
-                                        <figure class="zoom" onmousemove="zoom(event)"
+                                        <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                             style="background-image: url('static/vectores/vector 4.png')">
                                             <img src="static/vectores/vector 4.png"
                                                 class="imageZoomed imagenDefaultBig" />
                                         </figure>
                                         <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
                                         </p>
+                                        <a data-fslightbox="vector4" class="zoomButtonMine"
+                                    href="static/vectores/vector 4.png"><i class="bi bi-zoom-in"></i></a>
                                     </div>
 
                                     <p class="card-text textoReading">
@@ -961,12 +972,14 @@
 
                                 <div class="imagenDefaultContainer">
                                     <p class="titleImageMine">Figura 4.6 Linea de flujo de efectivo</p>
-                                    <figure class="zoom" onmousemove="zoom(event)"
+                                    <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                         style="background-image: url('static/vectores/vector 5.png')">
                                         <img src="static/vectores/vector 5.png" class="imageZoomed imagenDefaultBig" />
                                     </figure>
                                     <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
                                     </p>
+                                    <a data-fslightbox="vector5" class="zoomButtonMine"
+                                    href="static/vectores/vector 5.png"><i class="bi bi-zoom-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1178,12 +1191,14 @@
 
                                 <div class="imagenDefaultContainer">
                                     <p class="titleImageMine">Tabla 4.2 Tabla de amortización</p>
-                                    <figure class="zoom" onmousemove="zoom(event)"
+                                    <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
                                         style="background-image: url('static/vectores/tabla2.png')">
                                         <img src="static/vectores/tabla2.png" class="imageZoomed imagenDefaultBig" />
                                     </figure>
                                     <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
                                     </p>
+                                    <a data-fslightbox="tabla2" class="zoomButtonMine"
+                                    href="static/vectores/tabla2.png"><i class="bi bi-zoom-in"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,4 @@
+//Zoom manual
 function zoom(e) {
     var zoomer = e.currentTarget;
     e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
@@ -6,3 +7,12 @@ function zoom(e) {
     y = offsetY / zoomer.offsetHeight * 100
     zoomer.style.backgroundPosition = x + '% ' + y + '%';
 }
+
+//Carousel de imagenes (Con click)
+fsLightboxInstances["vector1"].props.onOpen = function () {}
+fsLightboxInstances["vector2"].props.onOpen = function () {}
+fsLightboxInstances["vector3"].props.onOpen = function () {}
+fsLightboxInstances["vector4"].props.onOpen = function () {}
+fsLightboxInstances["vector5"].props.onOpen = function () {}
+fsLightboxInstances["tabla1"].props.onOpen = function () {}
+fsLightboxInstances["tabla2"].props.onOpen = function () {}
