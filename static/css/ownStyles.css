@@ -411,19 +411,20 @@ figure.zoom img {
 }
 
 .containerMenuAndContent-segundaSeccion {
-    height: calc(100vh - 147.16px) !important;
+    height: auto !important;
+    min-height: 80vh;
     width: 100%;
     overflow-y: scroll;
     padding: 30px 60px;
 }
 
-@media only screen and (max-device-height: 480px) and (orientation: landscape) {
+/* @media only screen and (max-device-height: 480px) and (orientation: landscape) {
 
     .containerMenuAndContent-segundaSeccion {
         height: 200vh !important;
     }
 
-}
+} */
 
 @media (max-width: 800px) {
     .containerMenuAndContent {
@@ -570,7 +571,7 @@ figure.zoom img {
     display: grid;
     grid-template-columns: 2fr .5fr;
     grid-template-rows: auto;
-    background-color: #d8d8d8;
+    background-color: #c9c9c9;
     border-bottom: #245174 30px solid;
     gap: 40px;
 }
@@ -812,6 +813,22 @@ figure.zoom img {
     font-size: 22px;
     text-align: justify;
     transition: all .1 ease-in-out;
+}
+
+.textBoldOwn{
+    font-weight: 650 !important;
+}
+
+.textSpaceLineOwn{
+   line-height: 25px !important;
+}
+
+.textLineSubOwn{
+    text-decoration: underline !important;
+ }
+
+.textItalicOwn{
+    font-style: italic !important;
 }
 
 .textoReadingH2,
@@ -1226,7 +1243,7 @@ figure.zoom img {
     border-radius: 10px;
     position: fixed;
     bottom: 28px;
-    right: 80px;
+    left: 20px;
 }
 
 .containerSizeButtonsAlone{
@@ -1237,12 +1254,32 @@ figure.zoom img {
     border-radius: 10px;
     position: fixed;
     bottom: 28px;
-    right: 28px;
+    left: 20px;
+}
+
+.containerModifyTextButtons{
+    width: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 28px;
+    left: 210px;
+}
+
+@media (max-width: 500px) {
+    .containerModifyTextButtons{
+        bottom: 68px;
+        left: 20px;
+    }
 }
 
 .containerSizeButtonsOne,
 .containerSizeButtonsTwo,
-.containerSizeButtonsThree {
+.containerSizeButtonsThree,
+.containerSizeButtonBold,
+.containerSizeButtonItalic{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all .1s ease-in-out;
 }
@@ -1261,8 +1298,26 @@ figure.zoom img {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.containerSizeButtonBold:hover,
+.containerSizeButtonItalic:hover {
+    background-color: #2c4968;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    
+}
+
+.containerSizeButtonBold:active,
+.containerSizeButtonItalic:active {
+    background-color: #1a232c;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .containerSizeTextButton {
     background-color: #1a232c !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+.containerModifyTextButton {
+    background-color: #2c2c2c !important;
+    color: #fff;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
 }
 
@@ -1297,4 +1352,43 @@ figure.zoom img {
     justify-content: center;
     align-items: center;
     padding-bottom: 8px;
+}
+
+.containerSizeButtonBold {
+    background-color: #436a94;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.containerSizeButtonItalic {
+    background-color: #436a94;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.containerSizeButtonSpaceLine {
+    background-color: #436a94;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+/*Listado fuentes*/
+@media (max-width: 500px) {
+    .listadoFuentes{
+        overflow-x: scroll;
+    }
 }

@@ -147,3 +147,32 @@ for(var i = 0; i < textSizeThree.length; i++){
         reemplazoH1H2porH3();
     })
 }
+
+//Para los botones en bold e italic y el space line
+//Bold
+$('.textChangeBold').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textBoldOwn')
+});
+
+//Italic
+$('.textChangeItalic').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textItalicOwn')
+});
+
+//SpaceLine
+$('.textChangeSpaceLine').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textSpaceLineOwn')
+});
+
+//Underline
+$('.textChangeUnderline').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textLineSubOwn')
+});
