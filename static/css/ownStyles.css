@@ -1037,3 +1037,9 @@ figure.zoom img {
         font-size: 14px;
     }
 }  
+
+.form-check-input{
+    width: 1.3em !important;
+    height: 1.3em !important;
+    margin-right: 5px !important;
+}
