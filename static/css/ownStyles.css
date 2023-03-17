@@ -1229,6 +1229,17 @@ figure.zoom img {
     right: 80px;
 }
 
+.containerSizeButtonsAlone{
+    width: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+}
+
 .containerSizeButtonsOne,
 .containerSizeButtonsTwo,
 .containerSizeButtonsThree {
