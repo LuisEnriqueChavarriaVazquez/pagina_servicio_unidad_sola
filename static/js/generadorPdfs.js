@@ -88,6 +88,8 @@ generarDocumento.addEventListener('click', () => {
         colores -= 4;
     }
 
-    doc.save('a4.pdf');
-    window.open(doc.output('bloburl'))
+    //doc.save('a4.pdf');
+    //window.open(doc.output('bloburl'))
+    let previewPDF = document.getElementById('previewPDF');
+    previewPDF.setAttribute('src', doc.output('bloburl'));
 })
