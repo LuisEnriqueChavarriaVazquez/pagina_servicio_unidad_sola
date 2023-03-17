@@ -16,3 +16,11 @@ fsLightboxInstances["vector4"].props.onOpen = function () {}
 fsLightboxInstances["vector5"].props.onOpen = function () {}
 fsLightboxInstances["tabla1"].props.onOpen = function () {}
 fsLightboxInstances["tabla2"].props.onOpen = function () {}
+
+
+fsLightboxInstances["tuto1"].props.onOpen = function () {}
+fsLightboxInstances["tuto2"].props.onOpen = function () {}
+fsLightboxInstances["tuto3"].props.onOpen = function () {}
+fsLightboxInstances["tuto4"].props.onOpen = function () {}
+fsLightboxInstances["tuto5"].props.onOpen = function () {}
+fsLightboxInstances["tuto6"].props.onOpen = function () {}

@@ -33,6 +33,16 @@
   <!--Tamaño del texto-->
   <script defer src="static/js/textsizer.js"></script>
 
+  <!--Manual digital-->
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+  <script defer src="static/js/owl.carousel.min.js"></script>
+  <script defer src="static/js/manualUsuarioDigital.js"></script>
+
+  <!--Carousel-->
+  <script defer src="static/js/imageZoomed.js"></script>
+  <script defer src="static/js/fslightbox.js"></script>
+
+
 </head>
 
 <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
@@ -565,42 +575,84 @@
 
       <div class="marginPersonalIntro">
         <div class="titleSuperior">
-          Manual de usuario
+          Manual de usuario (Documento)
         </div>
+        <br>
         <div class="card">
           <div class="card-body">
-            <p class="card-text textoReadingH2">
-              Da click en el enlace para descargar el <b>manual de usuario.</b>
-            </p>
             <div class="d-grid gap-2">
               <a href="./manual_usuario.pdf" target="_blank" download="manualUsuario.pdf"
                 class="btn btn-secondary btn-lg">Descargar</a>
             </div>
           </div>
         </div>
-        <div class="imagenDefaultContainer">
+
+        <br>
+        <div class="titleSuperior">
+          Manual de usuario (Digital)
+        </div>
+        <!--Carousel-->
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Menús</h5>
+                <a data-fslightbox="tuto1" href="static/vectores/tuto1_menu.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sección de inicio</h5>
+                <a data-fslightbox="tuto2" href="static/vectores/tuto2_inicio.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner3.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sección de contenidos</h5>
+                <a data-fslightbox="tuto3" href="static/vectores/tuto2_inicio.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner4.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sección glosario</h5>
+                <a data-fslightbox="tuto4" href="static/vectores/tuto2_inicio.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner5.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sección referencias</h5>
+                <a data-fslightbox="tuto5" href="static/vectores/tuto2_inicio.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="static/vectores/tutorialBanner6.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sección referencias</h5>
+                <a data-fslightbox="tuto6" href="static/vectores/tuto2_inicio.png"class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="imagenDefaultContainer">
           <img class="imagenDefault" src="static/img/icons/manual.png">
-        </div>
+        </div> -->
       </div>
-      <br><br><br>
-      <!--Menu de configuración de textos-->
-      <section class="containerModifyTextButtons">
-        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
-        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
-        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
-        </div>
-        <div class="containerSizeButtonItalic textChangeHighlight"><i class="bi bi-input-cursor-text"></i></div>
-        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
-        </div>
-      </section>
-      <section class="containerSizeButtons">
-        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
-        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i class="bi bi-type-h2"></i></div>
-        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
-        </div>
-        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
-        </div>
-      </section>
     </div>
   </div>
 
