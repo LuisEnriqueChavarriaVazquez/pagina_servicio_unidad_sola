@@ -383,6 +383,14 @@ figure.zoom img {
     }
 }
 
+
+@media (max-width: 500px) {
+    .containerMenuAndContent-segundaSeccion {
+        padding: 0px;
+    }
+}
+
+
 .cardsPaginaContenidoList {
     display: grid;
     grid-template-columns: 1fr;
@@ -795,14 +803,14 @@ figure.zoom img {
     }
 
     .titleSuperior {
-        margin: 0 0 10px 0;
+        margin: 0 0 0 0;
         padding: 8px 20px;
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 700;
-        background-color: #4b79aa;
-        border: #2e4d6e solid 1px;
+        background-color: #578cc4;
+        border: #2e4d6e solid 0px;
         color: #fcfcfc;
-        border-radius: 6px;
+        border-radius: 0px;
     }
 }
 
@@ -916,6 +924,37 @@ figure.zoom img {
 
 .cardLevelThree {
     background-color: #f7f7f7;
+}
+
+@media (max-width: 500px) {
+    .card-body{
+        margin: 0px !important;
+        padding: 10px !important;
+    }
+
+    .cardLevelOne {
+        background-color: #dadada;
+        border: #cfcfcf 0px solid;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 3px !important;
+    }
+
+    .cardLevelOneMarginAdjust{
+        padding: 5px !important;
+    }
+    
+    .cardLevelTwo {
+        background-color: #e7e7e7;
+        margin: 4.5px;
+        padding: 0px;
+    }
+    
+    .cardLevelThree {
+        background-color: #f7f7f7;
+        margin: 4.5px;
+        padding: 0px;
+    }
 }
 
 /*Cargador*/
