@@ -83,17 +83,33 @@
             Material de apoyo
         </div>
 
-        <div class="card" style="width: 100%;">
-            <div class="card-body">
-                <p class="card-text textoReading">
-                    Da click en el enlace para descargar el material de apoyo
-                </p>
-                <div class="d-grid gap-2">
-                    <a href="./manual_usuario.pdf" target="_blank" download="manualUsuario"
-                        class="btn btn-secondary btn-lg">Descargar</a>
+        <section class="cardsPaginaContenidoGrid">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text textoReading">
+                        Da click en el enlace para descargar los <b>material de apoyo</b> proporcionados por su docente.
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a href="./manual_usuario.pdf" target="_blank" download="manualUsuario.pdf"
+                            class="btn btn-secondary btn-lg">Descargar</a>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text textoReading">
+                        Da click en el enlace para descargar la <b>aplicación oficial (beta Android Nougat o
+                            superior)</b>
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a href="./static/apk/unidad_4.apk" target="_blank" download="unidad_4.apk"
+                            class="btn btn-secondary btn-lg">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <div class="imagenDefaultContainer mt-3">
             <img class="imagenDefault" src="static/img/icons/materialApoyo.png">
         </div>
@@ -117,15 +133,11 @@
             </div>
         </div>
         <div class="footerContainerTwo">
-            <button type="button" class="mt-3 btn btn-secondary">
-                <i class="bi bi-question-circle"></i> Manual
-            </button>
-            <button type="button" class="mt-3 btn btn-secondary">
-                <i class="bi bi-tools"></i> Requerimientos
-            </button>
-            <button type="button" class="mt-3 btn btn-secondary">
-                <i class="bi bi-person-lines-fill"></i> Contacto
-            </button>
+            <a href="./manual_usuario.pdf" target="_blank" download="manualUsuario.pdf">
+                <button type="button" class="mt-3 btn btn-secondary">
+                    <i class="bi bi-question-circle"></i> Manual de usuario
+                </button>
+            </a>
         </div>
     </footer>
 
