@@ -148,10 +148,28 @@ for(var i = 0; i < textSizeThree.length; i++){
     })
 }
 
+
+//Estado de los botones
+let stateCero = 0;
+let stateOne = 0;
+let stateTwo = 0;
+let stateThree = 0;
+let stateFour = 0;
+let stateFive = 0;
+
 //Para los botones en bold e italic y el space line
 //Bold
 $('.textChangeBold').click( function() {
     $(this).toggleClass('containerSizeTextButton');
+
+    if(stateCero == 0){
+        stateCero = 1;
+        $('.textChangeBold').addClass('containerSizeTextButton');
+    }else{
+        stateCero = 0;
+        $('.textChangeBold').removeClass('containerSizeTextButton');
+    }
+
     //Accedemos a los textos
     $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textBoldOwn')
 });
@@ -159,6 +177,15 @@ $('.textChangeBold').click( function() {
 //Italic
 $('.textChangeItalic').click( function() {
     $(this).toggleClass('containerSizeTextButton');
+
+    if(stateOne == 0){
+        stateOne = 1;
+        $('.textChangeItalic').addClass('containerSizeTextButton');
+    }else{
+        stateOne = 0;
+        $('.textChangeItalic').removeClass('containerSizeTextButton');
+    }
+
     //Accedemos a los textos
     $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textItalicOwn')
 });
@@ -166,6 +193,15 @@ $('.textChangeItalic').click( function() {
 //SpaceLine
 $('.textChangeSpaceLine').click( function() {
     $(this).toggleClass('containerSizeTextButton');
+
+    if(stateTwo == 0){
+        stateTwo = 1;
+        $('.textChangeSpaceLine').addClass('containerSizeTextButton');
+    }else{
+        stateTwo = 0;
+        $('.textChangeSpaceLine').removeClass('containerSizeTextButton');
+    }
+
     //Accedemos a los textos
     $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textSpaceLineOwn')
 });
@@ -173,6 +209,48 @@ $('.textChangeSpaceLine').click( function() {
 //Underline
 $('.textChangeUnderline').click( function() {
     $(this).toggleClass('containerSizeTextButton');
+
+    if(stateThree == 0){
+        stateThree = 1;
+        $('.textChangeUnderline').addClass('containerSizeTextButton');
+    }else{
+        stateThree = 0;
+        $('.textChangeUnderline').removeClass('containerSizeTextButton');
+    }
+
     //Accedemos a los textos
     $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textLineSubOwn')
+});
+
+//Highlight
+$('.textChangeHighlight').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+
+    if(stateFour == 0){
+        stateFour = 1;
+        $('.textChangeHighlight').addClass('containerSizeTextButton');
+    }else{
+        stateFour = 0;
+        $('.textChangeHighlight').removeClass('containerSizeTextButton');
+    }
+
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textHighlightOwn')
+});
+
+
+//Align texts
+$('.textAlignLeft').click( function() {
+    $(this).toggleClass('containerSizeTextButton');
+
+    if(stateFive == 0){
+        stateFive = 1;
+        $('.textAlignLeft').addClass('containerSizeTextButton');
+    }else{
+        stateFive = 0;
+        $('.textAlignLeft').removeClass('containerSizeTextButton');
+    }
+
+    //Accedemos a los textos
+    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textAlignLeftOwn')
 });

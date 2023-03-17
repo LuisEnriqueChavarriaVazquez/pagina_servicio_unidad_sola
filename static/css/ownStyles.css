@@ -816,16 +816,28 @@ figure.zoom img {
 }
 
 .textBoldOwn{
-    font-weight: 650 !important;
+    font-weight: 700 !important;
 }
 
 .textSpaceLineOwn{
-   line-height: 25px !important;
+   line-height: 22px !important;
 }
+
+.textAlignLeftOwn{
+    text-align: left !important;
+ }
 
 .textLineSubOwn{
     text-decoration: underline !important;
  }
+
+.textHighlightOwn{
+    background-color: #c9c9c9 !important;
+    color: #2c2c2c;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 .textItalicOwn{
     font-style: italic !important;
@@ -1236,9 +1248,9 @@ figure.zoom img {
 
 /*Form de los textos*/
 .containerSizeButtons {
-    width: 180px;
+    width: 200px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     border-radius: 10px;
     position: fixed;
@@ -1247,9 +1259,9 @@ figure.zoom img {
 }
 
 .containerSizeButtonsAlone{
-    width: 180px;
+    width: 200px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     border-radius: 10px;
     position: fixed;
@@ -1258,14 +1270,14 @@ figure.zoom img {
 }
 
 .containerModifyTextButtons{
-    width: 180px;
+    width: 200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     border-radius: 10px;
     position: fixed;
     bottom: 28px;
-    left: 210px;
+    left: 225px;
 }
 
 @media (max-width: 500px) {
@@ -1279,7 +1291,8 @@ figure.zoom img {
 .containerSizeButtonsTwo,
 .containerSizeButtonsThree,
 .containerSizeButtonBold,
-.containerSizeButtonItalic{
+.containerSizeButtonItalic,
+.containerSizeButtonSpaceLine{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all .1s ease-in-out;
 }
