@@ -88,5 +88,7 @@ generarDocumento.addEventListener('click', () => {
         colores -= 4;
     }
 
-    doc.save('a4.pdf');
+    doc.save('resultado_evalaucion.pdf');
+    //let previewPDF = document.getElementById('previewPDF');
+    //previewPDF.setAttribute('src', doc.output('bloburl'));
 })
