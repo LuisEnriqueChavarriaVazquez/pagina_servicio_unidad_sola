@@ -154,7 +154,7 @@ let stateCero = 0;
 let stateOne = 0;
 let stateTwo = 0;
 let stateThree = 0;
-let stateFour = 0;
+let stateFour = 1;
 let stateFive = 0;
 
 //Para los botones en bold e italic y el space line
@@ -229,13 +229,12 @@ $('.textChangeHighlight').click( function() {
     if(stateFour == 0){
         stateFour = 1;
         $('.textChangeHighlight').addClass('containerSizeTextButton');
+        $(".idFacto").addClass('textoResaltadoFacto');
     }else{
         stateFour = 0;
         $('.textChangeHighlight').removeClass('containerSizeTextButton');
+        $(".idFacto").removeClass('textoResaltadoFacto');
     }
-
-    //Accedemos a los textos
-    $(".textoDinamicoIdentificador,.textoReadingH1,.textoReadingH2,.textoReadingH3").toggleClass('textHighlightOwn')
 });
 
 

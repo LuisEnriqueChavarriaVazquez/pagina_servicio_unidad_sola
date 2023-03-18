@@ -816,6 +816,14 @@ figure.zoom img {
     transition: all .1 ease-in-out;
 }
 
+.textoResaltadoFacto {
+    font-weight: 650;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    padding: 0px 8px;
+    color: #424242;
+}
+
 .textBoldOwn {
     font-weight: 700 !important;
 }
@@ -833,8 +841,8 @@ figure.zoom img {
 }
 
 .textHighlightOwn {
-    background-color: #c9c9c9 !important;
-    color: #2c2c2c;
+    background-color: #444444 !important;
+    color: #e7e7e7;
     font-weight: 600;
     border-radius: 5px;
     padding: 5px;
@@ -1409,7 +1417,7 @@ figure.zoom img {
 
 /*Manual digital*/
 
-.item{
+.item {
     margin-top: 30px;
     margin-bottom: 40px;
     transition: all .2s ease;
