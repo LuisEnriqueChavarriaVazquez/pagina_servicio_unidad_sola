@@ -818,10 +818,10 @@ figure.zoom img {
 
 .textoResaltadoFacto {
     font-weight: 650;
-    background-color: #c9c9c9;
+    background-color: #93BFCF;
     border-radius: 5px;
     padding: 0px 8px;
-    color: #424242;
+    color: #434242;
 }
 
 .textBoldOwn {
@@ -1212,8 +1212,8 @@ figure.zoom img {
 }
 
 .mensajeCorrecta {
-    color: #298552;
-    background-color: #b5fdd6;
+    color: #F8FFDB;
+    background-color: #5D9C59;
     padding: 10px 20px;
     border-radius: 6px;
     font-weight: 600;
@@ -1221,8 +1221,8 @@ figure.zoom img {
 }
 
 .mensajeIncorrecta {
-    color: #792323;
-    background-color: #ffa5a5;
+    color: #F1DBBF;
+    background-color: #A62349;
     padding: 10px 20px;
     border-radius: 6px;
     font-weight: 600;
