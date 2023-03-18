@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Contenidos</title>
+    <link rel="shortcut icon" href="static/img/ipn.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="static/fonts/roboto.css">
+
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/ownStyles.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Script para la evaluación-->
+    <script defer src="static/js/evaluacion_unidad.js"></script>
+    <!--JS-->
+    <script defer src="static/js/menuLateral.js"></script>
+    <script defer src="static/js/imageZoomed.js"></script>
+
+    <!--Cargador de la pagina-->
+    <script defer src="static/js/loader.js"></script>
+
+    <!--Bloqueo de copias-->
+    <script defer src="static/js/noCopy.js"></script>
+
+    <!--Formulas matematicas-->
+    <script defer src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script defer src="static/js/formulas.js"></script>
+
+    <!--Generador de PDFS-->
+    <script defer src="static/js/jspdf.min.js"></script>
+    <script defer src="static/js/generadorPdfs.js"></script>
+
+    <!--Fecha y tiempo actual-->
+    <script defer src="static/js/fechaActual.js"></script>
+    <script defer src="static/js/tiempoEnvio.js"></script>
+
+    <!--Contador de intentos-->
+    <script defer src="static/js/intentosActuales.js"></script>
+
+    <!--Carousel-->
+    <script defer src="static/js/fslightbox.js"></script>
+
+    <!--Tamaño del texto-->
+    <script defer src="static/js/textsizer.js"></script>
+
+</head>
+
+<body>
+    <!--Div para la carga de la página-->
+    <div class="loader"></div>
+
+    <section class="navSuperior">
+        <div class="navSuperior-icons">
+          <img id="iconIpn" src="static/img/ipn_blanco.png">
+          <img id="iconEscom" src="static/img/escom_blanco.png">
+        </div>
+        <div class="navSuperior-texts">
+          <h4 class="navSuperior-title text-light">Recurso Didáctico Digital</h4>
+          <h5 class="navSuperior-desc text-light">Unidad 4: Elementos de matemáticas
+            financieras y la planeación financiera</h5>
+        </div>
+      </section>
+
+    <nav id="navPersonal" class="navbar nav-fill navbar-expand-lg bg-body-tertiary" style="background: #5086c1;">
+        <div class="container-fluid">
+            <button id="navbarIconPersonal" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-linkTextos text-light" href="index.html">Inicio</a>
+                    </li>
+                    <button type="button" class="btn btn-light nav-linkTextos"
+                        href="contenidos.html">Contenidos</button>
+                    <li class="nav-item">
+                        <a class="nav-link nav-linkTextos text-light" href="materialDeApoyo.html">Material de apoyo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-linkTextos text-light" href="glosario.html">Glosario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-linkTextos text-light" href="referencias.html">Fuentes de consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex align-items-start">
+        <section class="containerMenuAndContentClose">
+            <div class="containerMenuAndContent-primeraSeccion sideButtonPersonal nav flex-column nav-pills me-3 hideElement"
+                id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <!--Botones de contenido-->
+                <button class="justifyPersonal nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-intro" type="button" role="tab" aria-controls="v-pills-intro"
+                    aria-selected="false"><i class="bi bi-door-open text-primary"></i> &nbsp;&nbsp;Introducción</button>
+
+                <button class="justifyPersonal nav-link" id="v-pills-4.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.1" type="button" role="tab" aria-controls="v-pills-4.1"
+                    aria-selected="true">4.1 Valor del dinero en el tiempo</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.1.1" type="button" role="tab" aria-controls="v-pills-4.1.1"
+                    aria-selected="false">4.1.1 Valor futuro y valor presente </button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.1.1.1" type="button" role="tab" aria-controls="v-pills-4.1.1.1"
+                    aria-selected="false">4.1.1.1 Valor futuro de cantidades únicas</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1.2-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.1.1.2" type="button" role="tab" aria-controls="v-pills-4.1.1.2"
+                    aria-selected="false">4.1.1.2 Valor presente</button>
+                <button class="justifyPersonal nav-link" id="v-pills-4.2-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.2" type="button" role="tab" aria-controls="v-pills-4.2"
+                    aria-selected="false">4.2 Anualidades</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.2.1" type="button" role="tab" aria-controls="v-pills-4.2.1"
+                    aria-selected="false">4.2.1 Valor futuro de anualidades ordinarias</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.2-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.2.2" type="button" role="tab" aria-controls="v-pills-4.2.2"
+                    aria-selected="false">4.2.2 Valor presente de anualidades ordinarias</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.3-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.2.3" type="button" role="tab" aria-controls="v-pills-4.2.3"
+                    aria-selected="false">4.2.3 Valor futuro y valor presente de anualidades anticipadas</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.4-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.2.4" type="button" role="tab" aria-controls="v-pills-4.2.4"
+                    aria-selected="false">4.2.4 Anualidades y programa de amortización</button>
+                <button class="justifyPersonal nav-link" id="v-4.3-tab" data-bs-toggle="pill" data-bs-target="#v-4.3"
+                    type="button" role="tab" aria-controls="v-4.3" aria-selected="false">4.3 La planeación
+                    financiera</button>
+                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.3.1-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.3.1" type="button" role="tab" aria-controls="v-pills-4.3.1"
+                    aria-selected="false">4.3.1 El presupuesto maestro</button>
+                <button class="justifyPersonal nav-link" id="v-pills-4.4-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-4.4" type="button" role="tab" aria-controls="v-pills-4.4"
+                    aria-selected="false">4.4 Estados financieros proforma</button>
+                <!--Botones adicionales-->
+                <button class="justifyPersonal nav-link" id="v-pills-actividades-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-actividades" type="button" role="tab" aria-controls="v-pills-actividades"
+                    aria-selected="false"><i class="bi bi-book text-primary"></i> &nbsp;&nbsp;Actividades de
+                    aprendizaje</button>
+                <button class="justifyPersonal nav-link" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-evaluacion" type="button" role="tab" aria-controls="v-pills-evaluacion"
+                    aria-selected="false"><i
+                        class="bi bi-file-earmark-richtext text-primary"></i>&nbsp;&nbsp;Evaluación</button>
+                <button class="justifyPersonal nav-link" id="v-pills-cierre-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-cierre" type="button" role="tab" aria-controls="v-pills-cierre"
+                    aria-selected="false"><i class="bi bi-door-closed text-primary"></i> &nbsp;&nbsp;Cierre</button>
+            </div>
+            <div class="tab-content containerMenuAndContent-segundaSeccion" id="v-pills-tabContent">
+                <!--Introduccion-->
+                <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel"
+                    aria-labelledby="v-pills-intro-tab" tabindex="0">
+
+                    <div class="titleSuperior">
+                        Introducción
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                En esta unidad temática <span class="textoResaltadoFacto idFacto">te familiarizarás con algunas de las siguientes transacciones:</span>
+                            </p>
+
+                            <ol class="textoReadingH2">
+                                <li>
+                                    <span class="textoResaltadoFacto idFacto">Amortización de préstamos.</span>
+                                </li>
+                                <li>
+                                    <span class="textoResaltadoFacto idFacto">Pagos de arrendamiento.</span>
+                                </li>
+                                <li>
+                                    <span class="textoResaltadoFacto idFacto">Planeación de las finanzas</span> personales.
+                                </li>
+                                <li>
+                                    Calcular el <span class="textoResaltadoFacto idFacto">valor de los ahorros en fechas futuras.</span>
+                                </li>
+                                <li>
+                                    Calcular el <span class="textoResaltadoFacto idFacto">monto que necesitas hoy para tener una cantidad específica</span> en una fecha
+                                    posterior.
+                                </li>
+                                <li>
+                                    Calcular el <span class="textoResaltadoFacto idFacto">tiempo necesario para lograr una meta financiera.</span>
+                                </li>
+                            </ol>
+
+                            <p class="card-text textoReadingH2">
+                                Para comprender cómo se realizan dichas transacciones y sobre todo para tomar las
+                                mejores decisiones al respecto, <span class="textoResaltadoFacto idFacto">necesitas considerar el valor del dinero en el tiempo a
+                                través de la aplicación de algunas fórmulas matemáticas.</span> Adicionalmente, también se
+                                requiere para la elaboración del <span class="textoResaltadoFacto idFacto">presupuesto maestro</span> con base en el cual se construyen
+                                los <span class="textoResaltadoFacto idFacto">estados financieros proforma o proyectados</span>, temas que abordaremos en esta unidad
+                                temática.
+                            </p>
+
+                            <div class="imagenDefaultContainer">
+                                <img class="imagenDefaultExtra" src="static/img/icons/introduccion.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Primer contenido-->
+                <div class="tab-pane fade" id="v-pills-4.1" role="tabpanel" aria-labelledby="v-pills-4.1-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.1 Valor del dinero en el tiempo
+                    </div>
+
+                    <div class="card cardMarginExtra">
+                        <h5 class="card-header textoReadingTitle">¿Qué es el valor del dinero en el tiempo?</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                El <span class="textoResaltadoFacto idFacto">valor del dinero en el tiempo es uno de los aspectos más
+                                importantes de las finanzas</span>; expliquemoslo de manera sencilla, si por ejemplo, en
+                                este momento <span class="textoResaltadoFacto idFacto">tienes $100 (cien pesos) valen más el día de hoy que en el futuro y
+                                esto se debe basicamente a que el día de hoy los puedes invertir y ganar
+                                rendimientos.</span> Sin embargo, esos mismos $100 (cien pesos) recibidos en el futuro <span class="textoResaltadoFacto idFacto">no
+                                tedrán el mismo poder adquisitivo que tienen el día de hoy</span>, dicho cambio en el valor
+                                del dinero tiene como principal causa el efecto inflacionario sobre los bienes y
+                                servicios que compramos. De tal manera que, <span class="textoResaltadoFacto idFacto">“la relación que existe entre el tiempo,
+                                el interés y el poder de compra del dinero se conoce como valor del dinero en el
+                                tiempo”</span> (Vidaurri, 2020, p.134)
+                            </p>
+                            <p class="card-text textoReadingH2">A medida que vayas avanzando en los subtemas de este
+                                FRDD
+                                irás comprendiendo mejor
+                                este interesante tema.</p>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Segundo contenido-->
+                <div class="tab-pane fade" id="v-pills-4.1.1" role="tabpanel" aria-labelledby="v-pills-4.1.1-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.1.1 Valor futuro y valor presente
+                    </div>
+
+                    <div class="card cardLevelOne">
+                        <div class="card-body cardLevelOneMarginAdjust">
+                            <p class="card-text textoReadingH2">
+                                Del valor del dinero en el tiempo hay dos conceptos básicos que
+                                debemos comprender:
+                            </p>
+
+                            <section class="cardsPaginaContenidoGrid">
+                                <div class="card cardMarginExtra">
+                                    <h5 class="card-header textoReadingTitle">Valor futuro</h5>
+                                    <div class="card-body">
+                                        <p class="card-text textoReadingH2">
+                                            Es el <span class="textoResaltadoFacto idFacto">efectivo que se recibirá en una fecha futura.</span> La técnica del valor
+                                            futuro
+                                            utiliza la capitalización para encontrar el valor futuro de cada flujo de
+                                            efectivo.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card cardMarginExtra">
+                                    <h5 class="card-header textoReadingTitle">Valor presente</h5>
+                                    <div class="card-body">
+                                        <p class="card-text textoReadingH2">
+                                            Término que se usa para referirse al <span class="textoResaltadoFacto idFacto">>valor actual del dinero.</span> La técnica del
+                                            valor
+                                            presente utiliza la tasa de descuento. Aunque el valor futuro es más
+                                            atractivo
+                                            por
+                                            naturaleza, el valor presente es más útil para la toma de decisiones
+                                            financieras
+                                            (Gitman, 2003)
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="card cardMarginExtra cardLevelTwo">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        El valor del dinero <span class="textoResaltadoFacto idFacto">se determina sobre los flujos de caja o flujos
+                                        de efectivo.</span> De acuerdo con Vidal y González (2014) el flujo de efectivo tiene
+                                        como
+                                        propósito determinar todas las entradas y salidas de dinero; es decir, los
+                                        ingresos,
+                                        costos, gastos e inversiones producidos por una empresa o proyecto en el futuro.
+                                        Siguiendo a Gitman (2012) los flujos de efectivo <span class="textoResaltadoFacto idFacto">(entradas y salidas de dinero)</span>
+                                        se
+                                        presentan como cantidades únicas (montos únicos), anualidades e ingreso mixto
+                                        (figura 4.1).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="imagenDefaultContainer">
+                                <p class="titleImageMine">Figura 4.1 Clasificación de los flujos de efectivo</p>
+                                <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                    style="background-image: url('static/vectores/vector 1.png')">
+                                    <img src="static/vectores/vector 1.png" class="imageZoomed imagenDefaultBig" />
+                                </figure>
+                                <p class="noteImageMine">Fuente: Gitman (2012).</p>
+                                <a data-fslightbox="vector1" class="zoomButtonMine"
+                                    href="static/vectores/vector 1.png"><i class="bi bi-zoom-in"></i></a>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Cantidad única</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">Cantidad global que se tiene actualmente (valor presente)</span> o que se espera en una
+                                        fecha futura (valor futuro); es cualquier cantidad que no se repite en forma
+                                        periódica; por ejemplo: <span class="textoResaltadoFacto idFacto">$100 pesos, $3,400 pesos o cualquier otra cantidad.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Anualidad</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Son cantidades iguales que se repiten periódicamente durante un determinado
+                                        tiempo.
+                                        <span class="textoResaltadoFacto idFacto">No necesariamente hace referencia a pagos anuales</span>, pueden ser quincenales,
+                                        mensuales, bimestrales etc. Las anualidades pueden ser: ordinarias, vencidas o
+                                        diferidas y anticipadas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Ingreso mixto</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Conjunto de flujos de efectivo periódicos y desiguales que no reflejan un patrón
+                                        en
+                                        particular. Por ejemplo, <span class="textoResaltadoFacto idFacto">para el período uno $5,000 pesos, para el período dos
+                                        $4,000 pesos, para el período tres $8,000 pesos, etc.</span>
+                                        <br>
+                                        En los siguientes subtemas se abordarán el <span class="textoResaltadoFacto idFacto">valor presente y valor futuro tanto
+                                        de
+                                        cantidades únicas</span>, así como de anualidades.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Tercer contenido-->
+                <div class="tab-pane fade" id="v-pills-4.1.1.1" role="tabpanel" aria-labelledby="v-pills-4.1.1.1-tab"
+                    tabindex="0">
+                    <div class="titleSuperior">
+                        4.1.1.1 Valor futuro de cantidades únicas
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelOne">
+                        <div class="card-body cardLevelOneMarginAdjust">
+                            <div class="card cardMarginExtra cardLevelTwo">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Este valor futuro de una cantidad única se puede determinar, al menos, de dos
+                                        formas:
+                                    </p>
+                                    <p class="card-text textoReadingH2"><span class="textoResaltadoFacto idFacto">a. Línea de flujo de efectivo</span></p>
+                                    <p class="card-text textoReadingH2"><span class="textoResaltadoFacto idFacto">b. Fórmula matemática</span></p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelThree">
+                                <h5 class="card-header textoReadingTitle">a. Línea de flujo de efectivo</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Ejemplo: En el supuesto que el día de hoy realizaras una <span class="textoResaltadoFacto idFacto">inversión de $100,000
+                                        pesos</span> con
+                                        vencimiento a 3 años con una tasa de interés anual del 10%  <span class="textoResaltadoFacto idFacto">¿Cuánto dinero
+                                        recibirás
+                                        al finalizar los tres años?</span>
+                                    </p>
+
+                                    <div class="card cardMarginExtra">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                <span class="textoResaltadoFacto idFacto">Hagamos los cálculos sobre la siguiente línea de flujo de efectivo:</span> A
+                                                medida que
+                                                vayas
+                                                avanzando en los subtemas de este FRDD
+                                                irás comprendiendo mejor
+                                                este interesante tema.
+                                            </p>
+                                        </div>
+                                        <div class="imagenDefaultContainer">
+                                            <p class="titleImageMine">Figura 4.2 linea de flujo de efectivo</p>
+                                            <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                                style="background-image: url('static/vectores/vector 2.png')">
+                                                <img src="static/vectores/vector 2.png"
+                                                    class="imageZoomed imagenDefaultBig" />
+                                            </figure>
+                                            <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
+                                            </p>
+                                            <a data-fslightbox="vector2" class="zoomButtonMine"
+                                                href="static/vectores/vector 2.png"><i class="bi bi-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card cardMarginExtra">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                <span class="textoResaltadoFacto idFacto">Las cantidades que aparecen en la línea de flujo de efectivo
+                                                (figura 4.2)</span>, se calcularon de la siguiente forma (tabla 4.1):
+                                            </p>
+                                        </div>
+                                        <div class="imagenDefaultContainer">
+                                            <p class="titleImageMine">Tabla 4.1 Valor futuro de cantidades únicas</p>
+                                            <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                                style="background-image: url('static/vectores/tabla1.png')">
+                                                <img src="static/vectores/tabla1.png"
+                                                    class="imageZoomed imagenDefaultBig" />
+                                            </figure>
+                                            <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
+                                            </p>
+                                            <a data-fslightbox="tabla1" class="zoomButtonMine"
+                                                href="static/vectores/tabla1.png"><i class="bi bi-zoom-in"></i></a>
+                                        </div>
+                                        <div class="card cardMarginExtraTwo cardLevelTwo">
+                                            <div class="card-body">
+                                                <p class="card-text textoReadingH2">
+                                                    Como habrás notado usar la línea de flujo de efectivo <span class="textoResaltadoFacto idFacto">resulta
+                                                    sencillo y muy
+                                                    práctico</span> cuando se trata de pocos períodos de tiempo; sin embargo,
+                                                    puede ser
+                                                    laborioso cuando los cálculos son, por ejemplo, para 30 años o más.
+                                                    Para
+                                                    facilitar
+                                                    los cálculos contamos con la siguiente fórmula matemática:
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelThree">
+                                <h5 class="card-header textoReadingTitle">b. Fómula matemática</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        La fórmula para <span class="textoResaltadoFacto idFacto">calcular el valor futuro (VF)</span> de una cantidad única es:
+                                    </p>
+                                </div>
+                                <div class="contenedorFormula">
+                                    <p class="textoFormula">$$VF_n = {VP(1+i)^n}$$</p>
+                                </div>
+                                <div class="card cardMarginExtraTwo">
+                                    <div class="card-body">
+                                        <p class="card-text textoReadingH2">
+                                            Para el ejemplo que estamos trabajando quedaría:
+                                        </p>
+                                    </div>
+                                    <div class="contenedorFormula">
+                                        <p class="textoFormula">$$VF_n = {VP(1+i)^n} = (100,000)(1.10)^3 = 133,100$$</p>
+                                        <div class="infoFormula">
+                                            <p class="infoFormula_title">Donde: </p>
+                                            <p class="infoFormula_data">VP = Valor presente</p>
+                                            <p class="infoFormula_data">VF = Valor futuro</p>
+                                            <p class="infoFormula_data">i = Tasa de interés</p>
+                                            <p class="infoFormula_data">n = Período de tiempo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Cuarto contenido-->
+                <div class="tab-pane fade" id="v-pills-4.1.1.2" role="tabpanel" aria-labelledby="v-pills-4.1.1.2-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.1.1.2 Valor presente de cantidades únicas
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Ejemplo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Hasta el momento hemos <span class="textoResaltadoFacto idFacto">calculado el valor futuro de una cantidad
+                                única</span>, para encontrar el valor presente solo tienes que despejarlo de la
+                                fórmula.
+                            </p>
+                            <p class="card-text textoReadingH2">
+                                Sigamos trabajando con el <span class="textoResaltadoFacto idFacto">mismo ejemplo</span>, solo que ahora vamos a enfocarnos en el
+                                valor presente, y la pregunta es: <span class="textoResaltadoFacto idFacto">¿cuánto tendrías que depositar hoy en una
+                                cuenta
+                                que paga el 10% de interés anual para recibir, al término de 3 años $133,100?</span>
+                            </p>
+
+                            <div class="card cardMarginExtra">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Contamos con la fórmula de valor futuro de cantidades únicas:
+                                    </p>
+                                    <div class="contenedorFormula">
+                                        <p class="textoFormula">$$VF_n = {VP(1+i)^n}$$</p>
+                                    </div>
+                                    <p class="card-text textoReadingH2">
+                                        Despejamos el valor presente:
+                                    </p>
+                                    <div class="contenedorFormula">
+                                        <p class="textoFormula">$$VP = {VF\over(1+i)^n} =
+                                            {133,100\over(1+0.10)^3} = 100,000$$</p>
+                                    </div>
+                                    <p class="card-text textoReadingH2">
+                                        Al proceso de encontrar los valores presentes también se le conoce
+                                        como <span class="textoResaltadoFacto idFacto">descuento de flujos de efectivo</span>, dicho proceso es lo opuesto a la
+                                        capitalización (ver figura 4.2). Y da respuesta a la pregunta: “si puedo
+                                        ganar un
+                                        porcentaje i sobre mi dinero, por ejemplo el 10% <span class="textoResaltadoFacto idFacto">¿cuánto es lo máximo
+                                        que estaría
+                                        dispuesto(a) a pagar ahora por la oportunidad de recibir un valor futuro
+                                        de dinero
+                                        en “n” períodos a partir de hoy?</span> y la respuesta sería $100,000 pesos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Quinto contenido-->
+                <div class="tab-pane fade show" id="v-pills-4.2" role="tabpanel" aria-labelledby="v-pills-4.2-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.2 Anualidades
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Anualidades</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Una <span class="textoResaltadoFacto idFacto">anualidad es una serie de flujos de efectivo iguales y
+                                periódicos durante un determinado tiempo</span> (Besley, 2001; Gitman, 2012).
+                            </p>
+                            <p class="card-text textoReadingH2">
+                                Las anualidades pueden ser de dos tipos:
+                            </p>
+
+                            <section class="cardsPaginaContenidoGrid">
+                                <div class="card cardMarginExtra">
+                                    <h5 class="card-header textoReadingTitle">Ordinarias, vencidas o diferidas
+                                    </h5>
+                                    <div class="card-body">
+                                        <p class="card-text textoReadingH2">
+                                            <span class="textoResaltadoFacto idFacto">El flujo de efectivo (entrada o salida de efectivo) ocurre al final
+                                            de cada periodo</span>; estas anualidades son las más comunes en finanzas.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card cardMarginExtra">
+                                    <h5 class="card-header textoReadingTitle">Anticipadas</h5>
+                                    <div class="card-body">
+                                        <p class="card-text textoReadingH2">
+                                            El flujo de efectivo <span class="textoResaltadoFacto idFacto">(entrada o salida de efectivo)</span> ocurre al
+                                            inicio de cada periodo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <br>
+                            <p class="notaStyle textoReadingH2">Nota: en este curso nos centraremos en las
+                                anualidades ordinarias, vencidas o
+                                diferidas por ser las más utilizadas en el ámbito financiero. </p>
+
+
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Sexto contenido-->
+                <div class="tab-pane fade show" id="v-pills-4.2.1" role="tabpanel" aria-labelledby="v-pills-4.2.1-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.2.1 Valor futuro de anualidades ordinarias
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Ejemplo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Para explicar el valor futuro de anualidades ordinarias empecemos
+                                con este ejemplo: al final de cada año inviertes $10,000 pesos durante los
+                                próximos
+                                4 años a una tasa de interés del 10% anual. <span class="textoResaltadoFacto idFacto">¿Cuánto dinero obtendrás al
+                                finalizar el
+                                año 4?</span>
+                            </p>
+
+                            <p class="card-text textoReadingH2">
+                                Este problema se puede resolver de diferentes formas:
+                            </p>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">1. Utilizando la línea de flujo de
+                                    efectivo</h5>
+                                <div class="card-body">
+                                    <div class="imagenDefaultContainer">
+                                        <p class="titleImageMine">Figura 4.4 linea de flujo de efectivo</p>
+                                        <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                            style="background-image: url('static/vectores/vector 3.png')">
+                                            <img src="static/vectores/vector 3.png"
+                                                class="imageZoomed imagenDefaultBig" />
+                                        </figure>
+                                        <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y.
+                                            (2023).</p>
+                                        <a data-fslightbox="vector3" class="zoomButtonMine"
+                                            href="static/vectores/vector 3.png"><i class="bi bi-zoom-in"></i></a>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">Expliquemos como se obtuvieron los
+                                        cálculos en la linea de flujo de
+                                        efectivo</p>
+
+                                    <p class="card-text textoReadingH2"><span class="textoResaltadoFacto idFacto">Invertimos $10,000 pesos al final del
+                                        periodo 1,
+                                        esos $10,000
+                                        pesos
+                                        invertidos a una tasa del 10% anual</span> ganan $1,100 pesos con lo que al
+                                        final del
+                                        período 2 se tendrían $11,000 pesos; <span class="textoResaltadoFacto idFacto">al final del período 2 se
+                                        invierten otros
+                                        $10,000 pesos sumando un total de $21,000 pesos. Dicha cantidad se
+                                        reinvierte y
+                                        gana
+                                        $2,100 pesos</span>, entonces al final del período 3 se tienen $23,100
+                                        pesos que se
+                                        suman a
+                                        los $10,000 pesos que se están invirtiendo cada año dando un total
+                                        de $33,100
+                                        pesos
+                                        cantidad que se invierte y gana $3,310 dando un total de $36,410
+                                        pesos al final
+                                        del
+                                        período 4 y se le suman los $10,000 pesos <span class="textoResaltadoFacto idFacto">(que ya no ganan
+                                        intereses)</span> en razon
+                                        de
+                                        que termina el plazo de la inversión, de tal manera que al final se
+                                        tienen
+                                        $46,410
+                                        pesos.</p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">2. Calculando el valor futuro de los
+                                    pagos individuales y después
+                                    sumarlos</h5>
+
+                                &nbsp;
+                                <br>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 textoImportant primerContainerSpecial">Formula</p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$VF_n = {VP(1+i)^n}$$</p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 primerContainerSpecial">El VF del periodo 1 se capitaliza
+                                        en
+                                        3 periodos.</p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$VF_1 = {10,000(1+i)^3} =
+                                        13,310$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 primerContainerSpecial">El VF del periodo 2 se capitaliza
+                                        en
+                                        2 periodos.</p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$VF_2 = {10,000(1+i)^2} =
+                                        12,100$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 primerContainerSpecial">El VF del periodo 3 se capitaliza
+                                        en
+                                        1 periodo.</p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$VF_3 = {10,000(1+i)^1} =
+                                        11,000$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 primerContainerSpecial">El VF del periodo 4 no se
+                                        capitaliza.
+                                    </p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$VF_4 = {10,000(1+i)^0} =
+                                        10,000$$
+                                    </p>
+                                </div>
+                                <div class="specialContainerFormulaGrid">
+                                    <p class="textoReadingH2 textoImportant primerContainerSpecial">Total.</p>
+                                    <p class="textoReadingH2 segundoContainerSpecial">$$46,410$$</p>
+                                </div>
+                                <br>
+                                &nbsp;
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">3. Utilizando la fórmula de valor
+                                    futuro de una anualidad
+                                    ordinaria</h5>
+
+                                <div class="contenedorFormula marginPersonal">
+                                    <p class="textoFormula">$$VF_An = PA{(1+i)^n - 1\over i} = 10,000{(1+0.10)^4 - 1
+                                        \over 0.10} = 46,410$$</p>
+                                    <div class="infoFormula">
+                                        <p class="infoFormula_title">Donde: </p>
+                                        <p class="infoFormula_data">VP<sub>An</sub> = Valor futuro de una anualidad
+                                            ordinaria a un periodo de tiempo</p>
+                                        <p class="infoFormula_data">PA = Valor del pago igual o anualidad</p>
+                                        <p class="infoFormula_data">i = Tasa de descuento</p>
+                                        <p class="infoFormula_data">n = Período de tiempo</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Ejemplo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Veamos un ejemplo en el que se podría utilizar la anualidad
+                                ordinaria
+                            </p>
+
+                            <p class="card-text textoReadingH2">
+                                <span class="textoResaltadoFacto idFacto">Imagina que a la edad de 20 años empiezas a realizar depósitos
+                                anuales de $5,000 en una cuenta de ahorro que gana un 5% anual.</span> Al final de 40
+                                años,
+                                cuando tengas 60 años habrás ahorrado ($5,000) (40años) = 200,000; <span class="textoResaltadoFacto idFacto">sin embargo,
+                                al
+                                retirar el dinero recibirás:</span>
+                            </p>
+
+                            <div class="contenedorFormula">
+                                <p class="textoFormula">$$VF_An = PA{(1+i)^n - 1\over i} = 5,000{(1+0.5)^40 - 1 \over
+                                    0.05} = $603,998.8712$$</p>
+                            </div>
+
+                            <p class="card-text textoReadingH2">
+                                Así, el valor del dinero en el tiempo habrá permitido que tus
+                                ahorros <span class="textoResaltadoFacto idFacto">generen rendimientos compuestos durante 40 años.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Septimo contenido-->
+                <div class="tab-pane fade show" id="v-pills-4.2.2" role="tabpanel" aria-labelledby="v-pills-4.2.2-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.2.2 Valor presente de anualidades ordinarias
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelOne">
+                        <div class="card-body cardLevelOneMarginAdjust">
+
+                            <div class="card cardMarginExtra cardLevelTwo">
+                                <h5 class="card-header textoReadingTitle">Explicación</h5>
+                                <div class="card-body">
+
+                                    <p class="card-text textoReadingH2">
+                                        Utilizando los datos del ejemplo anterior (visto en valor futuro de anualidades
+                                        ordinarias), ahora vamos a <span class="textoResaltadoFacto idFacto">determinar el valor presente de una anualidad
+                                        ordinaria.</span>
+                                    </p>
+
+                                    <p class="card-text textoReadingH2">
+                                        Replanteamos el problema:
+                                    </p>
+
+                                    <div class="card cardMarginExtra cardLevelThree">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                Al final de cada año inviertes $10,000 durante los próximos 4 años a una
+                                                tasa de interés del 10% anual <span class="textoResaltadoFacto idFacto">¿cupal es el valor presente de la
+                                                anualidad ordinaria?</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">
+                                        Para su cálculo cuentas con al menos dos opciones:
+                                    </p>
+
+                                    <div class="card cardMarginExtra">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                1. Utilizando la <span class="textoResaltadoFacto idFacto">línea de flujo de efectivo y la fórmula de valor
+                                                presente</span>como si se tratara de cantidades únicas
+                                                <br>
+                                                2. Fórmula de <span class="textoResaltadoFacto idFacto">valor presente de una anualidad ordinaria</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelThree">
+                                <h5 class="card-header textoReadingTitle">Linea de flujo y formula</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Expliquemos cada una de dichas opciones.
+                                    </p>
+
+                                    <div class="card cardMarginExtra">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                Cálculo del valor presente de anualidades ordinarias
+                                                utilizando la
+                                                <span class="textoResaltadoFacto idFacto">línea de flujo de efectivo (figura 4.5) y la fórmula de valor presente</span>
+                                                como
+                                                si se
+                                                tratara de cantidades únicas.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="imagenDefaultContainer">
+                                        <p class="titleImageMine">Figura 4.5 linea de flujo de efectivo</p>
+                                        <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                            style="background-image: url('static/vectores/vector 4.png')">
+                                            <img src="static/vectores/vector 4.png"
+                                                class="imageZoomed imagenDefaultBig" />
+                                        </figure>
+                                        <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
+                                        </p>
+                                        <a data-fslightbox="vector4" class="zoomButtonMine"
+                                            href="static/vectores/vector 4.png"><i class="bi bi-zoom-in"></i></a>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">
+                                        El valor presente que se muestra en la figura anterior, se
+                                        obtuvo
+                                        de la siguiente forma:
+                                    </p>
+
+                                    <div class="contenedorFormulaCompacto marginPersonal">
+                                        <p class="textoFormulaCompacto textoFormula">$$VP = {10,000 \over 1.10^1} =
+                                            9,090.90$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$VP = {10,000 \over (1 + 0.10)^2}
+                                            = 8,264.46$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$VP = {10,000 \over (1 + 0.10)^3}
+                                            = 7,513.14$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$VP = {10,000 \over (1 + 0.10)^4}
+                                            = 6,830.13$$</p>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">
+                                        El valor presente que se muestra en la figura anterior, se
+                                        obtuvo
+                                        de la siguiente forma:
+                                    </p>
+
+                                    <div class="contenedorFormula marginPersonal">
+                                        <p class="textoFormula">$$VP_An = PA\left({{1- {1 \over (1+i)^n}} \over
+                                            i}\right)$$</p>
+                                        <div class="infoFormula">
+                                            <p class="infoFormula_title">Donde: </p>
+                                            <p class="infoFormula_data">P = Valor presente de una anualidad ordinaria a
+                                                un periodo de tiempo
+                                            </p>
+                                            <p class="infoFormula_data">PA = Valor del pago igual o anualidad</p>
+                                            <p class="infoFormula_data">i = Tasa de descuento</p>
+                                            <p class="infoFormula_data">n = Período de tiempo</p>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">
+                                        Para el ejemplo que estamos trabajando tenemos los
+                                        siguientes
+                                        datos:
+                                    </p>
+
+                                    <div class="contenedorFormulaCompacto marginPersonal">
+                                        <p class="textoFormulaCompacto textoFormula">$$PA = 10,000$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$i = 10%$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$n = 4$$</p>
+                                    </div>
+
+                                    <p class="card-text textoReadingH2">
+                                        Sustituimos los valores en la fórmula:
+                                    </p>
+
+                                    <div class="contenedorFormulaCompacto marginPersonal">
+                                        <p class="textoFormulaCompacto textoFormula">$$PA = 10,000$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$i = 10%$$</p>
+                                        <p class="textoFormulaCompacto textoFormula">$$n = 4$$</p>
+                                    </div>
+
+                                    <div class="card cardMarginExtra cardLevelTwo">
+                                        <div class="card-body">
+                                            <p class="card-text textoReadingH2">
+                                                <span class="textoResaltadoFacto idFacto">El resultado: $31,698.63</span> corresponde al valor presente
+                                                considerando
+                                                todas las anualidades juntas.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Octavo contenido-->
+                <div class="tab-pane fade show" id="v-pills-4.2.3" role="tabpanel" aria-labelledby="v-pills-4.2.3-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.2.3 Valor futuro y valor presente de anualidades anticipadas
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Ejemplo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Al inicio de cada año invertimos $10,000 durante los
+                                próximos 4 años a una tasa de interés del 10% anual. <span class="textoResaltadoFacto idFacto">¿Cuánto dinero se obtiene
+                                al
+                                finalizar el periodo de inversión?</span>
+                            </p>
+                        </div>
+
+                        <div class="card cardMarginExtraTwo">
+                            <div class="card-body">
+                                <p class="card-text textoReadingH2">
+                                    <span class="textoResaltadoFacto idFacto">De igual manera que en los ejercicios anteriores nos apoyaremos en la línea
+                                    de
+                                    flujo
+                                    de efectivo (Figura 4.6)</span>, en la que se puede apreciar que nuestra primera
+                                    inversión
+                                    de $10,000 (la que se realiza en el año 0) ganará intereses durante los años
+                                    1,
+                                    2, 3
+                                    y 4; la inversión que se realiza en el año 1 ganará intereses durante los
+                                    años
+                                    2,3 y
+                                    4; y así sucesivamente; finalmente, la inversión que se hace en el año 3
+                                    gana
+                                    intereses durante un año.
+                                </p>
+
+                                <div class="imagenDefaultContainer">
+                                    <p class="titleImageMine">Figura 4.6 Linea de flujo de efectivo</p>
+                                    <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                        style="background-image: url('static/vectores/vector 5.png')">
+                                        <img src="static/vectores/vector 5.png" class="imageZoomed imagenDefaultBig" />
+                                    </figure>
+                                    <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
+                                    </p>
+                                    <a data-fslightbox="vector5" class="zoomButtonMine"
+                                        href="static/vectores/vector 5.png"><i class="bi bi-zoom-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardMarginExtraTwo">
+                            <div class="card-body">
+                                <p class="card-text textoReadingH2">
+                                    Para <span class="textoResaltadoFacto idFacto">simplificar el cálculo del valor futuro de las 4 anualidades
+                                    de $10,000</span> (cada una realizada al inicio del año), considerando que ganan el
+                                    10%
+                                    anual, <span class="textoResaltadoFacto idFacto">utilizaremos la siguiente fórmula:</span>
+                                </p>
+
+                                <div class="contenedorFormulaCompacto marginPersonal">
+                                    <p class="textoFormulaCompacto textoFormula">$$VF_{Anualidad~Anticipada} = VP
+                                        \left\lbrace\left[ {(1+i)^n - 1 \over i} * (1 + i) \right]\right\rbrace$$</p>
+                                    <p class="textoFormulaCompacto textoFormula">$$VF_{AAn} = 10,000 \left\lbrace\left[
+                                        {(1.10)^4 - 1 \over 0.10} * (1.10) \right]\right\rbrace = 51,051$$</p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtraTwo cardLevelTwo">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Si se conoce el valor futuro de una <span class="textoResaltadoFacto idFacto">anualidad anticipada y se desconoce
+                                        el valor
+                                        presente</span>, éste se puede calcular, lo único que tendrás que hacer es
+                                        <span class="textoResaltadoFacto idFacto">despejar la
+                                        variable de la fórmula anterior.</span>
+                                    </p>
+                                    <p class="card-text textoReadingH2">
+                                        Finalmente, es importante hacer énfasis en las siguientes
+                                        consideraciones:
+                                    </p>
+
+                                    <section class="cardsPaginaContenidoGrid">
+                                        <div class="card cardMarginExtraTwo">
+                                            <div class="card-body">
+                                                <p class="card-text textoReadingH2">
+                                                    a. La <span class="textoResaltadoFacto idFacto">diferencia entre una anualidad ordinaria y una
+                                                    anticipada</span> es que,
+                                                    en ésta
+                                                    última cada uno de los pagos genera intereses durante un año
+                                                    adicional.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card cardMarginExtraTwo">
+                                            <div class="card-body">
+                                                <p class="card-text textoReadingH2">
+                                                    b. Las <span class="textoResaltadoFacto idFacto">anualidades anticipadas regularmente se aplican a
+                                                    los
+                                                    planes de
+                                                    ahorro en
+                                                    anualidades y a los contratos de rentas y arrendamiento</span> en
+                                                    los
+                                                    cuales el
+                                                    arrendatario hace el pago inicial de la renta al principio
+                                                    del
+                                                    período.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Noveno contenido-->
+                <div class="tab-pane fade show" id="v-pills-4.2.4" role="tabpanel" aria-labelledby="v-pills-4.2.4-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.2.4 Anualidades y programa de amortización
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Explicación</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Una de las <span class="textoResaltadoFacto idFacto">aplicaciones más importantes del interés compuesto</span> es la
+                                que se <span class="textoResaltadoFacto idFacto">relaciona con los préstamos liquidables</span> con base en anualidades (pagos
+                                iguales) a través del tiempo, como por ejemplo los préstamos para la compra de
+                                automóviles y los créditos bancarios e hipotecarios, entre otros.
+                            </p>
+
+                            <div class="card cardMarginExtra">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Si un préstamo debe pagarse con base en montos periódicos iguales
+                                        (quincenales,
+                                        mensuales, trimestrales, anuales, etc.) se dice que es un préstamo
+                                        <span class="textoResaltadoFacto idFacto">amortizable</span>;
+                                        es
+                                        decir, un préstamo reembolsable mediante pagos iguales en un determinado
+                                        periodo
+                                        de
+                                        tiempo.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Para saber detalladamente cómo será <span class="textoResaltadoFacto idFacto">reembolsado un préstamo se realiza
+                                        un
+                                        programa
+                                        de amortización</span>. Éste muestra en forma precisa cómo será pagado un
+                                        préstamo,
+                                        indicando el pago requerido en cada fecha y especificando qué cantidad
+                                        de dicho
+                                        pago
+                                        se destina al pago de intereses y qué cantidad al pago de capital o
+                                        principal.
+                                        Al
+                                        proceso de saldar o liquidar una deuda <span class="textoResaltadoFacto idFacto">se le llama amortizar.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Ejemplo</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Al iniciar sus operaciones, una empresa pide prestados
+                                <span class="textoResaltadoFacto idFacto">$1,000,000 pesos a una institución bancaria, a una tasa de interés anual de 24%</span>,
+                                y
+                                le conceden un plazo de seis meses para cubrir el adeudo. El interés que se paga
+                                se
+                                capitaliza mensualmente sobre saldos insolutos.
+                            </p>
+                        </div>
+
+                        <div class="card cardMarginExtraTwo cardLevelThree">
+                            <div class="card-body">
+                                <p class="card-text textoReadingH2">
+                                    En el caso de que esta empresa pagara cantidades iguales para cada uno de
+                                    los
+                                    periodos de pago determinar:
+                                    <br>
+                                    &nbsp;&nbsp; <span class="textoResaltadoFacto idFacto">a. El valor de los pagos iguales (anualidad)</span>
+                                    <br>
+                                    &nbsp;&nbsp; <span class="textoResaltadoFacto idFacto">b. La tabla de amortización del préstamo</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card cardMarginExtraTwo">
+                            <div class="card-body">
+                                <p class="card-text textoReadingH2">
+                                    Lo primero que se debe hacer es <span class="textoResaltadoFacto idFacto">determinar el monto de la cantidad igual que
+                                    se
+                                    pagará cada período</span> (en nuestro ejemplo es cada mes), para ello tenemos esta
+                                    fórmula:
+                                </p>
+
+                                <div class="contenedorFormula marginPersonal">
+                                    <p class="textoFormula">$$PA = P\left({i(1+i)^n \over (1+i)^n - 1}\right)$$</p>
+                                    <div class="infoFormula">
+                                        <p class="infoFormula_title">Donde: </p>
+                                        <p class="infoFormula_data">P = Valor presente o principal (cantidad prestada)
+                                        </p>
+                                        <p class="infoFormula_data">PA = Valor del pago igual o anualidad</p>
+                                        <p class="infoFormula_data">i = Tasa de interés</p>
+                                        <p class="infoFormula_data">n = Período de tiempo</p>
+                                    </div>
+                                </div>
+
+                                <p class="card-text textoReadingH2">Para nuestro ejemplo <span class="textoResaltadoFacto idFacto">contamos con los
+                                    siguientes datos:</span></p>
+
+                                <div class="contenedorFormulaCompacto marginPersonal">
+                                    <p class="textoFormulaCompacto textoFormula">$$P = 1,000,000$$</p>
+                                    <p class="textoFormulaCompacto textoFormula">$$i = {0.24 \over 12} = 0.02$$</p>
+                                    <p class="textoFormulaCompacto textoFormula">$$n = 6$$</p>
+                                </div>
+
+                                <p class="card-text textoReadingH2">Sustituimos los datos en la formula:</p>
+
+                                <div class="contenedorFormulaCompacto marginPersonal">
+                                    <p class="textoFormulaCompacto textoFormula">$$PA = P\left({i(1+i)^n \over (1+i)^n -
+                                        1}\right)$$</p>
+                                    <p class="textoFormulaCompacto textoFormula">$$PA = 1,000,000{0.02(1+0.02)^6 \over
+                                        (1+0.02)^6 - 1}$$</p>
+                                    <p class="textoFormulaCompacto textoFormula">$$n = 212,158.39$$</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card cardMarginExtraTwo">
+                            <div class="card-body">
+                                <p class="card-text textoReadingH2">
+                                    Con esto se construye la tabla de amortización del pago de la deuda
+                                    para determinar qué parte de <span class="textoResaltadoFacto idFacto">PA = $212,158.39 pagada cada periodo</span> se destina
+                                    a
+                                    pagar
+                                    el préstamo y qué cantidad corresponde al pago de intereses.
+                                </p>
+
+                                <div class="imagenDefaultContainer">
+                                    <p class="titleImageMine">Tabla 4.2 Tabla de amortización</p>
+                                    <figure class="zoom zoomContainerMine" onmousemove="zoom(event)"
+                                        style="background-image: url('static/vectores/tabla2.png')">
+                                        <img src="static/vectores/tabla2.png" class="imageZoomed imagenDefaultBig" />
+                                    </figure>
+                                    <p class="noteImageMine">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).
+                                    </p>
+                                    <a data-fslightbox="tabla2" class="zoomButtonMine"
+                                        href="static/vectores/tabla2.png"><i class="bi bi-zoom-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">Explicación de la tabla de amortización:</h5>
+
+                        <section class="cardsPaginaContenidoListPadding">
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Columna A</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">El período cero corresponde al presente</span>, al momento en el que se
+                                        adquiere la
+                                        deuda. Los demás períodos corresponden a las fechas en las que se harán
+                                        cada uno
+                                        de los pagos <span class="textoResaltadoFacto idFacto">hasta liquidar el préstamo.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Columna B</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        El interés del período se obtiene multiplicando el saldo insoluto del
+                                        periodo
+                                        anterior <span class="textoResaltadoFacto idFacto">(que corresponde al saldo final de ese período y por tanto al
+                                        inicial
+                                        para el periodo que se trate)</span> por la tasa de interés, en el ejemplo:
+                                        para el
+                                        período 1 el interés es igual a (1,000,000) (0.02) = 20,00; para el
+                                        período 2 el
+                                        interés es igual a (807,841.61) (0.02) = 16,156.83 y así sucesivamente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Columna C</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">La anualidad, renta o cuota es el pago igual que se hará de
+                                        manera periódica.</span> Una
+                                        parte de la anualidad es para pagar los intereses y lo que reste es para
+                                        ir
+                                        pagando a principal (la deuda).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Columna D</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">El pago a principal o a capital o amortización del préstamo es
+                                        la cantidad que se está pagando a la deuda; en el ejemplo</span>, de los
+                                        212,158.39 que
+                                        se están pagando
+                                        en cada período una parte son para cubrir intereses y la otra para ir
+                                        pagando la
+                                        deuda. Para calcular el pago a capital se restan los intereses a la
+                                        anualidad,
+                                        así en el período 1 se están abonando a la deuda $192,158.39 que resultó
+                                        de la
+                                        siguiente operación (212,158.39 – 20,000) = 192,158.39
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Columna E</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">La deuda después del pago o saldo insoluto corresponde a la
+                                        deuda al final de
+                                        cada período.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+                </div>
+
+                <!--10 contenido-->
+                <div class="tab-pane fade" id="v-4.3" role="tabpanel" aria-labelledby="v-4.3-tab" tabindex="0">
+                    <div class="titleSuperior">
+                        4.3 Planeación financiera
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <h5 class="card-header textoReadingTitle">¿Qué es la planeación financiera?</h5>
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Para las empresas <span class="textoResaltadoFacto idFacto">un elemento sumamente importante</span> es la planeación
+                                financiera; ésta proporciona una guía que <span class="textoResaltadoFacto idFacto">permite dirigir, coordinar y controlar
+                                las
+                                acciones que realiza la empresa orientadas al logro de sus objetivos.</span>
+                                Vale la pena destacar que la planeación de efectivo (preparación del presupuesto
+                                de
+                                efectivo) y la planeación de utilidades (preparación de estados financieros
+                                proforma) son dos aspectos clave de la planeación financiera.
+                            </p>
+
+                            <div class="card cardMarginExtra">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        El proceso de la planeación financiera <span class="textoResaltadoFacto idFacto">comienza con la elaboración de
+                                        planes
+                                        financieros a largo plazo</span> o estratégicos y con base en estos se formulan
+                                        los
+                                        planes
+                                        y presupuestos a corto plazo u operativos. <span class="textoResaltadoFacto idFacto">No hay un consenso en cuanto
+                                        al
+                                        tiempo</span>
+                                        que se considera como corto o largo plazos; en este sentido, Gitman
+                                        (2003)
+                                        menciona
+                                        que el corto plazo podría cubrir un período de uno a dos años y el largo
+                                        plazo
+                                        de
+                                        más de dos años; también enfatiza que las empresas que están sujetas a
+                                        <span class="textoResaltadoFacto idFacto">altos
+                                        grados
+                                        de incertidumbre operativa</span>, a ciclos de producción relativamente cortos,
+                                        o a los
+                                        dos, <span class="textoResaltadoFacto idFacto">tienden a usar horizontes de planeación más cortos.</span>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!--Contanido 11-->
+                <div class="tab-pane fade" id="v-pills-4.3.1" role="tabpanel" aria-labelledby="v-4.3.1-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.3.1 El presupuesto maestro
+                    </div>
+
+                    <div class="card cardLevelOne">
+                        <div class="card-body cardLevelOneMarginAdjust">
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">¿Qué es el presupuesto maestro?</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <span class="textoResaltadoFacto idFacto">El presupuesto maestro es un plan que integra los presupuestos
+                                        financieros y operativos de una organización;</span> muestra los recursos que
+                                        requiere
+                                        cada
+                                        una de las áreas operativas para llevar a cabo sus actividades durante
+                                        un
+                                        periodo
+                                        determinado.
+                                    </p>
+
+                                    <p class="card-text textoReadingH2">
+                                        La elaboración de los presupuestos financieros y operativos corresponde
+                                        a los
+                                        <span class="textoResaltadoFacto idFacto">gerentes funcionales</span>, aunque en algunas organizaciones existe un
+                                        <span class="textoResaltadoFacto idFacto">departamento o
+                                        comité, dependiente del área de finanzas,</span> que se encarga de realizar los
+                                        presupuestos.
+                                    </p>
+
+                                    <p class="card-text textoReadingH2">
+                                        Por lo general el ciclo de elaboración de un presupuesto maestro <span class="textoResaltadoFacto idFacto">inicia
+                                        cuando
+                                        la
+                                        alta dirección, a través del departamento o comité de presupuestos,</span>
+                                        proporciona
+                                        a
+                                        los gerentes funcionales los pronósticos de venta y de utilidades que se
+                                        espera
+                                        durante del periodo y termina con la preparación de los estados
+                                        financieros
+                                        presupuestados (González, 2003).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelThree">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        En términos generales, el presupuesto maestro se integra por los
+                                        siguientes presupuestos:
+                                    <ol>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de ingresos o
+                                            de
+                                            ventas</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de producción
+                                        </span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de
+                                            requerimientos y
+                                            compras de materia
+                                            prima</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de mano de
+                                            obra</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de gastos
+                                            indirectos
+                                            de fabricación</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de gastos de
+                                            operación
+                                        </span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuesto de inventarios
+                                            iniciales y finales</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuestos de costos de
+                                            venta
+                                        </span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Presupuestos financieros,
+                                            de
+                                            efectivo, de capital y de
+                                            requerimientos
+                                            financieros</span></li>
+                                        <li class="textoReadingH2"><span class="textoResaltadoFacto idFacto">Estados financieros
+                                            presupuestados
+                                            o proforma</span></li>
+                                    </ol>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Es importante mencionar que el estado de resultados presupuestado <span class="textoResaltadoFacto idFacto">se
+                                        basa en los
+                                        presupuestos de operación</span> y junto con los presupuestos financieros
+                                        proporcionan
+                                        información para la elaboración del <span class="textoResaltadoFacto idFacto">estado de flujo de efectivo proforma
+                                        y del
+                                        estado de situación proforma.</span>
+                                    </p>
+                                    <p class="card-text textoReadingH2">
+                                        Por último, <span class="textoResaltadoFacto idFacto">la implementación y control del presupuesto maestro implican
+                                        evaluar</span>
+                                        continuamente el <span class="textoResaltadoFacto idFacto">desempeño real contra el presupuestado para detectar
+                                        desviaciones</span> y
+                                        realizar los ajustes necesarios dirigidos al logro de los objetivos
+                                        estratégicos
+                                        de
+                                        la organización.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Contanido 12-->
+                <div class="tab-pane fade" id="v-pills-4.4" role="tabpanel" aria-labelledby="v-pills-4.4-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        4.4 Estados financieros proforma
+                    </div>
+
+                    <div class="card cardLevelOne">
+                        <div class="card-body cardLevelOneMarginAdjust">
+                            <p class="card-text textoReadingH2">
+                                <span class="textoResaltadoFacto idFacto">El término proforma es sinónimo de proyectado, pronosticado,
+                                presupuestado y estimado;</span> al hablar de estados financieros proforma nos
+                                estaremos
+                                refiriendo a <span class="textoResaltadoFacto idFacto">estados financieros proyectados.</span>
+                            </p>
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Estados financieros proforma</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                    <ul>
+                                        <li class="textoReadingH2">Los proforma son estados que contienen, en todo
+                                            o en
+                                            parte, uno o
+                                            <span class="textoResaltadoFacto idFacto">varios supuestos o hipótesis</span> con el fin de mostrar cuál sería la
+                                            situación
+                                            financiera o los resultados de las operaciones si éstos sucedieran.
+                                        </li>
+                                        <li class="textoReadingH2">El objetivo de estos estados es <span class="textoResaltadoFacto idFacto">proporcionar
+                                            información anticipada sobre la
+                                            situación financiera de la empresa si se trata del estado de
+                                            situación
+                                            financiera</span>, o
+                                            de las utilidades o pérdidas si se trata del estado de resultados.
+                                        </li>
+                                        <li class="textoReadingH2">La base de los estados financieros proforma son
+                                            <span class="textoResaltadoFacto idFacto">los
+                                            presupuestos.</span></li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra">
+                                <h5 class="card-header textoReadingTitle">Presupuesto</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        Estimación en términos monetarios tanto de los ingresos como de
+                                        los egresos de un ente económico.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardMarginExtra cardLevelThree">
+                                <h5 class="card-header textoReadingTitle">¿Quiénes utilizan los estados
+                                    financieros
+                                    proforma?</h5>
+                                <div class="card-body">
+                                    <p class="card-text textoReadingH2">
+                                        <b>Accionistas y dueños.</b>
+                                        <br>
+                                        Para <span class="textoResaltadoFacto idFacto">conocer la situación financiera de la empresa</span>
+                                        y
+                                        los
+                                        resultados esperados, con el fin de tomar decisiones.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReadingH2">
+                                        <b>Administradores.</b>
+                                        <br>
+                                        Para <span class="textoResaltadoFacto idFacto">planear las operaciones, trazar estrategias</span>
+                                        facilitando
+                                        la
+                                        toma de decisiones que tienen impacto en el presente y en el futuro.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReadingH2">
+                                        <b>Acreedores y futuros acreedores.</b>
+                                        <br>
+                                        Para vigilar <span class="textoResaltadoFacto idFacto">la seguridad de sus
+                                        créditos</span> u
+                                        otorgar nuevos créditos.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReadingH2">
+                                        <b>Prospectos de accionistas.</b>
+                                        <br>
+                                        Para decidir sobre <span class="textoResaltadoFacto idFacto">invertir o no en la empresa</span>
+                                        con
+                                        base en su situación financiera y resultados de operación.
+                                    </p>
+                                    <hr>
+                                    <p class="card-text textoReadingH2">
+                                        <b>Autoridades gubernamentales y crediticias.</b>
+                                        <br>
+                                        Estas instituciones se
+                                        auxilian de
+                                        los
+                                        <span class="textoResaltadoFacto idFacto">estados financieros proforma como un importante elemento que les
+                                        proporciona
+                                        información para evaluar</span> la conveniencia de proporcionar financiamiento
+                                        o no.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Actividades de aprendizaje-->
+                <div class="tab-pane fade" id="v-pills-actividades" role="tabpanel"
+                    aria-labelledby="v-pills-actividades-tab" tabindex="0">
+                    <p class="fs-1 fw-bold">Actividades de aprendizaje</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis atque quisquam
+                        voluptatem assumenda nisi. Voluptatem reiciendis iusto, quisquam vero ipsa asperiores
+                        quo ad
+                        nobis, a temporibus, sed porro suscipit? Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Et repellendus rerum nemo neque voluptatem laboriosam alias itaque ducimus fugiat,
+                        a vitae
+                        corporis quas molestias dolor repudiandae aut animi qui illo!</p>
+
+                    <section class="downloadActivitiesCard">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="static/img/back.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Actividad 1</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Pariatur dolorum atque facere.</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Descargar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="static/img/back.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Actividad 2</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            Pariatur dolorum atque facere.</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Descargar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Evaluacion-->
+                <div class="tab-pane fade" id="v-pills-evaluacion" role="tabpanel"
+                    aria-labelledby="v-pills-evaluacion-tab" tabindex="0">
+
+                    <div class="titleSuperior">
+                        Evaluación
+                    </div>
+
+                    <section class="cardsPaginaContenidoGridPadding">
+                        <div class="contenedorBarraProgreso">
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span
+                                    id="contadorPreguntas">0</span>/10</p>
+                            <hr>
+                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span
+                                    id="contadorPreguntasRespondidas">0</span>/10</p>
+                            <div class="contenedorBarraProgresoBarra" id="barraPreguntas"></div>
+                        </div>
+
+                        <div class="contenedorBarraProgreso">
+                            <p class="contenedorBarraProgresoTexto textoReading">Fecha de respuesta: <span
+                                    id="fechaActual"></span></p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Tiempo:
+                                <span id="tiempoActualHoras">00</span>:
+                                <span id="tiempoActualMinutos">00</span>':
+                                <span id="tiempoActualSegundos">00</span>''
+                            </p>
+                            <p class="contenedorBarraProgresoTexto textoReading">Intentos: <span
+                                    id="intentosActuales"></span></p>
+                        </div>
+                    </section>
+
+                    <section class="cardsPaginaContenidoGridPadding" id="contenedor_preguntas">
+
+                    </section>
+
+                    <br>
+                    <section class="cardsPaginaContenidoListPadding">
+                        <p class="notaStyle textoReading">Nota: Por respeto a su privacidad las descargas de PDFs de
+                            resultados en Android
+                            no son posibles, puesto que al ser generados del lado del cliente se solicitan permisos de
+                            lectura/escritura más alla de lo necesario. Favor de tomar captura de
+                            pantalla de sus resultados si es usuario de Android.</p>
+
+                        <div class="d-grid gap-2 mt-3 textoReading">
+                            <button class="btn btn-lg btn-secondary" id="generarDocumento" type="button">Descargar
+                                resultados en PDF</button>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Cierre-->
+                <div class="tab-pane fade" id="v-pills-cierre" role="tabpanel" aria-labelledby="v-pills-cierre-tab"
+                    tabindex="0">
+
+                    <div class="titleSuperior">
+                        Cierre
+                    </div>
+
+                    <div class="card cardMarginExtra cardLevelTwo">
+                        <div class="card-body">
+                            <p class="card-text textoReadingH2">
+                                Tal y como lo estudiaste en esta unidad temática, el <span class="textoResaltadoFacto idFacto">presupuesto maestro se conforma de
+                                un conjunto de presupuestos de operación y financieros a partir de los cuales se
+                                construyen los estados financieros proforma.</span> Uno de esos presupuestos es el presupuesto
+                                de flujo de efectivo, con el que es posible <span class="textoResaltadoFacto idFacto">calcular los flujos netos de efectivo (FNE)
+                                que son la base para evaluar proyectos de inversión,</span> tema que verás en la siguiente
+                                unidad temática.
+                            </p>
+                            <div class="imagenDefaultContainer">
+                                <img class="imagenDefaultExtra" src="static/img/icons/cierre.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Menu de configuración de textos-->
+                    <section class="containerModifyTextButtons">
+                        <div class="containerSizeButtonBold textChangeBold"><i class="bi bi-type-bold"></i></div>
+                        <div class="containerSizeButtonItalic textChangeItalic"><i class="bi bi-type-italic"></i></div>
+                        <div class="containerSizeButtonItalic textChangeUnderline"><i class="bi bi-type-underline"></i>
+                        </div>
+                        <div class="containerSizeButtonItalic textChangeHighlight containerSizeTextButton"><i
+                                class="bi bi-input-cursor-text"></i></div>
+                        <div class="containerSizeButtonSpaceLine textChangeSpaceLine"><i class="bi bi-distribute-vertical"></i>
+                        </div>
+                    </section>
+                    <section class="containerSizeButtons">
+                        <div class="containerSizeButtonsOne textSizeOne"><i class="bi bi-type-h1"></i></div>
+                        <div class="containerSizeButtonsTwo textSizeTwo containerSizeTextButton"><i
+                                class="bi bi-type-h2"></i></div>
+                        <div class="containerSizeButtonItalic textSizeThree"><i class="bi bi-type-h3"></i>
+                        </div>
+                        <div class="containerSizeButtonSpaceLine textAlignLeft"><i class="bi bi-text-left"></i>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button class="botonFlotante1" id="botonFlotante1">
+        <i class="bi bi-list" id="botonFlotanteIcon1"></i>
+        <!-- <i class="bi bi-x"></i> -->
+    </button>
+
+    <!--Pie de pagina-->
+    <footer class="footerDesign">
+        <div class="footerContainerOne">
+            <p class="textoFooter">
+                Recurso Didáctico Digital Unidad 4: Elementos de matemáticas
+                financieras y la planeación financiera por M. en A. Eduardo Rodríguez Flores, M. en C. Josefina Hernández Jaime & Dra. Yasmín
+                Ivette
+                Jiménez Galán se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0
+                Internacional.
+            </p>
+            <a href="https://github.com/LuisEnriqueChavarriaVazquez/pagina_servicio_unidad_sola" target="_blank">
+                <button type="button" class="mt-3 btn btn-primary">
+                    <i class="bi bi-github"></i> Acceso al repositorio del proyecto
+                </button>
+            </a>
+            <div class="iconCreativeContainer">
+                <div class="iconCreative"></div>
+            </div>
+        </div>
+        <div class="footerContainerTwo">
+            <a href="./manual_usuario.pdf" target="_blank" download="manualUsuario.pdf">
+                <button type="button" class="mt-3 btn btn-secondary">
+                    <i class="bi bi-question-circle"></i> Manual de usuario
+                </button>
+            </a>
+        </div>
+    </footer>
+
+    <!--Seccion de notificaciones-->
+    <section id="contenedorNotificaciones">
+    </section>
+</body>
+
+</html>
