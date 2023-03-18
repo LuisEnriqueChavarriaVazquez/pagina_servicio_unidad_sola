@@ -1,6 +1,166 @@
 //Puntaje del usuario
+
 let puntajeTotal = 0;
 let preguntasContestadasTotal = 0;
+let contenedor_preguntas = document.getElementById('contenedor_preguntas');
+
+
+function aleatorio(a, b) {
+    var aleatorio = Math.round(Math.random() * (b - a) + parseInt(a));
+    return aleatorio
+}
+
+
+function preguntas_aleatorias() {
+
+    const preguntas_aleatorias_indices = [0]
+    const preguntas = [
+        0,
+        {
+            enunciado: "Enunciado de la pregunta 1",
+            opciones: [123, 2334, 434, 45],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 2",
+            opciones: [123, 2334, 434, 567],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 3",
+            opciones: [123, 2334, 434, 45],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 4",
+            opciones: [123, 2334, 434, 56],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 5",
+            opciones: [123, 2334, 434, 56],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 6",
+            opciones: [123, 2334, 434, 56],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 7",
+            opciones: [123, 2334, 434, 56],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 8",
+            opciones: [123, 2334, 434, 56],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 9",
+            opciones: [123, 2334, 434, 563],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 10",
+            opciones: [123, 2334, 434, 345],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 11",
+            opciones: [123, 2334, 434, 3456],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 12",
+            opciones: [123, 2334, 434, 3541],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 13",
+            opciones: [123, 2334, 434, 466],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 14",
+            opciones: [123, 2334, 434, 5655],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 15",
+            opciones: [123, 2334, 434, 455],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 16",
+            opciones: [123, 2334, 434, 3434],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 17",
+            opciones: [123, 2334, 434, 452],
+        },
+        {
+            enunciado: "Enunciado de la pregunta 18",
+            opciones: [123, 2334, 434, 3434],
+        }
+    ]
+
+
+    while (preguntas_aleatorias_indices.length < 11) {
+        numero = aleatorio(1, preguntas.length);
+        if (preguntas_aleatorias_indices.includes(numero) == false) {
+            preguntas_aleatorias_indices.push(numero)
+        }
+    }
+
+    let contenido_preguntas = ""
+
+
+        for (i = 1; i < 11; i++) {
+            aux=preguntas[preguntas_aleatorias_indices[i]]
+            
+            enunciado=Object.values(aux)[0]
+            contenido_preguntas = contenido_preguntas + `
+            <div class="card">
+            <div class="card-body" id="pregunta${preguntas_aleatorias_indices[i]}">
+            <form>
+                <h5 class="preguntaIdentificador card-title textoReadingTitle">Pregunta ${preguntas_aleatorias_indices[i]}</h5>
+                <p class="preguntaEnunciado textoReading">${enunciado}</p>
+                <section class="m-3" >
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                            id="pregunta${preguntas_aleatorias_indices[i]}_opt1" value="${aux.opciones[0]}">
+                        <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt1">
+                        ${aux.opciones[0]}
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                            id="pregunta${preguntas_aleatorias_indices[i]}_opt2" value="${aux.opciones[1]}">
+                        <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt2">
+                        ${aux.opciones[1]}
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                            id="pregunta${preguntas_aleatorias_indices[i]}_opt3" value="${aux.opciones[2]}">
+                        <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt3">
+                        ${aux.opciones[2]}
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                            id="pregunta${preguntas_aleatorias_indices[i]}_opt4" value="${aux.opciones[3]}">
+                        <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt4">
+                        ${aux.opciones[3]}
+                        </label>
+                    </div>
+                </section>
+                <div id="retroalimentacion">
+
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btnIndividualQuestion" id="button_evaluation_${preguntas_aleatorias_indices[i]}" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">
+                        <span class="textoReading">
+                        Revisar pregunta
+                        </span>
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+            `
+        }
+
+    contenedor_preguntas.innerHTML = contenido_preguntas;
+
+}
+
 
 function pregunta(numero) {
     //Respuestas para las preguntas
@@ -52,7 +212,7 @@ function pregunta(numero) {
     //Accedemos al contenido de la opcion elejida por el alumno
     var respuestaAlumnoContent = document.getElementById(respuestaAlumnoId);
     respuestaAlumnoContent.classList.add('respuestaAlumnoClassMark');
-    
+
     //Evaluacion de las preguntas
     console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
@@ -61,7 +221,7 @@ function pregunta(numero) {
         puntajeTotal++;
         preguntasContestadasTotal++;
     } else {
-        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Incorrecto</span>` +", la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
+        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Incorrecto</span>` + ", la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
         retroalimentacion.classList.add('mensajeIncorrecta');
         preguntasContestadasTotal++;
     }
@@ -73,10 +233,10 @@ function pregunta(numero) {
     contadorPreguntasRespondidas.innerText = preguntasContestadasTotal;
 
     //La barra se incrementa de tamaño con cada pregunta
-    barraPreguntas.setAttribute('style', 'width:' + preguntasContestadasTotal*10 + '%');
+    barraPreguntas.setAttribute('style', 'width:' + preguntasContestadasTotal * 10 + '%');
 
     //Se elimina el boton de la pregunta que ha sido respondida
-    let button_evaluation = document.getElementById('button_evaluation_'+numero);
+    let button_evaluation = document.getElementById('button_evaluation_' + numero);
     button_evaluation.setAttribute('style', 'display:none');
 
     //Se eliminan los inputs de la pregunta
@@ -91,158 +251,6 @@ function pregunta(numero) {
     opt4_input.setAttribute('disabled', '');
 }
 
-const preguntas_aleatorias_indices = [0]
-const preguntas = [
-    0,
-    {
-        "enunciado": "Enunciado de la pregunta 1",
-        "opciones": [123, 2334, 434, 45],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 2",
-        "opciones": [123, 2334, 434, 567],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 3",
-        "opciones": [123, 2334, 434, 45],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 4",
-        "opciones": [123, 2334, 434, 56],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 5",
-        "opciones": [123, 2334, 434, 56],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 6",
-        "opciones": [123, 2334, 434, 56],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 7",
-        "opciones": [123, 2334, 434, 56],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 8",
-        "opciones": [123, 2334, 434, 56],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 9",
-        "opciones": [123, 2334, 434, 563],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 10",
-        "opciones": [123, 2334, 434, 345],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 11",
-        "opciones": [123, 2334, 434, 3456],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 12",
-        "opciones": [123, 2334, 434, 3541],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 13",
-        "opciones": [123, 2334, 434, 466],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 14",
-        "opciones": [123, 2334, 434, 5655],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 15",
-        "opciones": [123, 2334, 434, 455],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 16",
-        "opciones": [123, 2334, 434, 3434],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 17",
-        "opciones": [123, 2334, 434, 452],
-    },
-    {
-        "enunciado": "Enunciado de la pregunta 18",
-        "opciones": [123, 2334, 434, 3434],
-    }
-];
-
-function preguntas_aleatorias() {
-
-
-
-    while (preguntas_aleatorias_indices.length < 11) {
-        numero = aleatorio(1, preguntas.length);
-        if (preguntas_aleatorias_indices.includes(numero) == false) {
-            preguntas_aleatorias_indices.push(numero)
-        }
-    }
-
-
-    let contenedor_preguntas = document.getElementById('contenedor_preguntas');
-    let contenido_preguntas = "";
-    for (i = 1; i < preguntas_aleatorias_indices.length; i++) {
-        contenido_preguntas = contenido_preguntas + `
-        <div class="card">
-        <div class="card-body" id="pregunta${preguntas_aleatorias_indices[i]}">
-        <form>
-            <h5 class="preguntaIdentificador card-title textoReadingTitle">Pregunta ${preguntas_aleatorias_indices[i]}</h5>
-            <p class="preguntaEnunciado textoReading">${preguntas[preguntas_aleatorias_indices[i]].enunciado}</p>
-            <section class="m-3" >
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                        id="pregunta${preguntas_aleatorias_indices[i]}_opt1" value="${preguntas[preguntas_aleatorias_indices[i]].opciones[0]}">
-                    <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt1">
-                    ${preguntas[preguntas_aleatorias_indices[i]].opciones[0]}
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                        id="pregunta${preguntas_aleatorias_indices[i]}_opt2" value="${preguntas[preguntas_aleatorias_indices[i]].opciones[1]}">
-                    <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt2">
-                    ${preguntas[preguntas_aleatorias_indices[i]].opciones[1]}
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                        id="pregunta${preguntas_aleatorias_indices[i]}_opt3" value="${preguntas[preguntas_aleatorias_indices[i]].opciones[2]}">
-                    <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt3">
-                    ${preguntas[preguntas_aleatorias_indices[i]].opciones[2]}
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                        id="pregunta${preguntas_aleatorias_indices[i]}_opt4" value="${preguntas[preguntas_aleatorias_indices[i]].opciones[3]}">
-                    <label class="form-check-label textoReading" for="pregunta${preguntas_aleatorias_indices[i]}_opt4">
-                    ${preguntas[preguntas_aleatorias_indices[i]].opciones[3]}
-                    </label>
-                </div>
-            </section>
-            <div id="retroalimentacion">
-
-            </div>
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary btnIndividualQuestion" id="button_evaluation_${preguntas_aleatorias_indices[i]}" onclick="pregunta(${preguntas_aleatorias_indices[i]})" type="button">
-                    <span class="textoReading">
-                    Revisar pregunta
-                    </span>
-                </button>
-            </div>
-            </form>
-        </div>
-    </div>
-        `;
-    }
-    contenedor_preguntas.innerHTML = contenido_preguntas;
-
-}
-
-function aleatorio(a, b) {
-    var aleatorio = Math.round(Math.random() * (b - a) + parseInt(a));
-    return aleatorio
-}
-
 
 if (window.addEventListener)
     window.addEventListener("load", preguntas_aleatorias, false);
@@ -250,6 +258,7 @@ else if (window.attachEvent)
     window.attachEvent("onload", preguntas_aleatorias);
 else
     window.onload = preguntas_aleatorias;
+
 
 
 
