@@ -818,7 +818,7 @@ figure.zoom img {
 
 .textoResaltadoFacto {
     font-weight: 650;
-    background-color: #dbdbdb;
+    background-color: #c9c9c9;
     border-radius: 5px;
     padding: 0px 8px;
     color: #424242;
@@ -829,7 +829,7 @@ figure.zoom img {
 }
 
 .textSpaceLineOwn {
-    line-height: 22px !important;
+    line-height: 45px !important;
 }
 
 .textAlignLeftOwn {
