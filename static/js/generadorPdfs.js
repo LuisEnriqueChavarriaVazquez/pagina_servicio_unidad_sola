@@ -77,8 +77,15 @@ generarDocumento.addEventListener('click', () => {
         doc.setTextColor(0, 0, 0);
         doc.text(20, posicionRespuesta, 'Su respuesta: ' + `${respuestaAlumnoClass[i].value}`);
         doc.text(20, posicionRespuestaCorrecta, 'Respuesta correcta: ' + `${respuestaCorrectaPreguntaAzar[i].textContent}`);
-        doc.text(20, estadoRespuesta, 'Estado: ' + `${estadoPreguntaAzar[i].textContent}`);
 
+        if (estadoPreguntaAzar[i].textContent=='Correcto') {
+            doc.setTextColor(11, 95, 17);
+        } else {
+            doc.setTextColor(151, 29, 5);
+        }
+        
+        doc.text(20, estadoRespuesta, 'Estado: ' + `${estadoPreguntaAzar[i].textContent}`);
+        doc.setTextColor(0, 79, 118);
         //Actualizacion de valores para la siguiente pregunta
         posicionRectangulo += 40;
         posicionEnunciado += 40;
