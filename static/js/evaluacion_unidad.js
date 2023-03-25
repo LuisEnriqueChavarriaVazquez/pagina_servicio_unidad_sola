@@ -173,7 +173,7 @@ function preguntas_aleatorias() {
 
 
     while (preguntas_aleatorias_indices.length < 11) {
-        numero = aleatorio(1, preguntas.length);
+        numero = aleatorio(1, preguntas.length-1);
         if (preguntas_aleatorias_indices.includes(numero) == false) {
             preguntas_aleatorias_indices.push(numero)
         }
@@ -244,15 +244,7 @@ function aleatorio(a, b) {
 }
 
 
-if (window.addEventListener)
-    window.addEventListener("load", preguntas_aleatorias, false);
-else if (window.attachEvent)
-    window.attachEvent("onload", preguntas_aleatorias);
-else
-    window.onload = preguntas_aleatorias;
-
-
-
+preguntas_aleatorias();
 
 //Evaluacion de todo (Pendiente)
 // let evaluartodo = document.getElementById('evaluartodo');
