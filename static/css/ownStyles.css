@@ -28,7 +28,7 @@ body {
 }
 
 .marginPersonalIntro {
-    padding: 40px 100px !important;
+    padding: 30px 60px !important;
     box-sizing: border-box !important;
 }
 
@@ -451,6 +451,7 @@ figure.zoom img {
         overflow-y: scroll;
         padding: 10px 15px;
     }
+
 }
 
 
@@ -476,12 +477,6 @@ figure.zoom img {
     padding: 20px;
 }
 
-.cardsPaginaContenidoGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-}
 
 .cardsPaginaContenidoGridPadding {
     display: grid;
@@ -532,13 +527,6 @@ figure.zoom img {
         grid-template-rows: auto;
         gap: 10px;
         padding: 10px;
-    }
-
-    .cardsPaginaContenidoGrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
     }
 
     .cardsPaginaContenidoGridPadding {
@@ -1429,4 +1417,12 @@ figure.zoom img {
 
 .item:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* cards material de apoyo*/
+.cads_apoyo{
+    margin: auto auto;
+}
+.cads_apoyo div div{
+    padding: 5px 5px;
 }
