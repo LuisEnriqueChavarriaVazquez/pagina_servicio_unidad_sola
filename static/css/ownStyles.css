@@ -1426,3 +1426,18 @@ figure.zoom img {
 .cads_apoyo div div{
     padding: 5px 5px;
 }
+.btn-apoyo{
+    background: #224f6e;
+    color:#fff;
+    border: 2px solid #224f6e;
+}
+
+.btn-apoyo:hover{
+    background: #fff;
+    color: #224f6e;
+    border: 2px solid #224f6e;
+}
+
+.fa-readme,.fa-hire-a-helper,.fa-android{
+    color: #245174;
+}
