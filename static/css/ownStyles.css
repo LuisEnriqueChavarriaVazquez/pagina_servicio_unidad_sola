@@ -1441,3 +1441,12 @@ figure.zoom img {
 .fa-readme,.fa-hire-a-helper,.fa-android{
     color: #245174;
 }
+
+/*Referencia de los iconos*/
+.referenciaIcono{
+    margin-bottom: 10px;
+    background-color: #ddd;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
