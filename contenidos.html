@@ -30,12 +30,12 @@
 
 
     <!--JS-->
-    <script defer src="static/js/menuLateral.js"></script>
+    <script defer src="static/js/unidadesMenu.js"></script>
     <script defer src="static/js/imageZoomed.js"></script>
 
     <!--Cargador de la pagina-->
     <script defer src="static/js/loader.js"></script>
-    
+
     <!--Script para la evaluación-->
     <script defer src="static/js/evaluacion_unidad.js"></script>
 
@@ -104,179 +104,140 @@
                     <li class="nav-item">
                         <a class="nav-link nav-linkTextos text-light" href="referencias.html">Fuentes de consulta</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-linkTextos text-light" href="aplicacion.html">App móvil</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            4.1 Valor del dinero en el tiempo
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">4.1.1 Valor futuro y valor presente</a></li>
-                            <li><a class="dropdown-item" href="#">4.1.1.1 Valor futuro de cantidades únicas</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">4.1.1.2 Valor presente</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            4.2 Anualidades
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">4.2.1 Valor futuro de anualidades
-                                    ordinarias</a></li>
-                            <li><a class="dropdown-item" href="#">4.2.2 Valor presente de anualidades
-                                    ordinarias</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">4.2.3 Valor futuro y valor presente de
-                                    anualidades
-                                    anticipadas</a></li>
-                            <li><a class="dropdown-item" href="#">4.2.4 Anualidades y programa de
-                                    amortización</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            4.3 La planeación financiera
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">4.3.1 El presupuesto maestro</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            4.4 Estados financieros proforma
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
+
     <div class="d-flex align-items-start">
         <section class="containerMenuAndContentClose">
-            <div class="containerMenuAndContent-primeraSeccion sideButtonPersonal nav flex-column nav-pills me-3 hideElement"
-                id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav-pills" id="v-pills-tab" role="tablist">
+                <nav class="navbar nav-fill navbar-expand-lg navbar-light bg-light" id="temas-subtemas">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active int" id="v-pills-intro-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-intro"  aria-controls="v-pills-intro"
+                                       ><i class="bi bi-door-open "></i>
+                                        &nbsp;&nbsp;Introducción</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link u41" id="v-pills-4.1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-4.1" aria-controls="v-pills-4.1"
+                                        >4.1 Valor del dinero en el tiempo</a>
+                                    <ul class="dropdown-menu u41" aria-labelledby="v-pills-4.1-tab">
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.1.1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.1.1" aria-controls="v-pills-4.1.1"
+                                               >4.1.1 Valor futuro y
+                                                valor
+                                                presente
+                                            </a>
 
-                <ul>
-                    <li>
-                        <button class="justifyPersonal nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-intro" type="button" role="tab" aria-controls="v-pills-intro"
-                            aria-selected="false"><i class="bi bi-door-open "></i>
-                            &nbsp;&nbsp;Introducción</button>
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-4.1-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-4.1" type="button" role="tab" aria-controls="v-pills-4.1"
-                            aria-selected="true">4.1 Valor del dinero en el tiempo</button>
-                        <ul>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.1.1" type="button" role="tab"
-                                    aria-controls="v-pills-4.1.1" aria-selected="false">4.1.1 Valor futuro y valor
-                                    presente
-                                </button>
-                            </li>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1.1-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.1.1.1" type="button" role="tab"
-                                    aria-controls="v-pills-4.1.1.1" aria-selected="false">4.1.1.1 Valor futuro de
-                                    cantidades
-                                    únicas</button>
-                            </li>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.1.1.2-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.1.1.2" type="button" role="tab"
-                                    aria-controls="v-pills-4.1.1.2" aria-selected="false">4.1.1.2 Valor
-                                    presente</button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-4.2-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-4.2" type="button" role="tab" aria-controls="v-pills-4.2"
-                            aria-selected="false">4.2 Anualidades</button>
-                        <ul>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.1-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.2.1" type="button" role="tab"
-                                    aria-controls="v-pills-4.2.1" aria-selected="false">4.2.1 Valor futuro de
-                                    anualidades ordinarias</button>
-                            </li>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.2-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.2.2" type="button" role="tab"
-                                    aria-controls="v-pills-4.2.2" aria-selected="false">4.2.2 Valor presente de
-                                    anualidades ordinarias</button>
-                            </li>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.3-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.2.3" type="button" role="tab"
-                                    aria-controls="v-pills-4.2.3" aria-selected="false">4.2.3 Valor futuro y valor
-                                    presente de anualidades anticipadas</button>
-                            </li>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.2.4-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.2.4" type="button" role="tab"
-                                    aria-controls="v-pills-4.2.4" aria-selected="false">4.2.4 Anualidades y programa de
-                                    amortización</button>
-                            </li>
-                        </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.1.1.1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.1.1.1"
+                                                aria-controls="v-pills-4.1.1.1">4.1.1.1 Valor
+                                                futuro de
+                                                cantidades
+                                                únicas</a>
 
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-4.3-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-4.3" type="button" role="tab" aria-controls="v-4.3"
-                            aria-selected="false">4.3 La planeación
-                            financiera</button>
-                        <ul>
-                            <li>
-                                <button class="justifyPersonalSecondary nav-link" id="v-pills-4.3.1-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-4.3.1" type="button" role="tab"
-                                    aria-controls="v-pills-4.3.1" aria-selected="false">4.3.1 El presupuesto
-                                    maestro</button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-4.4-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-4.4" type="button" role="tab" aria-controls="v-pills-4.4"
-                            aria-selected="false">4.4 Estados financieros proforma</button>
-                    </li>
-                    <!--Botones adicionales-->
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-actividades-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-actividades" type="button" role="tab"
-                            aria-controls="v-pills-actividades" aria-selected="false"><i class="bi bi-book"></i>
-                            &nbsp;&nbsp;Actividades de
-                            aprendizaje</button>
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-evaluacion" type="button" role="tab"
-                            aria-controls="v-pills-evaluacion" aria-selected="false"><i
-                                class="bi bi-file-earmark-richtext"></i>&nbsp;&nbsp;Evaluación</button>
-                    </li>
-                    <li>
-                        <button class="justifyPersonal nav-link" id="v-pills-cierre-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-cierre" type="button" role="tab" aria-controls="v-pills-cierre"
-                            aria-selected="false"><i class="bi bi-door-closed"></i>
-                            &nbsp;&nbsp;Cierre</button>
-                    </li>
-                </ul>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.1.1.2-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.1.1.2"
+                                                aria-controls="v-pills-4.1.1.2">4.1.1.2 Valor
+                                                presente</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link u42" id="v-pills-4.2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-4.2" aria-controls="v-pills-4.2"
+                                        >4.2 Anualidades</a>
+                                    <ul class="dropdown-menu u42" aria-labelledby="v-pills-4.2-tab">
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.2.1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.2.1" aria-controls="v-pills-4.2.1"
+                                               >4.2.1 Valor futuro de anualidades ordinarias
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.2.2-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.2.2" aria-controls="v-pills-4.2.2"
+                                               >4.2.2 Valor presente de anualidades ordinarias
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.2.3-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.2.3" aria-controls="v-pills-4.2.3"
+                                               >4.2.3 Valor futuro y valor presente de anualidades
+                                                anticipadas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.2.4-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.2.4" aria-controls="v-pills-4.2.4"
+                                               >4.2.4 Anualidades y programa de amortización
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link u43" id="v-4.3-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-4.3" aria-controls="v-4.3"
+                                        >4.3 La planeación
+                                        financiera</a>
+                                    <ul class="dropdown-menu u43" aria-labelledby="v-4.3-tab">
+                                        <li>
+                                            <a class="dropdown-item" id="v-pills-4.3.1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-4.3.1" aria-controls="v-pills-4.3.1"
+                                               >4.3.1 El presupuesto maestro
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link u44" id="v-pills-4.4-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-4.4"  aria-controls="v-pills-intro">
+                                        4.4 Estados financieros proforma</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-actividades-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-actividades"
+                                        aria-controls="v-pills-actividades"><i
+                                            class="bi bi-book"></i>
+                                        &nbsp;&nbsp;Actividades de
+                                        aprendizaje</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-evaluacion"
+                                        aria-controls="v-pills-evaluacion"><i
+                                            class="bi bi-file-earmark-richtext"></i>&nbsp;&nbsp;Evaluación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="v-pills-cierre-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cierre" aria-controls="v-pills-cierre"
+                                       ><i class="bi bi-door-closed"></i>
+                                        &nbsp;&nbsp;Cierre</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
             <div class="tab-content containerMenuAndContent-segundaSeccion" id="v-pills-tabContent">
@@ -336,7 +297,10 @@
 
                             <div class="imagenDefaultContainer">
                                 <img class="imagenDefaultExtra" src="static/img/icons/introduccion.png">
-                                <span class="referenciaIcono">Ilustración de <a href="https://icons8.com/illustrations/author/VKgWUPlqQ7Ea">AlexManokhi</a> proveniente de <a href="https://icons8.com/illustrations">Ouch!</a> (Referencia de acuerdo a los terminos legales del proveedor de ilustraciones)</span>
+                                <span class="referenciaIcono">Ilustración de <a
+                                        href="https://icons8.com/illustrations/author/VKgWUPlqQ7Ea">AlexManokhi</a>
+                                    proveniente de <a href="https://icons8.com/illustrations">Ouch!</a> (Referencia de
+                                    acuerdo a los terminos legales del proveedor de ilustraciones)</span>
                             </div>
                         </div>
                     </div>
@@ -2228,7 +2192,10 @@
                             </p>
                             <div class="imagenDefaultContainer">
                                 <img class="imagenDefaultExtra" src="static/img/icons/cierre.png">
-                                <span class="referenciaIcono">Ilustración de <a href="https://icons8.com/illustrations/author/VKgWUPlqQ7Ea">AlexManokhi</a> proveniente de <a href="https://icons8.com/illustrations">Ouch!</a> (Referencia de acuerdo a los terminos legales del proveedor de ilustraciones)</span>
+                                <span class="referenciaIcono">Ilustración de <a
+                                        href="https://icons8.com/illustrations/author/VKgWUPlqQ7Ea">AlexManokhi</a>
+                                    proveniente de <a href="https://icons8.com/illustrations">Ouch!</a> (Referencia de
+                                    acuerdo a los terminos legales del proveedor de ilustraciones)</span>
                             </div>
                         </div>
                     </div>
@@ -2257,13 +2224,8 @@
 
                 </div>
             </div>
-        </section>
-    </div>
 
-    <button class="botonFlotante1" id="botonFlotante1">
-        <i class="bi bi-list" id="botonFlotanteIcon1"></i>
-        <!-- <i class="bi bi-x"></i> -->
-    </button>
+    </div>
 
     <!--Pie de pagina-->
     <footer class="footerDesign">
