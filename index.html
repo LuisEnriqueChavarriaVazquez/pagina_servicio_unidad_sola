@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="static/css/ownStyles.css">
+  <link rel="stylesheet" href="static/css/navSuperior.css">
 
   <!-- Compiled and minified JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -48,18 +49,16 @@
 <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
   <!--Div para la carga de la página-->
   <div class="loader"></div>
-
-  <section class="navSuperior">
-    <div class="navSuperior-icons">
-      <img id="iconIpn" src="static/img/ipn_blanco.png">
-      <img id="iconEscom" src="static/img/escom_blanco.png">
-    </div>
-    <div class="navSuperior-texts">
-      <h4 class="navSuperior-title text-light">Recurso Didáctico Digital</h4>
-      <h5 class="navSuperior-desc text-light">Unidad 4: Elementos de matemáticas
+  
+  <div class="nav-superior" id="nav-superior">
+    <div id="icoNavIpn"></div>
+    <div class="titleNavIpnContainer">
+      <h4 class="titleNavIpn">Recurso Didáctico Digital</h4>
+      <h5 class="titleNavIpn">Unidad 4: Elementos de matemáticas
         financieras y la planeación financiera</h5>
     </div>
-  </section>
+    <div id="icoNavEscom"></div>
+  </div>
 
   <nav id="navPersonal" class="navbar nav-fill navbar-expand-lg bg-body-tertiary" style="background: #5086c1;">
     <div class="container-fluid">
