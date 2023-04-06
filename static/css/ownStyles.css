@@ -1476,3 +1476,9 @@ figure.zoom img {
 #temas-subtemas .dropdown-menu{
     background-color: #F0F0F0;
 }
+
+.nav-pills {
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #333;
+    --bs-nav-pills-link-active-bg: #fff;
+}
