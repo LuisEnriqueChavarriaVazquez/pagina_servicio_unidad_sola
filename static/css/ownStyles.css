@@ -182,6 +182,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     width: auto;
+    color: #205295;
 }
 
 @media (max-width: 1400px) {
@@ -1449,4 +1450,29 @@ figure.zoom img {
     font-weight: 600;
     padding: 5px 15px;
     border-radius: 10px;
+}
+
+#temas-subtemas .nav-link{
+    color: #205295;
+    font-weight: 500;
+}
+
+#temas-subtemas .nav-link.active{
+    color: #333;
+    font-weight: 700;
+    background-color: white;
+}
+
+#temas-subtemas .dropdown-item{
+    color: #205295;
+}
+
+#temas-subtemas .dropdown-item.active{
+    color: #333;
+    background-color: white;
+    font-weight: 500;
+}
+
+#temas-subtemas .dropdown-menu{
+    background-color: #F0F0F0;
 }
