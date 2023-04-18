@@ -619,6 +619,26 @@ figure.zoom img {
     text-align: justify;
 }
 
+/*Nuevo footer*/
+.footerCreativeContainer{
+    margin: 15px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footerCreativeContainer a{
+    color: #205295 !important;
+    margin: 2px 0;
+}
+
+.footerCreativeContainer img{
+    width: 160px;
+    margin: 20px 0;
+}
+
 @media (max-width: 1000px) {
     .footerContainerOne {
         padding: 40px;
@@ -641,6 +661,11 @@ figure.zoom img {
         font-weight: 600;
         text-align: justify;
     }
+
+    .footerCreativeContainer{
+        font-size: .75rem;
+    }
+    
 }
 
 @media (max-width: 600px) {
