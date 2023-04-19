@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="static/css/ownStyles.css">
   <link rel="stylesheet" href="static/css/navSuperior.css">
+  <link rel="stylesheet" href="static/css/driver.css">
 
   <!-- Compiled and minified JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -42,6 +43,10 @@
   <!--Carousel-->
   <script defer src="static/js/imageZoomed.js"></script>
   <script defer src="static/js/fslightbox.js"></script>
+
+  <!--Tutoriales-->
+  <script defer src="static/js/tutorial/driver.min.js"></script>
+  <script defer src="static/js/tutorial/tutorialIndex.js"></script>
 
 
 </head>
@@ -69,20 +74,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <button type="button" class="btn btn-light nav-linkTextos" href="index.html">Inicio</button>
-          <li class="nav-item">
+          <button type="button" class="btn btn-light nav-linkTextos" href="index.html" id="a1_tuto">Inicio</button>
+          <li class="nav-item" style="background: #5086c1; border-radius: 10px;" id="a2_tuto">
             <a class="nav-link nav-linkTextos text-light" href="contenidos.html">Contenidos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="background: #5086c1; border-radius: 10px;" id="a3_tuto">
             <a class="nav-link nav-linkTextos text-light" href="materialDeApoyo.html">Formulario</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="background: #5086c1; border-radius: 10px;" id="a4_tuto">
             <a class="nav-link nav-linkTextos text-light" href="glosario.html">Glosario</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="background: #5086c1; border-radius: 10px;" id="a5_tuto">
             <a class="nav-link nav-linkTextos text-light" href="referencias.html">Fuentes de consulta</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="background: #5086c1; border-radius: 10px;" id="a6_tuto">
             <a class="nav-link nav-linkTextos text-light" href="aplicacion.html">App móvil</a>
           </li>
         </ul>
@@ -91,32 +96,32 @@
   </nav>
 
   <ul class="nav nav-tabs overflowResponsiveTabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a7_tuto">
       <button class="nav-link nav-linkTextos active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one-tab-pane"
         type="button" role="tab" aria-controls="one-tab-pane" aria-selected="true">Bienvenida</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a8_tuto">
       <button class="nav-link nav-linkTextos" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane"
         type="button" role="tab" aria-controls="two-tab-pane" aria-selected="false">Unidad de competencia</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a9_tuto">
       <button class="nav-link nav-linkTextos" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane"
         type="button" role="tab" aria-controls="three-tab-pane" aria-selected="false">Metodologia</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a10_tuto">
       <button class="nav-link nav-linkTextos" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane"
         type="button" role="tab" aria-controls="four-tab-pane" aria-selected="false">Evaluación de los
         aprendizajes</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a11_tuto">
       <button class="nav-link nav-linkTextos" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane"
         type="button" role="tab" aria-controls="five-tab-pane" aria-selected="false">Contactos</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a12_tuto">
       <button class="nav-link nav-linkTextos" id="six-tab" data-bs-toggle="tab" data-bs-target="#six-tab-pane"
         type="button" role="tab" aria-controls="six-tab-pane" aria-selected="false">Requerimientos</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="nav-item" role="presentation" id="a13_tuto">
       <button class="nav-link nav-linkTextos" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven-tab-pane"
         type="button" role="tab" aria-controls="seven-tab-pane" aria-selected="false">Manual de usuario</button>
     </li>
@@ -711,7 +716,7 @@
   </section>
 
   <!--Boton para la sección de ayuda-->
-  <div class="buttonHelpTutorial">
+  <div class="buttonHelpTutorial" id="buttonHelpTutorialID">
     Ayuda
   </div>
 </body>
