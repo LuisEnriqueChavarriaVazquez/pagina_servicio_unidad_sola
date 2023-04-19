@@ -641,9 +641,18 @@ figure.zoom img {
     }
 
     .footerCreativeContainer a{
-        font-size: .5rem;
+        font-size: .7rem;
+        font-weight: 700;
     }
     
+}
+
+@media (max-width: 500px) {
+
+    .footerCreativeContainer a{
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px) {
