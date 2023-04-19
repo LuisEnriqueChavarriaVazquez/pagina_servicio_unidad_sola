@@ -640,8 +640,8 @@ figure.zoom img {
         text-align: justify;
     }
 
-    .footerCreativeContainer{
-        font-size: .65rem;
+    .footerCreativeContainer a{
+        font-size: .5rem;
     }
     
 }
