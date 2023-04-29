@@ -1528,3 +1528,9 @@ figure.zoom img {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: #2d4b6b;
 }
+
+.verAnualidades{
+    text-decoration: none;
+    color: #205295;
+    font-weight: bold;
+}
