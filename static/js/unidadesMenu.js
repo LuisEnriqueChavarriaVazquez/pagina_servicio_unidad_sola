@@ -40,12 +40,13 @@ function verAnualidades() {
 }
 
 
-function seleccionaPadre(unidad) {
+// function seleccionaPadre(unidad) {
 
-  $('.nav-link').removeClass('active')
-  $('.dropdown-item').removeClass('active')
 
-  padre=$('.nav-link.'+unidad)
-  padre.addClass('active')
+//   $('.dropdown-item').removeClass('active')
 
-}
+//   padre=$('.nav-link.'+unidad)
+//   $('.nav-link.'+unidad).removeClass('active')
+//   padre.addClass('active')
+
+// }

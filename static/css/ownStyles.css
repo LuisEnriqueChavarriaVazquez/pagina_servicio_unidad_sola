@@ -1524,6 +1524,7 @@ figure.zoom img {
     }
 }
 
+
 .buttonHelpTutorial:hover{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: #2d4b6b;
@@ -1534,3 +1535,16 @@ figure.zoom img {
     color: #205295;
     font-weight: bold;
 }
+
+.appmovil{
+    display: none;
+  }
+  
+
+@media (max-width: 1000px) {
+    .appmovil {
+      display: block;
+    }
+  }
+  
+
