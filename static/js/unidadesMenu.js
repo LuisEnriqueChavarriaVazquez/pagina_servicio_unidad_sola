@@ -16,6 +16,13 @@ $('.nav-link.u43').hover(function(){
 
 });
 
+$('.nav-link.u44').hover(function(){
+    $('.dropdown-menu').removeClass('show');
+});
+
+$('.containerMenuAndContent-segundaSeccion').hover(function(){
+    $('.dropdown-menu').removeClass('show')
+})
 
 $('.dropdown-item').on('click',function(){
 
@@ -27,26 +34,19 @@ $('.nav-link.int').hover(function() {
     $('.dropdown-menu').removeClass('show')
 })
 
-$('.nav-link.u44').hover(function() {
-    $('.dropdown-menu').removeClass('show')
-})
-
-$('.containerMenuAndContent-segundaSeccion').hover(function(){
-    $('.dropdown-menu').removeClass('show')
-})
 
 function verAnualidades() {
     document.getElementById("v-pills-4.2-tab").click();
 }
 
 
-// function seleccionaPadre(unidad) {
+function seleccionaPadre(unidad) {
 
 
-//   $('.dropdown-item').removeClass('active')
+  $('.nav-link').removeClass('btnActive')
 
-//   padre=$('.nav-link.'+unidad)
-//   $('.nav-link.'+unidad).removeClass('active')
-//   padre.addClass('active')
+  padre=$('.nav-link.'+unidad)
+  padre.addClass('btnActive')
 
-// }
+}
+

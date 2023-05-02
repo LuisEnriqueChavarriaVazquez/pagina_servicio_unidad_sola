@@ -1,6 +1,7 @@
 /* Algunas fuentes para los textos */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*Pagina default*/
 * {
@@ -1467,16 +1468,18 @@ figure.zoom img {
 #temas-subtemas .nav-link{
     color: #205295;
     font-weight: 500;
+    font-size: 1.05rem;
 }
 
-#temas-subtemas .nav-link.active{
-    color: #333;
-    font-weight: 700;
-    background-color: white;
+.btnActive{
+    color: #333 !important;
+    font-weight: 700 !important;
+    background-color: white !important;
 }
 
 #temas-subtemas .dropdown-item{
     color: #205295;
+    font-weight: 400;
 }
 
 #temas-subtemas .dropdown-item.active{

@@ -117,8 +117,8 @@
     <div class="d-flex align-items-start">
         <section class="containerMenuAndContentClose">
             <div class="nav-pills" id="v-pills-tab" role="tablist">
-                <nav class="navbar nav-fill navbar-expand-lg navbar-light" id="temas-subtemas">
-                    <div class="container-fluid">
+                <nav class="navbar nav-fill navbar-expand-lg navbar-light">
+                    <div class="container-fluid" id="temas-subtemas">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -127,14 +127,12 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <button class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-intro" aria-controls="v-pills-intro"><i
-                                            class="bi bi-door-open "></i>
-                                        &nbsp;&nbsp;Introducción</button>
+                                    <a class="nav-link int active" id="v-pills-intro-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-intro" aria-controls="v-pills-intro" onclick="seleccionaPadre('int')">Introducción</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link u41" id="v-pills-4.1-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-4.1" aria-controls="v-pills-4.1">4.1 Valor del dinero
+                                        data-bs-target="#v-pills-4.1" aria-controls="v-pills-4.1" onclick="seleccionaPadre('u41')">4.1 Valor del dinero
                                         en el tiempo</a>
                                     <ul class="dropdown-menu u41" aria-labelledby="v-pills-4.1-tab">
                                         <li>
@@ -169,7 +167,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link u42" id="v-pills-4.2-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-4.2" aria-controls="v-pills-4.2">4.2 Anualidades</a>
+                                        data-bs-target="#v-pills-4.2" aria-controls="v-pills-4.2" onclick="seleccionaPadre('u42')">4.2 Anualidades</a>
                                     <ul class="dropdown-menu u42" aria-labelledby="v-pills-4.2-tab">
                                         <li>
                                             <a class="dropdown-item" id="v-pills-4.2.1-tab"
@@ -204,7 +202,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link u43" id="v-4.3-tab" data-bs-toggle="pill" data-bs-target="#v-4.3"
-                                        aria-controls="v-4.3">4.3 La planeación
+                                        aria-controls="v-4.3" onclick="seleccionaPadre('u43')">4.3 La planeación
                                         financiera</a>
                                     <ul class="dropdown-menu u43" aria-labelledby="v-4.3-tab">
                                         <li>
@@ -218,27 +216,22 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link u44" id="v-pills-4.4-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-4.4" aria-controls="v-pills-intro">
+                                        data-bs-target="#v-pills-4.4" aria-controls="v-pills-intro" onclick="seleccionaPadre('u44')">
                                         4.4 Estados financieros proforma</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" id="v-pills-actividades-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-actividades" aria-controls="v-pills-actividades"><i
-                                            class="bi bi-book"></i>
-                                        &nbsp;&nbsp;Actividades de
+                                    <a class="nav-link actividades" id="v-pills-actividades-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-actividades" aria-controls="v-pills-actividades" onclick="seleccionaPadre('actividades')">Actividades de
                                         aprendizaje</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-evaluacion" aria-controls="v-pills-evaluacion"><i
-                                            class="bi bi-file-earmark-richtext"></i>&nbsp;&nbsp;Evaluación</a>
+                                    <a class="nav-link eval" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-evaluacion" aria-controls="v-pills-evaluacion" onclick="seleccionaPadre('eval')">Evaluación</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="v-pills-cierre-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-cierre" aria-controls="v-pills-cierre"><i
-                                            class="bi bi-door-closed"></i>
-                                        &nbsp;&nbsp;Cierre</a>
+                                    <a class="nav-link cierre" id="v-pills-cierre-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cierre" aria-controls="v-pills-cierre" onclick="seleccionaPadre('cierre')">Cierre</a>
                                 </li>
                             </ul>
                         </div>
