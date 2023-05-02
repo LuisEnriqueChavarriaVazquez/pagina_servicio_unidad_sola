@@ -845,11 +845,11 @@ figure.zoom img {
 }
 
 .textHighlightOwn {
-    background-color: #444444 !important;
-    color: #e7e7e7;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 5px;
+    background-color: #e7e7e7 !important;
+    color: #212529;
+    font-weight: 400;
+    border-radius: 0px;
+    padding: 0px 0px;
 }
 
 .textItalicOwn {
