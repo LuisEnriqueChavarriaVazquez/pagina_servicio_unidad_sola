@@ -824,9 +824,9 @@ figure.zoom img {
 
 .textoResaltadoFacto {
     font-weight: 650;
-    background-color: #93BFCF;
+    background-color: #afdcec;
     border-radius: 5px;
-    padding: 0px 8px;
+    padding: 0px 2px;
     color: #434242;
 }
 
@@ -993,7 +993,7 @@ figure.zoom img {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -1031,6 +1031,7 @@ figure.zoom img {
     flex-direction: column;
     padding: 10px 20px;
     width: 95%;
+    margin-bottom: 1rem;
 }
 
 .infoFormula p {
