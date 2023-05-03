@@ -28,24 +28,6 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-
-    <!--Scripts para la evaluacion-->
-    <script defer src="static/js/evaluacion/puntajeActual.js"></script>
-    <script src="static/js/evaluacion/mezclaArray.js"></script>
-    <script defer src="static/js/evaluacion/nombreGrupoAlumno.js"></script>
-    <script defer src="static/js/evaluacion/jspdf.min.js"></script>
-    <script defer src="static/js/evaluacion/fechaActual.js"></script>
-    <script defer src="static/js/evaluacion/validarCompletadoDeCuestionario.js"></script>
-    <script defer src="static/js/evaluacion/optMultiple.js"></script>
-    <script defer src="static/js/evaluacion/optTrueFalse.js"></script>
-    <script defer src="static/js/evaluacion/optDragAndDrop.js"></script>
-    <script defer src="static/js/evaluacion/intentosActuales.js"></script>
-    <script defer src="static/js/evaluacion/generadorPdfs.js"></script>
-    <script defer src="static/js/evaluacion/statsSticky.js"></script>
-    <script defer src="static/js/evaluacion/randomizeQuestionsDom.js"></script>
-    <script defer src="static/js/evaluacion/numeradorPreguntas.js"></script>
-    <script defer src="static/js/evaluacion/pruebaPdf.js"></script>
-
     <!--JS-->
     <script defer src="static/js/unidadesMenu.js"></script>
     <script defer src="static/js/imageZoomed.js"></script>
@@ -233,9 +215,8 @@
                                         aprendizaje</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link eval" id="v-pills-evaluacion-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-evaluacion" aria-controls="v-pills-evaluacion"
-                                        onclick="seleccionaPadre('eval')">Evaluación</a>
+                                    <a class="nav-link eval"
+                                        href="evaluacion.html">Evaluación</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link cierre" id="v-pills-cierre-tab" data-bs-toggle="pill"
@@ -2237,55 +2218,6 @@
                         </div>
                     </section>
 
-                </div>
-
-                <!--Evaluacion-->
-                <div class="tab-pane fade" id="v-pills-evaluacion" role="tabpanel"
-                    aria-labelledby="v-pills-evaluacion-tab" tabindex="0">
-
-                    <div class="titleSuperior">
-                        Evaluación
-                    </div>
-
-                    <section class="cardsPaginaContenidoGridPadding">
-                        <div class="contenedorBarraProgreso">
-                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas correctas <span
-                                    id="contadorPreguntas">0</span>/10</p>
-                            <hr>
-                            <p class="contenedorBarraProgresoTexto textoReading">Preguntas respondidas <span
-                                    id="contadorPreguntasRespondidas">0</span>/10</p>
-                            <div class="contenedorBarraProgresoBarra" id="barraPreguntas"></div>
-                        </div>
-
-                        <div class="contenedorBarraProgreso">
-                            <p class="contenedorBarraProgresoTexto textoReading">Fecha de respuesta: <span
-                                    id="fechaActual"></span></p>
-                            <p class="contenedorBarraProgresoTexto textoReading">Tiempo:
-                                <span id="tiempoActualHoras">00</span>:
-                                <span id="tiempoActualMinutos">00</span>':
-                                <span id="tiempoActualSegundos">00</span>''
-                            </p>
-                            <p class="contenedorBarraProgresoTexto textoReading">Intentos: <span
-                                    id="intentosActuales"></span></p>
-                        </div>
-                    </section>
-
-                    <section class="cardsPaginaContenidoGridPadding" id="contenedor_preguntas"></section>
-                    <section class="cardsEvaluationTwo clgreyl1 border1 shadow2" id="contenedor_preguntas_two"></section>
-
-                    <br>
-                    <section class="cardsPaginaContenidoListPadding">
-                        <p class="notaStyle textoReading">Nota: Por respeto a su privacidad las descargas de PDFs de
-                            resultados en Android
-                            no son posibles, puesto que al ser generados del lado del cliente se solicitan permisos de
-                            lectura/escritura más alla de lo necesario. Favor de tomar captura de
-                            pantalla de sus resultados si es usuario de Android.</p>
-
-                        <div class="d-grid gap-2 mt-3 textoReading">
-                            <button class="btn btn-lg btn-secondary" id="generarDocumento" type="button">Descargar
-                                resultados en PDF</button>
-                        </div>
-                    </section>
                 </div>
 
                 <!--Cierre-->
