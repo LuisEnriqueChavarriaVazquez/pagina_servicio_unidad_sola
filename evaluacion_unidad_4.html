@@ -127,6 +127,7 @@
     <script defer src="https://luisenriquechavarriavazquez.github.io/Poli_libro/js/tutorialInteractiveEval.js"
         type="text/javascript"></script>
 </head>
+
 <body style="overflow-x: hidden;">
 
     <!--Pantalla de carga para los cuestionarios en caso de que tarde mucho-->
@@ -142,7 +143,7 @@
         <div class="clbktx textoStandar clgreyl2 border1 textoDeCarga">Generando cuestionario</div>
     </section>
 
-    <div class="nav-superior nav-superiorUnit1" id="nav-superior">
+    <div class="nav-superior nav-superiorUnit1 cl1" id="nav-superior">
         <div id="icoNavIpn"></div>
         <div class="titleNavIpnContainer">
             <p class="titleNavIpn white-text">Evaluación Recurso didáctico digital</p>
@@ -311,18 +312,20 @@
         <section class="cardsEvaluationTwo clgreyl1 border1 shadow2" id="contenedor_preguntas_two"></section>
 
         <!--Descarga de archivos-->
-        <section id="contenedorDescargaArchivos">
+        <section> <!--id="contenedorDescargaArchivos"-->
             <p class="textoTitulo clbktx tituloEvaluacion">Descargar resultados</p>
             <section class="cardsEvaluationDownload clgreyl1 border1">
-                <p class="notaStyle clgreyl2 border1 shadow2 clbktx textoStandar">Nota: Por respeto a su privacidad las
+                <p class="notaStyle clgreyl2 border1 shadow2 clbktx textoStandar">Nota Android: Por respeto a su
+                    privacidad las
                     descargas de PDFs de
                     resultados en Android
                     no son posibles, puesto que al ser generados del lado del cliente se solicitan permisos de
                     lectura/escritura más alla de lo necesario. Favor de tomar captura de
                     pantalla de sus resultados si es usuario de Android.</p>
 
-                <a class='btn-large waves-effect waves-light border1 white-text cl4' id="documentoPrueba"
-                    unidadButton="unidad4_sola">Descargar<i class="material-icons right">file_download</i></a>
+                <a class='btn-large waves-effect waves-light border1 white-text cl4 hide-on-med-and-down'
+                    id="documentoPrueba" unidadButton="unidad4_sola">Descargar<i
+                        class="material-icons right">file_download</i></a>
             </section>
         </section>
 
@@ -337,11 +340,11 @@
     </a>
 
     <a data-target="mobile-demo"
-        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobileDownloadResult scale-transition scale-out nav-superiorUnit1"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobileDownloadResult scale-transition scale-out nav-superiorUnit1 hide-on-med-and-down"
         style="width: 54px; height: 54px;" id="documentoPruebaFloat">
         <i class="material-icons">download</i>
     </a>
-
+    
     <!--Boton de tutorial-->
     <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 scale-transition" id="buttonComputerHelp"><i
             class="material-icons left">help</i>Ayuda</a>
