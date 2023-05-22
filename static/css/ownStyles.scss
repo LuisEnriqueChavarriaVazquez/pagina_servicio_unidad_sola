@@ -186,7 +186,20 @@ body {
     font-weight: 700;
     width: auto;
     color: #205295;
+    
+    &:hover{
+        border-radius: 5px !important;
+        color: #ffffff !important;
+        background-color: #34587e !important;
+    }
+
+    // &:hover{
+    //     border-radius: 5px !important;
+    //     color: #42003f !important;
+    //     background-color: #ffe0ff !important;
+    // }  
 }
+
 
 @media (max-width: 1400px) {
     .nav-linkTextos {
@@ -1473,6 +1486,19 @@ figure.zoom img {
     color: #205295;
     font-weight: 500;
     font-size: 1.05rem;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        border-radius: 5px !important;
+        color: #ffffff !important;
+        background-color: #4c7bad !important;
+    }  
+
+    // &:hover{
+    //     border-radius: 5px !important;
+    //     color: #42003f !important;
+    //     background-color: #ffe0ff !important;
+    // }  
 }
 
 .btnActive{
