@@ -24,7 +24,7 @@ function buscar_concepto(){
             <p class="fs-1 fw-bold">No hay coincidencias</p>
             <div class="imagenDefaultContainer mt-3">
                 <img class="imagenDefault" src="static/img/icons/no-Result.png">
-                <span class="referenciaIcono">Ilustración de <a href="https://icons8.com/illustrations/author/VKgWUPlqQ7Ea">AlexManokhi</a> proveniente de <a href="https://icons8.com/illustrations">Ouch!</a> (Referencia de acuerdo a los terminos legales del proveedor de ilustraciones)</span>
+                <span class="referenciaIcono">Retomado de AlexManokhi proveniente de <a target="_blank" href="https://icons8.com/illustrations/illustration/tutti-blue-question-mark-with-decorative-elements-1">Ouch!</span>
             </div>
             <br>
             <div class="card" style="width: 100%;">
