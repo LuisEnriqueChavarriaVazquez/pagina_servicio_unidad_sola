@@ -46,12 +46,12 @@ function pregunta(numero) {
     //Evaluacion de las preguntas
     console.log(respuestaAlumnoId)
     if (respuestaCorrectaId == respuestaAlumnoId) {
-        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Correcto</span>` + ", la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
+        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Correcto</span>` + " la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
         retroalimentacion.classList.add('mensajeCorrecta');
         puntajeTotal++;
         preguntasContestadasTotal++;
     } else {
-        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Incorrecto</span>` +", la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
+        retroalimentacion.innerHTML = `<span class="estadoPreguntaAzar">Incorrecto</span>` +" la respuesta es " + `<span class="respuestaCorrectaPreguntaAzar">${respuestasExplicacion[numero]}</span>`;
         retroalimentacion.classList.add('mensajeIncorrecta');
         preguntasContestadasTotal++;
     }
