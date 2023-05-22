@@ -40,7 +40,41 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en" id="generalDocument" style="overflow-y:scroll; overflow-x: scroll;">
+<html lang="en" id="generalDocument" style="overflow: auto !important;">
+
+<style>
+    @media (max-width: 600px) {
+        .clbordertdotted{
+            margin-bottom: 3px !important;
+            font-size: 12px !important;
+            height: 19px !important;
+        }
+
+        .definicionCaja {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            grid-template-rows: 20px 20px !important;
+        }
+
+        .definicionCajaContainer .clbordertdotted {
+            height: auto !important;
+        }
+
+        .definicionCajaContainer .clbordertdotted p {
+            font-size: 12px !important;
+            margin: 0 !important;
+            height: 20px !important;
+        }
+
+        .definicionCajaContainer .clbordertdotted div {
+            height: 15px !important;
+        }
+
+        .definicionCajaContainer .clbordertdotted div span {
+            font-size: 10px !important;
+        }
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -344,7 +378,7 @@
         style="width: 54px; height: 54px;" id="documentoPruebaFloat">
         <i class="material-icons">download</i>
     </a>
-    
+
     <!--Boton de tutorial-->
     <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 scale-transition" id="buttonComputerHelp"><i
             class="material-icons left">help</i>Ayuda</a>
