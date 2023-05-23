@@ -44,7 +44,7 @@
 
 <style>
     @media (max-width: 600px) {
-        .clbordertdotted{
+        .clbordertdotted {
             margin-bottom: 3px !important;
             font-size: 12px !important;
             height: 19px !important;
@@ -72,6 +72,10 @@
 
         .definicionCajaContainer .clbordertdotted div span {
             font-size: 10px !important;
+        }
+
+        .btnMinuscula::first-letter {
+            text-transform: capitalize !important;
         }
     }
 </style>
@@ -337,7 +341,8 @@
             </div>
         </section>
         <section class="containerSaveDataUser clgreyl1 border1 shadow2">
-            <a class='btn-large waves-effect waves-light border1 white-text cl4' id="guardarDatos"></a>
+            <a style="text-transform: lowercase !important;"
+                class='btn-large btnMinuscula waves-effect waves-light border1 white-text cl4' id="guardarDatos"></a>
         </section>
 
         <p class="textoTitulo clbktx tituloEvaluacion">Preguntas</p>
