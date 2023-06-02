@@ -35,6 +35,9 @@
     <!--Cargador de la pagina-->
     <script defer src="static/js/loader.js"></script>
 
+    <!--Modales-->
+    <script defer src="static/js/modals.js"></script>
+
     <!--Bloqueo de copias-->
     <!-- <script defer src="static/js/noCopy.js"></script> -->
 
@@ -164,7 +167,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#"  id="v-pills-4.2.2-tab"
+                                            <a class="dropdown-item" href="#" id="v-pills-4.2.2-tab"
                                                 onclick="seleccionaPadre('u42')" data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-4.2.2" aria-controls="v-pills-4.2.2">4.2.2
                                                 Valor presente de anualidades ordinarias
@@ -188,8 +191,9 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link u43" href="#" id="v-4.3-tab" data-bs-toggle="pill" data-bs-target="#v-4.3"
-                                        aria-controls="v-4.3" onclick="seleccionaPadre('u43')">4.3 La planeación
+                                    <a class="nav-link u43" href="#" id="v-4.3-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-4.3" aria-controls="v-4.3"
+                                        onclick="seleccionaPadre('u43')">4.3 La planeación
                                         financiera</a>
                                     <ul class="dropdown-menu u43" aria-labelledby="v-4.3-tab">
                                         <li>
@@ -209,14 +213,15 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link actividades" href="#" id="v-pills-actividades-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-actividades" aria-controls="v-pills-actividades"
+                                    <a class="nav-link actividades" href="#" id="v-pills-actividades-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-actividades"
+                                        aria-controls="v-pills-actividades"
                                         onclick="seleccionaPadre('actividades')">Actividades de
                                         aprendizaje</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link eval"
-                                        href="evaluacion_unidad_4.html">Evaluación</a>
+                                    <button class="nav-link eval" id="inputModal" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Evaluación</button>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link cierre" href="#" id="v-pills-cierre-tab" data-bs-toggle="pill"
@@ -286,8 +291,9 @@
 
                             <div class="imagenDefaultContainer">
                                 <img class="imagenDefaultExtra" src="static/img/icons/introduccion.png">
-                                <span class="referenciaIcono">Retomado de AlexManokhi proveniente de 
-                                    <a href="https://icons8.com/illustrations/illustration/tutti-pink-flag" target="_blank">Ouch!</a></span>
+                                <span class="referenciaIcono">Retomado de AlexManokhi proveniente de
+                                    <a href="https://icons8.com/illustrations/illustration/tutti-pink-flag"
+                                        target="_blank">Ouch!</a></span>
                             </div>
                         </div>
                     </div>
@@ -680,12 +686,13 @@
                                                 <h5 class="card-title">Actividad 4.1</h5>
                                             </div>
                                             <div class="card-body">
-        
+
                                                 <i class="fab fa-brands fa-readme fa-3x"></i>
                                                 <p class="card-text">Valor del dinero en el tiempo
                                                 </p>
-                                                <a href="./actividades/actividad 4.1 valor del dinero en el tiempo.pdf" target="_blank"
-                                                download="valor_del_dinero_en_el_tiempo.pdf" class="btn btn-apoyo">Descargar</a>
+                                                <a href="./actividades/actividad 4.1 valor del dinero en el tiempo.pdf"
+                                                    target="_blank" download="valor_del_dinero_en_el_tiempo.pdf"
+                                                    class="btn btn-apoyo">Descargar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1714,7 +1721,8 @@
                             </div>
 
                             <p class="card-text textoReadingH2">
-                                Es momento de movilizar tus aprendizajes sobre el tema realizando la siguiente actividad:
+                                Es momento de movilizar tus aprendizajes sobre el tema realizando la siguiente
+                                actividad:
                             </p>
                             <section class="container cads_apoyo">
                                 <div class="row">
@@ -1724,7 +1732,7 @@
                                                 <h5 class="card-title">Actividad 4.2</h5>
                                             </div>
                                             <div class="card-body">
-        
+
                                                 <i class="fab fa-brands fa-readme fa-3x"></i>
                                                 <p class="card-text"> Amortización de anualidades vencidas
                                                 </p>
@@ -1736,7 +1744,7 @@
                                     </div>
                                 </div>
                             </section>
-        
+
                         </section>
 
                     </div>
@@ -2118,7 +2126,8 @@
                                 </div>
                             </div>
                             <p class="card-text textoReadingH2">
-                                Al realizar la siguiente actividad de aprendizaje lograrás una mayor comprensión del tema: presupuesto maestro y estados financieros proforma.
+                                Al realizar la siguiente actividad de aprendizaje lograrás una mayor comprensión del
+                                tema: presupuesto maestro y estados financieros proforma.
                             </p>
                             <section class="container cads_apoyo">
                                 <div class="row">
@@ -2128,7 +2137,7 @@
                                                 <h5 class="card-title">Actividad 4.3</h5>
                                             </div>
                                             <div class="card-body">
-        
+
                                                 <i class="fab fa-brands fa-readme fa-3x"></i>
                                                 <p class="card-text">Presupuesto maestro y estados financieros proforma
                                                 </p>
@@ -2202,8 +2211,8 @@
                                         <i class="fab fa-brands fa-readme fa-3x"></i>
                                         <p class="card-text"> Amortización de anualidades vencidas
                                         </p>
-                                        <a href="./actividades/actividad 4.2 anualidades vencidas.pdf"
-                                            target="_blank" download="amortizacion_de_anualidades_vencidas.pdf"
+                                        <a href="./actividades/actividad 4.2 anualidades vencidas.pdf" target="_blank"
+                                            download="amortizacion_de_anualidades_vencidas.pdf"
                                             class="btn btn-apoyo">Descargar</a>
                                     </div>
                                 </div>
@@ -2253,8 +2262,9 @@
                             </p>
                             <div class="imagenDefaultContainer">
                                 <img class="imagenDefaultExtra" src="static/img/icons/cierre.png">
-                                <span class="referenciaIcono">Retomado de AlexManokhi proveniente de 
-                                    <a href="https://icons8.com/illustrations/illustration/tutti-graduate-diploma" target="_blank">Ouch!</a></span>
+                                <span class="referenciaIcono">Retomado de AlexManokhi proveniente de
+                                    <a href="https://icons8.com/illustrations/illustration/tutti-graduate-diploma"
+                                        target="_blank">Ouch!</a></span>
                             </div>
                         </div>
                     </div>
@@ -2284,6 +2294,27 @@
                 </div>
             </div>
 
+    </div>
+
+    <!--Modals-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Al contestar los reactivos incluidos en esta evaluación pondrás a prueba los aprendizajes que has
+                    adquirido en esta unidad temática IV. El resultado que obtengas puede tener o no valor para tu
+                    evaluación, de acuerdo con la estrategia didáctica seguida por tu profesor(a).
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary"><a href="evaluacion_unidad_4.html" style="color: #fff; text-decoration: none;">Iniciar evaluación</a></button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Pie de pagina-->
